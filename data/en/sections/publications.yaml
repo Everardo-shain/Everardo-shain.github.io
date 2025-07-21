@@ -12,71 +12,40 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: "Machine Learning"
-  filter: "machinelearning"
-- name: "Image Processing"
-  filter: "image-processing"
-- name: Security
-  filter: "security"
+- name: "Paper"
+  filter: "paper"
+- name: "Thesis"
+  filter: "thesis"
 
 # your publications
 publications:
-- title: An Example Paper on Machine Learning
+- title: Tuning and Comparison of Optimization Algorithms for the Next Best View Problematic
   publishedIn:
-    name: 2020 IEEE Region Symposium (TENSYMP)
-    date: 7 June 2020
-    url: https://example.com
+    name: "IEEE Access (Volume: 12)"
+    date: 9 December 2024
+    url: https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=10380310&punumber=6287639
   authors:
-  - name: Dr. Madman
-    url: https://example.com
-  - name: Dr. Lessmad
-    url: https://example.com
-  - name: Dr. Moremad
-    url: https://example.com
-  - name: Dr. Goodman
-    url: https://example.com
+  - name: Everardo Shain-Ruvalcaba
+    url: https://orcid.org/0009-0001-5123-0557
+  - name: Efraín López-Damian
+    url: https://orcid.org/0000-0002-1113-929X
   paper:
-    summary: Voluptate in id id voluptate laboris. Minim mollit aliquip sit aliqua ut exercitation voluptate eiusmod consequat pariatur sunt enim veniam. Velit esse tempor laboris anim tempor officia. Magna non labore duis do esse sit do ipsum culpa. Officia consequat id non duis culpa dolor. Excepteur magna non nostrud cupidatat aute aliqua aliquip.
-    url: https://example.com
-  categories: ["machinelearning","image-processing"]
-  tags: ["Machine Learning", "Autonomous Driving", "Computer Vision"]
-
-- title: An Sample Paper on Image Processing
+    summary: This paper presents the tuning and comparison of various optimization algorithms on the Next Best View (NBV) problem. A simulated 5 Degree-of-Freedom (DOF) mobile robot with a mounted simulated range sensor was used on a Virtual Reality Modeling Language (VRML) environment, and the space discretization was made using a voxel map. The optimization methods tested were Nelder-Mead, an Evolution Strategy, and Simulated Annealing. Their repeatability was tested on a laboratory model, a room with a cube and a pyramid inside it, and a study room with multiple furniture and windows.
+    url: https://ieeexplore.ieee.org/document/10781375
+  categories: ["paper"]
+  tags: ["Next Best View", "Objective Function","Optimization Algorithms", "Voxel Map"]
+- title: View planning for three-dimensional environment reconstruction using the Next Best View method
   publishedIn:
-    name: 2020 IEEE Region Symposium (TENSYMP)
-    date: 7 June 2020
-    url: https://example.com
+    name: Instituto Tecnológico y de Estudios Superiores de Monterrey
+    date: 3 December 2024
+    url: https://repositorio.tec.mx/home
   authors:
-  - name: Dr. Madman
-    url: https://example.com
-  - name: Dr. Lessmad
-    url: https://example.com
-  - name: Dr. Moremad
-    url: https://example.com
-  - name: Dr. Goodman
-    url: https://example.com
+  - name: Everardo Shain-Ruvalcaba
+    url: https://orcid.org/0009-0001-5123-0557
+  - name: Efraín López-Damian
+    url: https://orcid.org/0000-0002-1113-929X
   paper:
-    summary: Ullamco magna minim cupidatat Lorem ea ex aliqua fugiat et. Dolor quis cillum ea duis irure et commodo aliquip consectetur ullamco labore ut anim nisi. Commodo reprehenderit est consectetur tempor adipisicing occaecat exercitation amet do aliquip dolor do irure. Labore officia ut magna pariatur reprehenderit et ex sit sunt. Magna proident ullamco adipisicing sit.
-    url: https://example.com
-  categories: ["image-processing"]
-  tags: ["Image Processing", "Computer Vision"]
-
-- title: An Example Paper on Security
-  publishedIn:
-    name: 2020 IEEE Region Symposium (TENSYMP)
-    date: 7 June 2020
-    url: https://example.com
-  authors:
-  - name: Dr. Madman
-    url: https://example.com
-  - name: Dr. Lessmad
-    url: https://example.com
-  - name: Dr. Moremad
-    url: https://example.com
-  - name: Dr. Goodman
-    url: https://example.com
-  paper:
-    summary: Dolor ad cupidatat pariatur nulla ipsum ex ullamco nisi anim ullamco. Dolore elit esse in exercitation minim aliqua. Amet velit incididunt magna laboris. Proident reprehenderit deserunt ad officia duis dolor. Tempor nostrud ullamco ullamco sint deserunt cupidatat irure minim consectetur nulla adipisicing sunt.
-    url: https://example.com
-  categories: ["security"]
-  tags: ["Machine Learning", "Autonomous Driving", "Machine Vision"]
+    summary: This master's thesis describes the impact of the objective function and optimization methods on the Next Best View problem, which consists in finding the next position that the sensor or camera needs to take to scan an object or scenery in its totality. A multi-factor objective function was designed including area and motion factors. Global optimization tasks such as a backstepping technique to escape local minima and a dynamic change in the objective function were implemented. Optimization methods such as Nelder-Mead, an Evolution Strategy, and Simulated Annealing were tuned and compared on three different scenarios.
+    url: https://repositorio.tec.mx/items/e2855326-09cd-47a7-8094-6b66793b2796
+  categories: ["thesis"]
+  tags: ["Next Best View", "Objective Function","Optimization Algorithms", "Voxel Map"]
