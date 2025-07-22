@@ -26,7 +26,7 @@ degrees:
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
     showGrades: true
-    collapseAfter: 3
+    collapseAfter: 6
     courses:
     - name: Leadership for Sustainable Development
       grade: 96
@@ -40,19 +40,19 @@ degrees:
       grade: 100
     - name: Thesis I
       grade: 95
-    - name: Design and Analysis of Experiments
+    - name: Elective I (Design and Analysis of Experiments)
       grade: 99
     - name: Thesis II
       grade: 100
-    - name: Linear Programming
+    - name: Elective II (Linear Programming)
       grade: 100
-    - name: Advanced Optimization Techniques
+    - name: Elective III (Advanced Optimization Techniques)
       grade: 100
     - name: Thesis III
       grade: 100
-    - name: Directed Study I
+    - name: Elective IV (Directed Study I)
       grade: 100
-    - name: Directed Study II
+    - name: Elective V (Directed Study II)
       grade: 100
   publications: #(optional)
   - title: Tuning and Comparison of Optimization Algorithms for the Next Best View Problematic
@@ -75,7 +75,7 @@ degrees:
     outOf: "4.0 (98.7%)"
   takenCourses:
     showGrades: true
-    collapseAfter: 3
+    collapseAfter: 6
     courses:
     - name: Physics I
       grade: 95
