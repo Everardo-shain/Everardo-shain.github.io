@@ -68,17 +68,17 @@ badges:
 - type: soft-skill-indicator
   name: Engineering and Scientific Research
   percentage: 85
-  color: "#00ffff"
+  color: "blue"
 
 - type: soft-skill-indicator
   name: Embedded Software & Robotics
   percentage: 75
-  color: "#00ffff"
+  color: "blue"
 
 - type: soft-skill-indicator
   name: Data Science
   percentage: 75
-  color: "#00ffff"
+  color: "blue"
 #Soft skills
 - type: soft-skill-indicator
   name: Logical Thinking

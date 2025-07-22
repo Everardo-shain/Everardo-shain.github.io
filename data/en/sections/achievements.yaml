@@ -10,18 +10,18 @@ section:
 
 # Your achievements achievements
 achievements:
-- title: "Graduation - M.S. in Engineering"
-  image: /images/sections/achievements/msc_graduation.jpg
-  summary: "Received Master of Science (M.S.) in Engineering from Tecnológico de Monterrey."
+# - title: "Graduation - M.S. in Engineering"
+#   image: /images/sections/achievements/msc_graduation.jpg
+#   summary: "Received Master of Science (M.S.) in Engineering from Tecnológico de Monterrey."
+- title: Bachelor's Best Graduate Award
+  image: /images/sections/achievements/best_graduate.jpg
+  summary: Best graduate of all the 200 graduates on my generation including all 12 bachelor's degrees of my university, obtaining a final grade average of 98.7/100.0.
 - title: Master's Highest Honorable Mention
   image: /images/sections/achievements/msc_mention.jpg
   summary: Awarded as the best graduate of Master of Science in Engineering in a generation of 15 students, backing up my knowledge and research skills.
 - title: Bachelor's Highest Honorable Mention
   image: /images/sections/achievements/bachelor_mention.jpg
   summary: Awarded as the best graduate of Mechatronics Engineering in a generation of 20 students, backing up my knowledge and skills on my field and achieving goals during my entire coursework.
-- title: "Graduation - B.S. in Mechatronics Engineering"
-  image: /images/sections/achievements/bachelor_graduation.jpg
-  summary: "Received Bachelor of Science (B.S.) in Mechatronics Engineering from Tecnológico de Monterrey."
-- title: Bachelor's Best Graduate Award
-  image: /images/sections/achievements/best_graduate.jpg
-  summary: Best graduate of all the 200 graduates on my generation including all 12 bachelor's degrees of my university, obtaining a final grade average of 98.7/100.0.
+# - title: "Graduation - B.S. in Mechatronics Engineering"
+#   image: /images/sections/achievements/bachelor_graduation.jpg
+#   summary: "Received Bachelor of Science (B.S.) in Mechatronics Engineering from Tecnológico de Monterrey."
