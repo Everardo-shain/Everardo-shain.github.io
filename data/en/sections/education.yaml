@@ -29,44 +29,31 @@ degrees:
     collapseAfter: 3
     courses:
     - name: Leadership for Sustainable Development
-      achieved: 1.44
-      outOf: 1.5
+      grade: 96
     - name: Mathematical Physical Modeling
-      achieved: 3
-      outOf: 3
+      grade: 100
     - name: Applied Computing
-      achieved: 3
-      outOf: 3
+      grade: 100
     - name: Research and Innovation Methods
-      achieved: 1.5
-      outOf: 1.5
+      grade: 100
     - name: Data Science and Statistical Inference
-      achieved: 3
-      outOf: 3
+      grade: 100
     - name: Thesis I
-      achieved: 2.85
-      outOf: 3
+      grade: 95
     - name: Design and Analysis of Experiments
-      achieved: 2.97
-      outOf: 3
+      grade: 99
     - name: Thesis II
-      achieved: 3
-      outOf: 3
+      grade: 100
     - name: Linear Programming
-      achieved: 3
-      outOf: 3
+      grade: 100
     - name: Advanced Optimization Techniques
-      achieved: 3
-      outOf: 3
+      grade: 100
     - name: Thesis III
-      achieved: 3
-      outOf: 3
+      grade: 100
     - name: Directed Study I
-      achieved: 3
-      outOf: 3
+      grade: 100
     - name: Directed Study II
-      achieved: 3
-      outOf: 3
+      grade: 100
   publications: #(optional)
   - title: Tuning and Comparison of Optimization Algorithms for the Next Best View Problematic
     url: "https://ieeexplore.ieee.org/document/10781375"
@@ -86,6 +73,132 @@ degrees:
     scale: GPA
     achieved: 3.95
     outOf: "4.0 (98.7%)"
+  takenCourses:
+    showGrades: true
+    collapseAfter: 3
+    courses:
+    - name: Physics I
+      grade: 95
+    - name: Foreign Language
+      grade: 92
+    - name: Verbal Expression and Analysis
+      grade: 92
+    - name: Mathematics I
+      grade: 95
+    - name: Introduction to Mechatronics Engineering
+      grade: 95
+    - name: Chemistry
+      grade: 100
+    - name: Problem Solving with Programming
+      grade: 97
+    - name: Natural Sciences and Sustainable Development
+      grade: 96
+    - name: Physics II
+      grade: 96
+    - name: Humanities and Fine Arts
+      grade: 94
+    - name: Statics
+      grade: 100
+    - name: Mathematics II
+      grade: 100
+    - name: Industrial Informatics
+      grade: 97
+    - name: Chemistry Laboratory
+      grade: 96
+    - name: Electricity and Magnetism
+      grade: 100
+    - name: Dynamics
+      grade: 100
+    - name: Mathematics III
+      grade: 100
+    - name: Differential Equations
+      grade: 97
+    - name: Electrical Circuits I
+      grade: 100
+    - name: Ethics, Self and Society
+      grade: 100
+    - name: Verbal Expression in the Workplace
+      grade: 98
+    - name: Computer Drawing
+      grade: 100
+    - name: Numerical Methods in Engineering
+      grade: 100
+    - name: Advanced Mathematics
+      grade: 91
+    - name: Logic Automatisms
+      grade: 100
+    - name: Logic Automatism Laboratory
+      grade: 100
+    - name: Electrical Circuits II
+      grade: 100
+    - name: Economy to Business Creation
+      grade: 100
+    - name: Thermodynamics
+      grade: 100
+    - name: Mechanics of Materials
+      grade: 100
+    - name: Probability and Statistics
+      grade: 100
+    - name: Electronics
+      grade: 100
+    - name: Analysis of Signals and Systems
+      grade: 100
+    - name: Entrepreneurship
+      grade: 100
+    - name: Mechanism Analysis and Simulation
+      grade: 99
+    - name: Actuators
+      grade: 99
+    - name: Control Engineering
+      grade: 100
+    - name: Applied Electronics
+      grade: 100
+    - name: Industrial Networks
+      grade: 100
+    - name: Mechatronic Instrumentation Laboratory
+      grade: 100
+    - name: Materials Technology
+      grade: 100
+    - name: Machine Design and Development
+      grade: 98
+    - name: Computerized Control
+      grade: 100
+    - name: Industrial Networks Project
+      grade: 100
+    - name: Microcontrollers
+      grade: 99
+    - name: Integral Electronics Laboratory
+      grade: 100
+    - name: Citizenship
+      grade: 100
+    - name: Applied Ethics
+      grade: 100
+    - name: Project of Mechatronics Engineering
+      grade: 100
+    - name: Manufacturing Technologies
+      grade: 100
+    - name: Mechatronic Design
+      grade: 100
+    - name: Mechatronics Laboratory
+      grade: 100
+    - name: Automation of Manufacturing Systems
+      grade: 100
+    - name: Integral Automatic Control Laboratory
+      grade: 99
+    - name: Topics I (Intelligent Systems)
+      grade: 100
+    - name: Project Evaluation and Management
+      grade: 100
+    - name: Industrial Robotics
+      grade: 100
+    - name: Introduction to Professional Development
+      grade: 100
+    - name: Topics II (Advanced CAD and Metrology)
+      grade: 98
+    - name: Topics III (Electric and Hybrid Vehicles)
+      grade: 100
+    - name: Topics IV (Electronic Technology Project)
+      grade: 100
   extracurricularActivities: #(optional)
   - Member of the student group Robociety
   - Participated on national robotics competitions Robofest 2022 and Robomatrix 2022.

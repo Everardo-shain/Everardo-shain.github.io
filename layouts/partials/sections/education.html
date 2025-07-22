@@ -80,18 +80,16 @@
                                 <table>
                                     <thead>
                                         <th class="course-name-header">{{ i18n "course_name"}}</th>
-                                        {{ if not $hideScale  }}<th>{{ i18n "total_credit"}}</th>{{ end }}
-                                        <th>{{ i18n "obtained_credit"}}</th>
-                                    </thead>
-                                    <tbody>
-                                        {{ range $index,$course := .takenCourses.courses }}
+                                        <th>{{ i18n "grade" }}</th>
+                                        </thead>
+                                        <tbody>
+                                        {{ range $index, $course := .takenCourses.courses }}
                                         <tr class="course {{ if ge $index $collapseAfter }}hidden-course{{ end}}">
                                             <td>{{ $course.name }}</td>
-                                            {{ if not $hideScale  }}<td>{{ $course.outOf }}</td>{{ end }}
-                                            <td>{{ $course.achieved }}</td>
+                                            <td>{{ $course.grade }}</td>
                                         </tr>
                                         {{ end }}
-                                    </tbody>
+                                        </tbody>
                                 </table>
                                 {{ else }}
                                     <ul>
