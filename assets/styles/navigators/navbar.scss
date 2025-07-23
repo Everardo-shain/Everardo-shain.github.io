@@ -1,15 +1,21 @@
 @mixin nav-item-hover-effect($theme: 'light') {
-  color: get-light-color('accent-color') !important;
-  border-bottom: 2px solid get-light-color('accent-color') !important;
-  background: rgba(get-light-color('accent-color'), 0.1);
+  // Common style for both themes
   @include transition();
 
+  // Conditionally apply styles based on the theme
   @if $theme == 'dark' {
+    // Dark theme styles
     color: get-dark-color('accent-color') !important;
     border-bottom: 2px solid get-dark-color('accent-color') !important;
     background: rgba(get-dark-color('accent-color'), 0.1);
+  } @else {
+    // Light theme styles (default)
+    color: get-light-color('accent-color') !important;
+    border-bottom: 2px solid get-light-color('accent-color') !important;
+    background: rgba(get-light-color('accent-color'), 0.1);
   }
 }
+
 
 .top-navbar {
   position: fixed;
@@ -54,13 +60,13 @@
       @include transition();
       border-bottom: 2px solid transparent;
       &:hover {
-        @include nav-item-hover-effect();
+        @include nav-item-hover-effect('light');
       }
     }
   }
 
   .navbar-nav .active {
-    @include nav-item-hover-effect();
+    @include nav-item-hover-effect('light');
   }
 
   #top-navbar-divider {
@@ -69,7 +75,12 @@
     height: 20px;
     width: 2px;
   }
-
+  .nav-link {
+    &.active,
+    &.show {
+      color: get-light-color('hover-over-accent-color');
+    }
+  }
   .dropdown-menu {
     box-shadow: $box-shadow;
     border: 1px solid rgba(get-light-color('accent-color'), 0.1);
@@ -88,7 +99,7 @@
         color: get-light-color('heading-color') !important;
 
         &:hover {
-          @include nav-item-hover-effect();
+          @include nav-item-hover-effect('light');
         }
       }
     }
@@ -163,7 +174,6 @@
         @include transition();
       }
     }
-
     #top-navbar-divider {
       height: auto;
       width: auto;
@@ -220,13 +230,23 @@ html[data-theme='dark'] {
     li {
       a {
         color: get-dark-color('heading-color');
+        &:hover {
+          @include nav-item-hover-effect('dark');
+        }
       }
     }
-
+    .navbar-nav .active {
+      @include nav-item-hover-effect('dark');
+    }
     #top-navbar-divider {
       background-color: get-dark-color('muted-text-color');
     }
-
+    .nav-link {
+      &.active,
+      &.show {
+        color: get-dark-color('hover-over-accent-color');
+      }
+    }
     .dropdown-menu {
       box-shadow: $box-shadow;
       background-color: get-dark-color('bg-card');
@@ -235,6 +255,9 @@ html[data-theme='dark'] {
       &.show {
         a {
           color: get-dark-color('heading-color') !important;
+          &:hover {
+            @include nav-item-hover-effect('dark');
+          }
         }
       }
     }
