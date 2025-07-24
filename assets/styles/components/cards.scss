@@ -92,6 +92,7 @@
         max-height: 144px;
         /* fallback */
         -webkit-line-clamp: 5;
+        line-clamp: 5;
         /* number of lines to show */
         -webkit-box-orient: vertical;
       }
