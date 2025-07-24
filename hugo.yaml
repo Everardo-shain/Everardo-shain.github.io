@@ -25,11 +25,11 @@ languages:
     languageName: English
     title: "Everardo Shain Portfolio"
     weight: 1
-  # es:
-  #   languageCode: es
-  #   languageName: Español
-  #   title: "Portafolio de Everardo Shain"
-  #   weight: 2
+  es:
+    languageCode: es
+    languageName: Español
+    title: "Portafolio de Everardo Shain"
+    weight: 2
 # default language for the content
 defaultContentLanguage: en
 
