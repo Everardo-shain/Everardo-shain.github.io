@@ -1,0 +1,64 @@
+.skills-section {
+  .card {
+    border-left: 1px solid get-light-color('bg-secondary');
+    border-top: 1px solid get-light-color('bg-secondary');
+    border-bottom: 1px solid get-light-color('bg-secondary');
+    border-right: 1px solid get-light-color('bg-secondary');
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 100%;
+    background-color: get-light-color('bg-card-secondary') !important;
+
+    .card-head {
+      background-color: get-light-color('bg-card-secondary') !important;
+      height: -moz-fit-content;
+      height: fit-content;
+      padding: 0.7rem;
+      padding-bottom: 0rem;
+      border-bottom: 2px solid get-light-color('accent-color');
+
+      .card-img-xs {
+        margin-right: 0.5rem;
+        margin-bottom: 0.75rem;
+      }
+    }
+
+    .card-body {
+      padding-top: 0.2rem;
+      padding-left: 0.7rem;
+    }
+    &:hover .card-head,
+    &:focus .card-head{
+      border-bottom: 2px solid get-light-color('hover-over-accent-color');
+    }
+  }
+
+  @include media('<=medium') {
+    padding-left: 0;
+    padding-right: 0;
+
+    .container {
+      max-width: 95%;
+    }
+  }
+}
+
+html[data-theme='dark'] {
+  .skills-section {
+    .card {
+      border-left: 1px solid get-dark-color('bg-secondary');
+      border-top: 1px solid get-dark-color('bg-secondary');
+      border-bottom: 1px solid get-dark-color('bg-secondary');
+      border-right: 1px solid get-dark-color('bg-secondary');
+      background-color: get-dark-color('bg-card-secondary') !important;
+      .card-head {
+        background-color: get-dark-color('bg-card-secondary') !important;
+        border-bottom: 2px solid get-dark-color('accent-color');
+      }
+      &:hover .card-head,
+      &:focus .card-head{
+        border-bottom: 2px solid get-dark-color('hover-over-accent-color');
+      }
+    }
+  }
+}
