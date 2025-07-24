@@ -21,45 +21,72 @@ buttons:
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: /images/sections/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
+# - name:
+#   logo: 
+#   image:
+#   role:
+#   timeline:
+#   repo: 
+#   url: 
+#   summary:
+#   tags: ["", "", ""]
 
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning"]
+- name: Next Best View (MSc Thesis)
+  image: /projects/Next Best View (MSc Thesis)/multimedia/imagenes.png
+  role: Lead Algorithm Developer
+  summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
+  tags: ["academic"]
 
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
+- name: Poker Simulation
+  image: /projects/Poker Simulation/multimedia/imagenes.png
+  role: Systems Programmer
+  summary: Programmed with C a poker simulator that evaluated the input hands and ran a Monte Carlo simulation to predict the winner, heavily using arrays and memory management, plus writing several test cases.
+  tags: ["academic"]
 
-- name: Nocode
-  logo: /images/sections/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
+- name: Northeastern Home Goods Vehicle Routing
+  image: /projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
+  role: Operations Research Analyst
+  summary: Optimized by 15.5% a vehicle routing problem of 45 deliveries on GAMS, and the total 261 deliveries by 12.1% with the Clarke and Wright Savings Algorithm coded on R.
+  tags: ["academic"]
 
-- name: Toha
-  logo: /images/sections/projects/toha.png
-  image: /images/sections/projects/toha_website.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+- name: US Children Adoption Statistical Inference
+  image: /projects/US Children Adoption Statistical Inference/multimedia/imagenes.png
+  role: Statistical Analyst
+  summary: Formulated and tested 3 children adoption hypotheses with the Mann-Whitney U test and bootstrapping using R language, with the tests achieving good power of at least 80%.
+  tags: ["academic"]
+
+- name: IC Genetic Algorithm
+  image: /projects/IC Genetic Algorithm/multimedia/imagenes.png
+  role: Machine Learning Engineer
+  summary: Implemented a genetic algorithm on Python that optimized 4 parameters of an integrated circuit, minimizing the MSE down to 2.78% using 100 generations of 32 chromosomes with 20 genes.
+  tags: ["academic"]
+
+- name: Chess Checkmate
+  image: /projects/Chess Checkmate/multimedia/imagenes.png
+  role: Python Developer
+  summary: Coded with Python a program that prints a chess board, generates hypothetic random positions of the King and Queen from opposite teams and determines if there is a checkmate following the rules.
+  tags: ["academic"]
+
+- name: Voronoi Diagram Generator
+  image: /projects/Voronoi Diagram Generator/multimedia/imagenes.png
+  role: MATLAB Developer
+  summary: Coded a Voronoi diagram generator in MATLAB, allowing the generation of images with of 256x256 pixels that contained 16 nodes with 5 elements each.
+  tags: ["academic"]
+
+- name: Conveyor Belt
+  image: /projects/Conveyor Belt/multimedia/imagenes.png
+  role: PLC Programmer
+  summary: Programmed a conveyor belt using ladder on a PLC with TIA Portal, fulfilling the requirements of filling 5 bags with 5 items each while rejecting undesired objects, plus sealing each bag with heat.
+  tags: ["academic"]
+
+- name: Laser Harp
+  image: /projects/Laser Harp/multimedia/imagenes.png
+  role: Embedded Systems Developer
+  summary: Programmed a laser harp using Arduino IDE on an ESP32, capable of reproducing 8 different 8-bit musical notes on an EK1236 amplifier using multiple KY-008 sensors as laser strings.
+  tags: ["academic"]
+
+- name: Industrial Robotics Tower of Hanoi
+  image: /projects/Industrial Robotics Tower of Hanoi/multimedia/imagenes.png
+  role: Robotics Programmer
+  summary: Coded the inverse kinematics of a UR10e robot using Python and tested it by solving a Tower of Hanoi with 7 movements where the relative error of the robot pose was under 0.1%.
+  tags: ["academic"]

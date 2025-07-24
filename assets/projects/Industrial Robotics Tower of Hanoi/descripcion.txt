@@ -1,0 +1,2 @@
+Industrial Robotics Tower of Hanoi
+Coded the inverse kinematics of a UR10e robot using Python and tested it by solving a Tower of Hanoi with 7 movements where the relative error of the robot pose was under 0.1%.

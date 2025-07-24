@@ -1,0 +1,11 @@
+View planning for three-dimensional environment reconstruction using the Next Best View method
+
+Masther´s thesis project, written in C on Ubuntu, a Linux-based distribution. 
+
+Next Best View is a method used to define the optimized path of a sensor mounted on a robot with the task of exploring and scanning an environment or object. This project was tested using virtual environments and a simulated range sensor.
+
+- Implemented 3 optimization algorithms: Nelder-Mead, Simmulated annealing and Evolutionary strategy) .
+- Formulated a new dynamically changing objective function optimizing area, distance and energy factors. 
+- Tested on 3 different environments, each of them being retrieved by at least 83% in less than 200 seconds.
+
+This project enhanced my C language programming skills and the capability of working on a large-scale project with multiple files by just editing essential lines of code. I applied analytical thinking when identifying how to adapt state of art algorithms to a specific problem, developed research skills during the entire investigation and upgraded my professional English skills by writing and defending my thesis on that language.

@@ -1,0 +1,2 @@
+Step Ladder Assembly
+Designed on Siemens NX a step ladder assembly including screws, rubber feet, rails and steps. Parametric design was used for its dimensions and shape (vertical, W shaped, V shaped, closed)

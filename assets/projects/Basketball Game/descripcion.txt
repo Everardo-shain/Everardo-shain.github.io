@@ -1,0 +1,2 @@
+Basketball Game
+Contributed to the design of an electronic circuit for a multiplayer basketball game with GAL16V8 PALs grogrammed with CUPL, 74161 binary counters and 7448 decoders for seven-segment displays.

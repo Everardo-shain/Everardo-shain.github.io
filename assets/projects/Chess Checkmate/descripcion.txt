@@ -1,0 +1,2 @@
+Chess Checkmate
+Coded with Python a program that prints a chess board, generates hypothetic random positions of the King and Queen from opposite teams and determines if there is a checkmate following the rules.

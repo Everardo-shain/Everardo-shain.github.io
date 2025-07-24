@@ -1,0 +1,2 @@
+Conveyor Belt
+Programmed a conveyor belt using ladder on a PLC with TIA Portal, fulfilling the requirements of filling 5 bags with 5 items each while rejecting undesired objects, plus sealing each bag with heat.

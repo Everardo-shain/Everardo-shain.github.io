@@ -1,0 +1,2 @@
+Next Best View (MSc thesis)
+Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.

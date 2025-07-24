@@ -1,0 +1,2 @@
+Audio Filtering
+Programmed on MATLAB an audio filtering system that took a piece of a song and added high frequency noise to then filter it using a low-pass filter to return to the original song.

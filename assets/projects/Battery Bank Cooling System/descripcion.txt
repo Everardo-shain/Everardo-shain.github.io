@@ -1,0 +1,2 @@
+Battery Bank Cooling System
+Designed and programmed on Labview a HMI for a battery cooling system to define the desired temperature limits plus visualize the current, voltage and temperature of both battery cells.
