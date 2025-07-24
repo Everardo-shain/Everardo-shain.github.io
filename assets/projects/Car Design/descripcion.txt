@@ -1,0 +1,2 @@
+Car Design
+Designed the exterior of a car using Siemens NX, applying surface modeling techniques and creating brackets for a complete assembly with an existing chassis model.

@@ -1,0 +1,2 @@
+Airline Passengers Prediction
+Coded on Python a LSTM model to predict the number of passengers per date of an airline company, having a loss of 0.00162 with a learning rate of 0.01 in 2000 epochs.

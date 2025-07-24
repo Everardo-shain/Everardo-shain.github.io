@@ -1,0 +1,2 @@
+Northeastern Home Goods Vehicle Routing
+Optimized by 15.5% a vehicle routing problem of 45 deliveries on GAMS, and the total 261 deliveries by 12.1% with the Clarke and Wright Savings Algorithm coded on R.

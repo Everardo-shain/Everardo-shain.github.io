@@ -1,0 +1,2 @@
+Turret Tracking
+Programmed on Arduino and MATLAB the control system of a laser turret that successfully tracked a red circle using computer vision and computarized control.

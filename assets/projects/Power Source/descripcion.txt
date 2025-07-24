@@ -1,0 +1,2 @@
+Power Source
+Contributed to the development of a power source with short circuit and overcurrent protection, giving outputs from 1.2 to 30.6 Volts. The simulation was made with Proteus, and a real prototype was built.

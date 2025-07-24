@@ -1,0 +1,2 @@
+Payroll Software
+Coded with C++ a program that makes payroll registrations on a text file database and makes salary queries by payroll, country, division and department plus a complete report with all entries.

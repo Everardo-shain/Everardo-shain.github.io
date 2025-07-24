@@ -1,0 +1,2 @@
+Upright CNC Router
+Programmed the control system of a simulated Upright CNC Router with Simulink in MATLAB, achieving the drawing 3 basic shapes and the trajectory between 3 input coordinates.

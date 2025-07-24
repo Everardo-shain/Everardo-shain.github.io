@@ -1,0 +1,2 @@
+Bicycle Assembly
+Designed on Siemens NX a bicycle assembly including wheels, pedals, seat, sprockets, handle and frame. Parametric design was used for its dimensions and by giving the user the option to include a basket.

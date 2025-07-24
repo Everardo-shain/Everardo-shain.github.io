@@ -1,0 +1,2 @@
+IC Genetic Algorithm
+Implemented a genetic algorithm on Python that optimized 4 parameters of an integrated circuit, minimizing the MSE down to 2.78\% using 100 generations of 32 chromosomes with 20 genes.100 generations of 32 chromosomes 20 genes.

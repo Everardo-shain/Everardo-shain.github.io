@@ -1,0 +1,2 @@
+Scooter Design
+Contributed on the project design of an electric scooter where we made a QFD, flow diagram, morphologic analysis, Pugh chart, CAD design, FEA, circuit design, programming and blueprints.
