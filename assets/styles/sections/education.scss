@@ -2,7 +2,7 @@
   @include section-title-adjustment();
 
   .card {
-    background-color: get-dark-color('bg-card-primary') !important;
+    background-color: get-light-color('bg-card-primary') !important;
     &:hover,
     &:focus {
       border-left: 2px solid get-light-color('hover-over-accent-color')!important;
