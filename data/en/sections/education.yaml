@@ -16,9 +16,9 @@ degrees:
   institution:
     name: Tecnológico de Monterrey
     url: "https://tec.mx"
-    logo: /images/sections/education/tec.webp
+    logo: /images/sections/education/tec_light.png
     # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/tech_college.png
+    darkLogo: /images/sections/education/tec_dark.png
   grade: #(optional)
     scale: GPA
     achieved: 3.97
@@ -66,9 +66,9 @@ degrees:
   institution:
     name: Tecnológico de Monterrey
     url: "https://tec.mx"
-    logo: /images/sections/education/tec.webp
+    logo: /images/sections/education/tec_light.png
     # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/tech_college.png
+    darkLogo: /images/sections/education/tec_dark.png
   grade: #(optional)
     scale: GPA
     achieved: 3.95

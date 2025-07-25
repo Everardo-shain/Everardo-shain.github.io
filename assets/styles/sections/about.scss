@@ -7,7 +7,7 @@ $progress-bar-colors: (
   'green': #2dca73,
   'sky': #00c9e3,
   'orange': #ff7c7c,
-  'accent': get-light-color('accent-color'),
+  'system': get-light-color('accent-color'),
 );
 
 @mixin circular-progress-bar-color() {
@@ -135,9 +135,9 @@ $progress-bar-colors: (
       height: 90%;
       padding: 1rem;
       border-radius: 50%;
-      background: get-light-color('text-color');
+      background: get-light-color('bg-card-primary');
       font-size: 1rem;
-      color: get-light-color('bg-primary');
+      color: get-light-color('text-color');
       line-height: initial;
       text-align: center;
       position: absolute;
@@ -210,7 +210,7 @@ $progress-bar-colors: (
 html[data-theme='dark'] {
  .about-section {
     .circular-progress {
-      &.accent {
+      &.system {
         .circular-progress-bar {
           border-color: get-dark-color('accent-color');
         }
@@ -232,7 +232,7 @@ html[data-theme='dark'] {
       }
 
       .circular-progress-value {
-        background: get-dark-color('inverse-text-color');
+        background: get-dark-color('bg-card-primary');
         color: get-dark-color('text-color');
       }
     }

@@ -21,7 +21,7 @@
       @include transition();
 
       .title {
-        color: get-light-color('inverse-text-color');
+        color: get-light-color('inverse-text-color')!important;
         background-color: rgba(get-light-color('bg-primary-inverse'), 0.7);
         opacity: 0;
         padding: 5px;
@@ -101,7 +101,7 @@
       @include transition();
 
       h4 {
-        color: get-light-color('inverse-text-color');
+        color: get-light-color('inverse-text-color')!important;
       }
       p {
         font-size: 16px;
@@ -135,7 +135,7 @@ html[data-theme='dark'] {
         background-color: get-dark-color('bg-primary');
 
         .title {
-          color: get-dark-color('inverse-text-color');
+          color: get-dark-color('inverse-text-color')!important;
           background-color: rgba(get-dark-color('bg-primary-inverse'), 0.7);
         }
       }
@@ -148,7 +148,7 @@ html[data-theme='dark'] {
         color: get-dark-color('inverse-text-color');
 
         h4 {
-          color: get-dark-color('inverse-text-color');
+          color: get-dark-color('inverse-text-color')!important;
         }
         p {
           color: get-dark-color('inverse-text-color');

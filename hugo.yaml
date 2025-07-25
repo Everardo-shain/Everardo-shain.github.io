@@ -25,11 +25,11 @@ languages:
     languageName: English
     title: "Everardo Shain Portfolio"
     weight: 1
-  es:
-    languageCode: es
-    languageName: Español
-    title: "Portafolio de Everardo Shain"
-    weight: 2
+  # es:
+  #   languageCode: es
+  #   languageName: Español
+  #   title: "Portafolio de Everardo Shain"
+  #   weight: 2
 # default language for the content
 defaultContentLanguage: en
 
@@ -58,7 +58,7 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/site/background-dark.jpg
+  background: /images/site/background-light.jpg
   # Background image of the landing page for dark theme
   darkBackground: /images/site/background-dark.jpg
 
@@ -100,7 +100,7 @@ params:
 
     # Enable and configure blog posts
     blog:
-      enable: true
+      enable: false
       showAuthor: true # shows the author of post (defaults true)
       # Share post on different social media
       shareButtons:

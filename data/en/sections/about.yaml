@@ -68,29 +68,29 @@ badges:
 - type: soft-skill-indicator
   name: Engineering and Scientific Research
   percentage: 85
-  color: "accent"
+  color: "system"
 
 - type: soft-skill-indicator
   name: Embedded Software & Robotics
   percentage: 75
-  color: "accent"
+  color: "system"
 
 - type: soft-skill-indicator
   name: Data Science
   percentage: 75
-  color: "accent"
+  color: "system"
 #Soft skills
 - type: soft-skill-indicator
   name: Logical Thinking
   #percentage: 85
-  color: "accent"
+  color: "system"
 
 - type: soft-skill-indicator
   name: Self-Learning
   #percentage: 90
-  color: "accent"
+  color: "system"
 
 - type: soft-skill-indicator
   name: Quick Understanding
   #percentage: 85
-  color: "accent"
+  color: "system"
