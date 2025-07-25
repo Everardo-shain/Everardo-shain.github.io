@@ -133,19 +133,21 @@
   &.transparent-navbar {
     background-color: transparent !important;
     .navbar-brand {
-      color: get-light-color('inverse-text-color');
+      color: get-light-color('text-color');
       font-weight: 600;
     }
     li {
       a {
-        color: get-light-color('inverse-text-color');
+        color: get-light-color('text-color');
       }
     }
     .feather-menu {
-      stroke: get-light-color('inverse-text-color');
+      stroke: get-light-color('text-color');
     }
   }
-
+  img.theme-icon {
+    filter: none;
+  }
   #themeMenu {
     width: 25px;
     min-width: 3rem;
