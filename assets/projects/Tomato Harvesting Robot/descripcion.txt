@@ -1,2 +1,0 @@
-Tomato Harvesting Robot
-Contributed to the design and programming of a robotic gripper with Arduino, mounted on a UR10e robot successfully completing the tasks of collecting a tomato and placing it on a container.

@@ -1,2 +1,0 @@
-IMDB Sentiment Analysis
-Contributed to the sentiment analysis of IMDB comments by coding on Python a tokenizer of 300 elements using spaCy and a CNN model with a test loss of 0.302 and a test accuracy of 88.38\%.

@@ -51,229 +51,235 @@ projects:
 #   tags: ["", "", ""]
 
 - name: Next Best View (Master's Thesis)
-  image: /projects/Next Best View (MSc Thesis)/multimedia/imagenes.png
+  image: /images/sections/projects/Next Best View (MSc Thesis)/multimedia/imagenes.png
   role: Researcher and Developer
   summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
   tags: ["optimization", "navigation"]
 
 - name: Poker Simulation
-  image: /projects/Poker Simulation/multimedia/imagenes.png
+  image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
   role: Developer
   summary: Programmed with C a poker simulator that evaluated the input hands and ran a Monte Carlo simulation to predict the winner, heavily using arrays and memory management, plus writing several test cases.
   tags: ["c", "software development"]
 
 - name: Northeastern Home Goods Vehicle Routing
-  image: /projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
+  image: /images/sections/projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
   role: Analyst and Developer
   summary: Optimized by 15.5% a vehicle routing problem of 45 deliveries on GAMS, and the total 261 deliveries by 12.1% with the Clarke and Wright Savings Algorithm coded on R.
   tags: ["optimization","r"]
 
 - name: US Children Adoption Statistical Inference
-  image: /projects/US Children Adoption Statistical Inference/multimedia/imagenes.png
+  image: /images/sections/projects/US Children Adoption Statistical Inference/multimedia/imagenes.png
   role: Analyst and Developer
   summary: Formulated and tested 3 children adoption hypotheses with the Mann-Whitney U test and bootstrapping using R language, with the tests achieving good power of at least 80%.
   tags: ["data science", "statistical inference", "r"]
 
 - name: IC Genetic Algorithm
-  image: /projects/IC Genetic Algorithm/multimedia/imagenes.png
+  image: /images/sections/projects/IC Genetic Algorithm/multimedia/imagenes.png
   role: Developer
   summary: Implemented a genetic algorithm on Python that optimized 4 parameters of an integrated circuit, minimizing the MSE down to 2.78% using 100 generations of 32 chromosomes with 20 genes.
   tags: ["optimization", "python"]
 
 - name: Chess Checkmate
-  image: /projects/Chess Checkmate/multimedia/imagenes.png
+  image: /images/sections/projects/Chess Checkmate/multimedia/imagenes.png
   role: Developer
   summary: Coded with Python a program that prints a chess board, generates hypothetic random positions of the King and Queen from opposite teams and determines if there is a checkmate following the rules.
   tags: ["python", "software development"]
 
 - name: Voronoi Diagram Generator
-  image: /projects/Voronoi Diagram Generator/multimedia/imagenes.png
+  image: /images/sections/projects/Voronoi Diagram Generator/multimedia/imagenes.png
   role: Developer
   summary: Coded a Voronoi diagram generator in MATLAB, allowing the generation of images with of 256x256 pixels that contained 16 nodes with 5 elements each.
   tags: ["matlab", "software development"]
 
 - name: Conveyor Belt
-  image: /projects/Conveyor Belt/multimedia/imagenes.png
+  image: /images/sections/projects/Conveyor Belt/multimedia/imagenes.png
   role: Developer
   summary: Programmed a conveyor belt using ladder on a PLC with TIA Portal, fulfilling the requirements of filling 5 bags with 5 items each while rejecting undesired objects, plus sealing each bag with heat.
   tags: ["plc", "automation"]
 
 - name: Laser Harp
-  image: /projects/Laser Harp/multimedia/imagenes.png
+  image: /images/sections/projects/Laser Harp/multimedia/imagenes.png
   role: Developer
   summary: Programmed a laser harp using Arduino IDE on an ESP32, capable of reproducing 8 different 8-bit musical notes on an EK1236 amplifier using multiple KY-008 sensors as laser strings.
   tags: ["embedded systems"]
 
 - name: Industrial Robotics Tower of Hanoi
-  image: /projects/Industrial Robotics Tower of Hanoi/multimedia/imagenes.png
+  image: /images/sections/projects/Industrial Robotics Tower of Hanoi/multimedia/imagenes.png
   role: Developer
   summary: Coded the inverse kinematics of a UR10e robot using Python and tested it by solving a Tower of Hanoi with 7 movements where the relative error of the robot pose was under 0.1%.
   tags: ["robotics","automation","python"]
 
 - name: Bicycle Assembly
-  image: /projects/Bicycle Assembly/multimedia/imagenes.png
+  image: /images/sections/projects/Bicycle Assembly/multimedia/imagenes.png
   role: CAD Designer
   summary: Designed on Siemens NX a bicycle assembly including wheels, pedals, seat, sprockets, handle and frame. Parametric design was used for its dimensions and by giving the user the option to include a basket.
   tags: ["design"]
 
 - name: Step Ladder Assembly
-  image: /projects/Step Ladder Assembly/multimedia/imagenes.png
+  image: /images/sections/projects/Step Ladder Assembly/multimedia/imagenes.png
   role: CAD Designer
   summary: Designed on Siemens NX a step ladder assembly including screws, rubber feet, rails and steps. Parametric design was used for its dimensions and shape (vertical, W shaped, V shaped, closed).
   tags: ["design"]
 
 - name: Car Design
-  image: /projects/Car Design/multimedia/imagenes.png
+  image: /images/sections/projects/Car Design/multimedia/imagenes.png
   role: CAD Designer
   summary: Designed the exterior of a car using Siemens NX, applying surface modeling techniques and creating brackets for a complete assembly with an existing chassis model.
   tags: ["design"]
 
+- name: Robociety (Robotics Student Association)
+  image: /images/sections/projects/Robociety/multimedia/imagenes.png
+  role: Developer and Team Member
+  summary: Programmed on Arduino a Sumo robot for international competition Robofest 2022 and a Mini Sumo robot for international competition Robomatrix 2022, where both robots successfully completed at least one round.
+  tags: ["robotics", "embedded systems", "student association"]
+
 - name: Industrial AGV
-  image: /projects/Industrial AGV/multimedia/imagenes.png
+  image: /images/sections/projects/Industrial AGV/multimedia/imagenes.png
   role: Developer
   summary: Contributed to the navigation programming of an industrial Ackermann AGV using Arduino, ROS on a NVIDIA Jetson Xavier device and a RPLIDAR sensor, successfully avoiding collisions inside a laboratory.
   tags: ["robotics", "embedded systems", "navigation"]
 
 - name: Power Source
-  image: /projects/Power Source/multimedia/imagenes.png
+  image: /images/sections/projects/Power Source/multimedia/imagenes.png
   role: Electronics Designer
   summary: Contributed to the development of a power source with short circuit and overcurrent protection, giving outputs from 1.2 to 30.6 Volts. The simulation was made with Proteus, and a real prototype was built.
   tags: ["electronics"]
 
 - name: Battery Bank Cooling System
-  image: /projects/Battery Bank Cooling System/multimedia/imagenes.png
+  image: /images/sections/projects/Battery Bank Cooling System/multimedia/imagenes.png
   role: Developer
   summary: Designed and programmed on Labview a HMI for a battery cooling system to define the desired temperature limits plus visualize the current, voltage and temperature of both battery cells.
   tags: ["electronics","labview", "software development"]
 
 - name: Tomato Harvesting Robot
-  image: /projects/Tomato Harvesting Robot/multimedia/imagenes.png
+  image: /images/sections/projects/Tomato Harvesting Robot/multimedia/imagenes.png
   role: Developer
   summary: Contributed to the design and programming of a robotic gripper with Arduino, mounted on a UR10e robot successfully completing the tasks of collecting a tomato and placing it on a container.
   tags: ["robotics", "embedded systems", "automation"]
 
 - name: IMDB Sentiment Analysis
-  image: /projects/IMDB Sentiment Analysis/multimedia/imagenes.png
+  image: /images/sections/projects/IMDB Sentiment Analysis/multimedia/imagenes.png
   role: Developer
   summary: Contributed to the sentiment analysis of IMDB comments by coding on Python a tokenizer of 300 elements using spaCy and a CNN model with a test loss of 0.302 and a test accuracy of 88.38%.
   tags: ["python", "machine learning", "data science"]
 
 - name: Airline Passengers Prediction
-  image: /projects/Airline Passengers Prediction/multimedia/imagenes.png
+  image: /images/sections/projects/Airline Passengers Prediction/multimedia/imagenes.png
   role: Developer
   summary: Coded on Python a LSTM model to predict the number of passengers per date of an airline company, having a loss of 0.00162 with a learning rate of 0.01 in 2000 epochs.
   tags: ["python", "machine learning", "data science"]
 
 - name: Turret Tracking
-  image: /projects/Turret Tracking/multimedia/imagenes.png
+  image: /images/sections/projects/Turret Tracking/multimedia/imagenes.png
   role: Developer
   summary: Programmed on Arduino and MATLAB the control system of a laser turret that successfully tracked a red circle using computer vision and computerized control.
   tags: ["embedded systems", "matlab", "control systems"]
 
 - name: Upright CNC Router
-  image: /projects/Upright CNC Router/multimedia/imagenes.png
+  image: /images/sections/projects/Upright CNC Router/multimedia/imagenes.png
   role: Developer
   summary: Programmed the control system of a simulated Upright CNC Router with Simulink in MATLAB, achieving the drawing of 3 basic shapes and the trajectory between 3 input coordinates.
   tags: ["matlab", "control systems", "simulation"]
 
 - name: Scooter Design
-  image: /projects/Scooter Design/multimedia/imagenes.png
+  image: /images/sections/projects/Scooter Design/multimedia/imagenes.png
   role: Designer
   summary: Contributed on the project design of an electric scooter where we made a QFD, flow diagram, morphologic analysis, Pugh chart, CAD design, FEA, circuit design, programming and blueprints.
   tags: ["design"]
 
 - name: Car Motor System
-  image: /projects/Car Motor System/multimedia/imagenes.png
+  image: /images/sections/projects/Car Motor System/multimedia/imagenes.png
   role: Developer
   summary: Programmed on C a simulated car motor system circuit with MPLAB X IDE on a PIC16f877a microcontroller, controlling the motor behavior on 3 different scenarios depending on the weather conditions.
   tags: ["c","embedded systems"]
 
 - name: Car Alarm System
-  image: /projects/Car Alarm System/multimedia/imagenes.png
+  image: /images/sections/projects/Car Alarm System/multimedia/imagenes.png
   role: Developer
   summary: Programmed on assembly language a simulated car alarm system circuit with MPLAB X IDE on a PIC16F84A microcontroller by including the car key buttons, plus light and sound indicators.
   tags: ["assembly", "embedded systems", "automation"]
 
 - name: Weather Conditions Prediction
-  image: /projects/Weather Conditions Prediction/multimedia/imagenes.png
+  image: /images/sections/projects/Weather Conditions Prediction/multimedia/imagenes.png
   role: Developer
   summary: Implemented 2 Machine Learning algorithms (KNN and Decision tree) on Python with data from accelerometer and temperature sensors, with both accuracies higher than 97%.
   tags: ["machine learning", "data science", "python"]
 
 - name: Audio Filtering
-  image: /projects/Audio Filtering/multimedia/imagenes.png
+  image: /images/sections/projects/Audio Filtering/multimedia/imagenes.png
   role: Developer
   summary: Programmed on MATLAB an audio filtering system that took a piece of a song and added high frequency noise to then filter it using a low-pass filter to return to the original song.
   tags: ["matlab", "software development"]
 
 - name: Elevator
-  image: /projects/Elevator/multimedia/imagenes.png
+  image: /images/sections/projects/Elevator/multimedia/imagenes.png
   role: Developer
   summary: Programmed a simulated 4-floor elevator using SCL and ladder language on a PLC with TIA Portal, fulfilling tasks of a real elevator including weight limit, alarm, variable speed, pressing memory and an HMI.
   tags: ["plc", "simulation", "automation"]
 
 - name: Sorting Line
-  image: /projects/Sorting Line/multimedia/imagenes.png
+  image: /images/sections/projects/Sorting Line/multimedia/imagenes.png
   role: Developer
   summary: Programmed a simulated sorting line using ladder language on a PLC with TIA Portal, successfully sorting parcels from 4 different types using sensors and pistons without overfilling the containers.
   tags: ["plc", "simulation", "automation"]
 
 - name: Smart Bulb
-  image: /projects/Smart Bulb/multimedia/imagenes.png
+  image: /images/sections/projects/Smart Bulb/multimedia/imagenes.png
   role: Developer
   summary: Developed a smart bulb by creating an app with MIT App Inventor with a scroll bar to regulate via Bluetooth the intensity of a bulb in an electronic circuit controlled by a PIC16F877A microcontroller.
   tags: ["embedded systems", "software development", "automation"]
 
 - name: Traffic Light Simulation
-  image: /projects/Traffic Light Simulation/multimedia/imagenes.png
+  image: /images/sections/projects/Traffic Light Simulation/multimedia/imagenes.png
   role: Developer
   summary: Programmed with ladder language the PLC of a LogixPro traffic light simulator, defining 70 and 30 seconds for green and yellow lights, plus 100 seconds when using the crosswalk button.
   tags: ["plc", "simulation", "automation"]
 
 - name: Cleaner Robot
-  image: /projects/Cleaner Robot/multimedia/imagenes.png
+  image: /images/sections/projects/Cleaner Robot/multimedia/imagenes.png
   role: Developer
   summary: Programmed a simulated robot on Labview that was able to collect 8 cans and place them all on a container at the finish line within 4 minutes while avoiding 3 obstacles.
   tags: ["labview","navigation", "simulation", "automation"]
 
 - name: Basketball Game
-  image: /projects/Basketball Game/multimedia/imagenes.png
+  image: /images/sections/projects/Basketball Game/multimedia/imagenes.png
   role: Developer
   summary: Contributed to the design of an electronic circuit for a multiplayer basketball game with GAL16V8 PALs programmed with CUPL, 74161 binary counters and 7448 decoders for seven-segment displays.
   tags: ["electronics","embedded systems"]
 
 - name: Millipede Video Game
-  image: /projects/Millipede Video Game/multimedia/imagenes.png
+  image: /images/sections/projects/Millipede Video Game/multimedia/imagenes.png
   role: Developer
   summary: Programmed on Labview a video game similar to Millipede from Atari, with the goal of surviving through 20 levels of 5 seconds each, with 10 ammunition and 3 lives.
   tags: ["labview", "software development"]
 
 # - name: Vending Machine
-#   image: /projects/Vending Machine/multimedia/imagenes.png
+#   image: /images/sections/projects/Vending Machine/multimedia/imagenes.png
 #   role: Developer
 #   summary: Programmed a simulated vending machine on Labview, capable of serving 3 drinks while counting coins and available drinks to assure both change and dispensing availability.
 #   tags: ["labview", "simulation"]
 
 - name: Soda Fountain
-  image: /projects/Soda Fountain/multimedia/imagenes.png
+  image: /images/sections/projects/Soda Fountain/multimedia/imagenes.png
   role: Developer
   summary: Contributed to the development of a soda fountain using water pumps and an Arduino UNO board programmed to work via Bluetooth with a mobile app for selecting the beverage.
   tags: ["embedded systems", "automation"]
 
 - name: Payroll Software
-  image: /projects/Payroll Software/multimedia/imagenes.png
+  image: /images/sections/projects/Payroll Software/multimedia/imagenes.png
   role: Developer
   summary: Coded with C++ a program that makes payroll registrations on a text file database and makes salary queries by payroll, country, division and department plus a complete report with all entries.
   tags: ["c++", "software development"]
 
 - name: Router Access
-  image: /projects/Router Access/multimedia/imagenes.png
+  image: /images/sections/projects/Router Access/multimedia/imagenes.png
   role: Developer
   summary: Coded with C++ a router access validation program, where users get an assigned access level if their account and password match the database, plus also adding their connection date into an access list file.
   tags: ["c++", "software development"]
 
 - name: Battleship
-  image: /projects/Battleship/multimedia/imagenes.png
+  image: /images/sections/projects/Battleship/multimedia/imagenes.png
   role: Developer
   summary: Programmed with C++ a two-player battleship game that requested both boards as text files and displayed them on an executable file, asking for both players’ moves and showing the final result.
   tags: ["c++", "software development"]

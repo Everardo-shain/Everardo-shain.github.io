@@ -1,2 +1,0 @@
-Voronoi Diagram Generator
-Coded a Voronoi diagram generator in MATLAB, allowing the generation of images with of 256x256 pixels that contained 16 nodes with 5 elements each.

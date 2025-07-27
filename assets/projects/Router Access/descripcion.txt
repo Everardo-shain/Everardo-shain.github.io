@@ -1,2 +1,0 @@
-Router Access
-Coded with C++ a router access validation program, where users get an assigned access level if their account and password match the database, plus also adding their connection date into an access list file.

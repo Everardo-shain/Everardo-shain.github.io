@@ -1,2 +1,0 @@
-Smart Bulb
-Developed a smart bulb by creating an app with MIT App Inventor with a scroll bar to regulate via Bluetooth the intensity of a bulb in an electronic circuit controlled by a PIC16F877A microcontroller.

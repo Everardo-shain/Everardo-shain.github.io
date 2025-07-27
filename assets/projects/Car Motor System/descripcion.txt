@@ -1,2 +1,0 @@
-Car Motor System
-Programmed on C a simulated car motor system circuit with MPLAB X IDE on a PIC16f877a microcontroller, controlling the motor behavior on 3 different scenarios depending on the weather conditions.

@@ -1,2 +1,0 @@
-Traffic Light Simulation
-Programmed with ladder language the PLC of a LogixPro traffic light simulator, defining 70 and 30 seconds for green and yellow lights, plus 100 seconds when using the crosswalk button.

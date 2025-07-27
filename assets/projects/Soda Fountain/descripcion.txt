@@ -1,2 +1,0 @@
-Soda Fountain
-Contributed to the development of a soda fountain using water pumps and an Arduino UNO board programmed to work via Bluetooth with a mobile app for selecting the beverage.
