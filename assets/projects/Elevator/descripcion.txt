@@ -1,2 +1,0 @@
-Elevator
-Programmed a simulated 4-floor elevator using SCL and ladder language on a PLC with TIA Portal, fulfilling tasks of a real elevator including weight limit, alarm, variable speed, pressing memory and an HMI

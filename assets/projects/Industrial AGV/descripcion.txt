@@ -1,2 +1,0 @@
-Industrial AGV
-Contributed to the navigation programming of an industrial Ackermann AGV using Arduino, ROS on a NVIDIA Jetson Xavier device and a RPLIDAR sensor, successfully avoiding collisions inside a laboratory.

@@ -1,2 +1,0 @@
-Laser Harp
-Programmed a laser harp using Arduino IDE on an ESP32, capable of reproducing 8 different 8-bit musical notes on an EK1236 amplifier using multiple KY-008 sensors as laser strings.

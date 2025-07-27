@@ -1,8 +1,0 @@
-Robociety
-
-Student association focused on robotics projects and international competitions.
-
-- Programmed a Sumo robot for Robofest 2022 and a Mini Sumo robot Robomatrix 2022, where both robots successfully completed at least one round.
-- Mentored 3 new members of the organization
-
-This experience allowed me to enhance my project management skills and to handle working under pressure at the competitions while also reaching defined goals. I gained insight on how to share my knowledge and experiences when mentoring new members.

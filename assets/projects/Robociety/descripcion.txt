@@ -1,7 +1,0 @@
-Robociety
-
-2020 – 2022
-
-Member of this student association focused on robotics projects and competitions
-
-Programmed on Arduino a Sumo robot for international competition Robofest 2022 and a Mini Sumo robot for international competition Robomatrix 2022, where both robots successfully completed at least one round.

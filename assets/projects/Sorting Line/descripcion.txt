@@ -1,2 +1,0 @@
-Sorting Line
-Programmed a simulated sorting line using ladder language on a PLC with TIA Portal, successfully sorting parcels from 4 different types using sensors and pistons without overfilling the containers.

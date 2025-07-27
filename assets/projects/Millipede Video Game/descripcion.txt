@@ -1,2 +1,0 @@
-Millipede Video Game
-Programmed on Labview a video game similar to Millipede from Atari, with the goal of surviving through 20 levels of 5 seconds each, with 10 ammunition and 3 lives.

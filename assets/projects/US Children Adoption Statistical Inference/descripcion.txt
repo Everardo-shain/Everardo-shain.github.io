@@ -1,2 +1,0 @@
-US Children Adoption Statistical Inference
-Formulated and tested 3 children adoption hypotheses with the Mann-Whitney U test and bootstrapping using R language, with the tests achieving good power of at least 80%.

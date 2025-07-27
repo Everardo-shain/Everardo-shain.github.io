@@ -1,2 +1,0 @@
-Weather Conditions Prediction
-Implemented 2 Machine Learning algorithms (KNN and Decision tree) on Python with data from accelerometer and temperature sensors, with both accuracies higher than 97%.

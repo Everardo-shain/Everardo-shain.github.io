@@ -1,2 +1,0 @@
-Battleship
-Programmed with C++ a two-player battleship game that requested both boards as text files and displayed them on an executable file, asking for both players moves and showing the final result.

@@ -1,2 +1,0 @@
-Vending Machine
-Programmed a simulated vending machine on Labview, capable of serving 3 drinks while counting coins and available drinks to assure both change and dispensing availability.
