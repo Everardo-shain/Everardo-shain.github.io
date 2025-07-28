@@ -131,3 +131,6 @@ other = "minutos"
 
 [grade]
 other = "Calificación"
+
+[project_video]
+other = "Video"
