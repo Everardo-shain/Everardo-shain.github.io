@@ -52,7 +52,8 @@ projects:
 #   role:
 #   timeline:
 #   repo: 
-#   url: 
+#   url: "https://www.example.com"
+#   video: "https://www.example.com"
 #   summary:
 #   tags: ["", "", ""]
 

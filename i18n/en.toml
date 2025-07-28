@@ -131,3 +131,6 @@ other = "minutes"
 
 [grade]
 other = "Grade"
+
+[project_video]
+other = "Video"
