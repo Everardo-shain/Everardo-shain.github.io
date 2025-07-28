@@ -15,7 +15,13 @@ buttons:
   filter: "all"
 
 - name: Data and Optimization
-  filter: "data science"
+  filter: "data and optimization"
+
+# - name: Data Science
+#   filter: "data science"
+
+# - name: Optimization
+#   filter: "optimization"
 
 - name: Software Development
   filter: "software development"
@@ -26,14 +32,14 @@ buttons:
 - name: Automation
   filter: "automation"
 
-- name: Control Systems
-  filter: "control systems"
+- name: Control and Navigation
+  filter: "control and navigation"
 
-- name: Navigation
-  filter: "navigation"
+# - name: Control Systems
+#   filter: "control systems"
 
-# - name: Optimization
-#   filter: "optimization"
+# - name: Navigation
+#   filter: "navigation"
 
 - name: Design
   filter: "design"
@@ -54,7 +60,7 @@ projects:
   image: /images/sections/projects/Next Best View (MSc Thesis)/multimedia/imagenes.png
   role: Researcher and Developer
   summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
-  tags: ["optimization", "c"]
+  tags: ["data and optimization", "optimization", "c"]
 
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
@@ -66,19 +72,19 @@ projects:
   image: /images/sections/projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
   role: Analyst and Developer
   summary: Optimized by 15.5% a vehicle routing problem of 45 deliveries on GAMS, and the total 261 deliveries by 12.1% with the Clarke and Wright Savings Algorithm coded on R.
-  tags: ["optimization","r"]
+  tags: ["data and optimization", "optimization","r"]
 
 - name: US Children Adoption Statistical Inference
   image: /images/sections/projects/US Children Adoption Statistical Inference/multimedia/imagenes.png
   role: Analyst and Developer
   summary: Formulated and tested 3 children adoption hypotheses with the Mann-Whitney U test and bootstrapping using R language, with the tests achieving good power of at least 80%.
-  tags: ["data science", "statistical inference", "r"]
+  tags: ["data and optimization", "data science", "statistical inference", "r"]
 
 - name: IC Genetic Algorithm
   image: /images/sections/projects/IC Genetic Algorithm/multimedia/imagenes.png
   role: Developer
   summary: Implemented a genetic algorithm on Python that optimized 4 parameters of an integrated circuit, minimizing the MSE down to 2.78% using 100 generations of 32 chromosomes with 20 genes.
-  tags: ["optimization", "python"]
+  tags: ["data and optimization", "optimization", "python"]
 
 - name: Chess Checkmate
   image: /images/sections/projects/Chess Checkmate/multimedia/imagenes.png
@@ -114,19 +120,19 @@ projects:
   image: /images/sections/projects/Bicycle Assembly/multimedia/imagenes.png
   role: CAD Designer
   summary: Designed on Siemens NX a bicycle assembly including wheels, pedals, seat, sprockets, handle and frame. Parametric design was used for its dimensions and by giving the user the option to include a basket.
-  tags: ["cad", "siemens nx"]
+  tags: ["design", "cad", "siemens nx"]
 
 - name: Step Ladder Assembly
   image: /images/sections/projects/Step Ladder Assembly/multimedia/imagenes.png
   role: CAD Designer
   summary: Designed on Siemens NX a step ladder assembly including screws, rubber feet, rails and steps. Parametric design was used for its dimensions and shape (vertical, W shaped, V shaped, closed).
-  tags: ["cad", "siemens nx"]
+  tags: ["design", "cad", "siemens nx"]
 
 - name: Car Design
   image: /images/sections/projects/Car Design/multimedia/imagenes.png
   role: CAD Designer
   summary: Designed the exterior of a car using Siemens NX, applying surface modeling techniques and creating brackets for a complete assembly with an existing chassis model.
-  tags: ["cad", "siemens nx"]
+  tags: ["design", "cad", "siemens nx"]
 
 - name: Robociety (Robotics Student Association)
   image: /images/sections/projects/Robociety/multimedia/imagenes.png
@@ -138,13 +144,13 @@ projects:
   image: /images/sections/projects/Industrial AGV/multimedia/imagenes.png
   role: Developer
   summary: Contributed to the navigation programming of an industrial Ackermann AGV using Arduino, ROS on a NVIDIA Jetson Xavier device and a RPLIDAR sensor, successfully avoiding collisions inside a laboratory.
-  tags: ["navigation", "arduino", "ros"]
+  tags: ["control and navigation", "navigation", "arduino", "ros"]
 
 - name: Power Source
   image: /images/sections/projects/Power Source/multimedia/imagenes.png
   role: Electronics Designer
   summary: Contributed to the development of a power source with short circuit and overcurrent protection, giving outputs from 1.2 to 30.6 Volts. The simulation was made with Proteus, and a real prototype was built.
-  tags: ["electronic design", "proteus"]
+  tags: ["design", "electronic design", "proteus"]
 
 - name: Battery Bank Cooling System
   image: /images/sections/projects/Battery Bank Cooling System/multimedia/imagenes.png
@@ -162,31 +168,31 @@ projects:
   image: /images/sections/projects/IMDB Sentiment Analysis/multimedia/imagenes.png
   role: Developer
   summary: Contributed to the sentiment analysis of IMDB comments by coding on Python a tokenizer of 300 elements using spaCy and a CNN model with a test loss of 0.302 and a test accuracy of 88.38%.
-  tags: ["data science", "machine learning", "python"]
+  tags: ["data and optimization", "data science", "machine learning", "python"]
 
 - name: Airline Passengers Prediction
   image: /images/sections/projects/Airline Passengers Prediction/multimedia/imagenes.png
   role: Developer
   summary: Coded on Python a LSTM model to predict the number of passengers per date of an airline company, having a loss of 0.00162 with a learning rate of 0.01 in 2000 epochs.
-  tags: ["data science", "machine learning", "python"]
+  tags: ["data and optimization", "data science", "machine learning", "python"]
 
 - name: Turret Tracking
   image: /images/sections/projects/Turret Tracking/multimedia/imagenes.png
   role: Developer
   summary: Programmed on Arduino and MATLAB the control system of a laser turret that successfully tracked a red circle using computer vision and computerized control.
-  tags: ["control systems", "matlab", "arduino"]
+  tags: ["control and navigation", "control systems", "matlab", "arduino"]
 
 - name: Upright CNC Router
   image: /images/sections/projects/Upright CNC Router/multimedia/imagenes.png
   role: Developer
   summary: Programmed the control system of a simulated Upright CNC Router with Simulink in MATLAB, achieving the drawing of 3 basic shapes and the trajectory between 3 input coordinates.
-  tags: ["control systems", "matlab"]
+  tags: ["control and navigation", "control systems", "matlab"]
 
 - name: Scooter Design
   image: /images/sections/projects/Scooter Design/multimedia/imagenes.png
   role: Designer
   summary: Contributed on the project design of an electric scooter where we made a QFD, flow diagram, morphologic analysis, Pugh chart, CAD design, FEA, circuit design, programming and blueprints.
-  tags: ["project design"]
+  tags: ["design", "project design"]
 
 - name: Car Motor System
   image: /images/sections/projects/Car Motor System/multimedia/imagenes.png
@@ -204,7 +210,7 @@ projects:
   image: /images/sections/projects/Weather Conditions Prediction/multimedia/imagenes.png
   role: Developer
   summary: Implemented 2 Machine Learning algorithms (KNN and Decision tree) on Python with data from accelerometer and temperature sensors, with both accuracies higher than 97%.
-  tags: ["data science", "machine learning", "python"]
+  tags: ["data and optimization", "data science", "machine learning", "python"]
 
 - name: Audio Filtering
   image: /images/sections/projects/Audio Filtering/multimedia/imagenes.png
@@ -240,13 +246,13 @@ projects:
   image: /images/sections/projects/Cleaner Robot/multimedia/imagenes.png
   role: Developer
   summary: Programmed a simulated robot on Labview that was able to collect 8 cans and place them all on a container at the finish line within 4 minutes while avoiding 3 obstacles.
-  tags: ["navigation", "labview"]
+  tags: ["control and navigation", "navigation", "labview"]
 
 - name: Basketball Game
   image: /images/sections/projects/Basketball Game/multimedia/imagenes.png
   role: Developer
   summary: Contributed to the design of an electronic circuit for a multiplayer basketball game with GAL16V8 PALs programmed with CUPL, 74161 binary counters and 7448 decoders for seven-segment displays.
-  tags: ["electronic design"]
+  tags: ["design", "electronic design"]
 
 - name: Millipede Video Game
   image: /images/sections/projects/Millipede Video Game/multimedia/imagenes.png
