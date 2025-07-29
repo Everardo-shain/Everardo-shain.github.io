@@ -16,7 +16,7 @@
     <table class="education-info-table">
         <tbody>
             {{ $count := len .degrees }}
-            {{ range .degrees}}
+            {{ range $index, $degree := .degrees}}
             <tr>
                 <td class="icon">
                     {{ if gt $count 1}}
@@ -30,7 +30,7 @@
                         <div></div>
                     </td>
                     <td class="details">
-                        <div class="degree-info card">
+                        <div class="degree-info card" id="degree-card-{{ $index }}">
 
                             {{ $logoImage:= resources.Get .institution.logo}}
                             {{ $darkLogoImage:= resources.Get .institution.darkLogo}}
@@ -98,12 +98,15 @@
                                         {{ end }}
                                     </ul>
                                 {{ end }}
-                                {{ if gt (len .takenCourses.courses ) $collapseAfter }}
-                                    <button type="button" class="btn btn-link show-more-btn pt-0 {{ if .takenCourses.showGrades }}ms-1{{ else }}ms-2{{ end }}"
-                                    id="show-more-btn">{{ i18n "show_more"}}</button>
-                                    <button type="button" class="btn btn-link show-more-btn hidden pt-0 {{ if .takenCourses.showGrades }}ms-1{{ else }}ms-2{{ end }}"
-                                    id="show-less-btn">{{ i18n "show_less"}}</button>
-                                {{ end }}
+                            {{ if gt (len .takenCourses.courses ) $collapseAfter }}
+                                <button 
+                                type="button" 
+                                class="btn btn-link course-toggle-btn pt-0 {{ if .takenCourses.showGrades }}ms-1{{ else }}ms-2{{ end }}"
+                                data-more-text="{{ i18n "show_more" }}"
+                                data-less-text="{{ i18n "show_less" }}">
+                                {{ i18n "show_more" }}
+                                </button>
+                            {{ end }}
                             </div>
                             {{ end }}
                             {{ if .extracurricularActivities }}
@@ -132,3 +135,34 @@
         </table>
     </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Find all the new toggle buttons
+    const toggleButtons = document.querySelectorAll('.course-toggle-btn');
+
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', function (event) {
+        const clickedButton = event.target;
+        // Find the parent card for the clicked button
+        const targetCard = clickedButton.closest('.degree-info.card');
+
+        if (!targetCard) return;
+
+        // Toggle the 'is-expanded' class on the card
+        targetCard.classList.toggle('is-expanded');
+
+        // Check if the card is now expanded
+        const isExpanded = targetCard.classList.contains('is-expanded');
+
+        // Update the button text
+        if (isExpanded) {
+          clickedButton.textContent = clickedButton.dataset.lessText;
+        } else {
+          clickedButton.textContent = clickedButton.dataset.moreText;
+          // If we are collapsing the list, scroll back to the top of the card
+          targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  });
+</script>
