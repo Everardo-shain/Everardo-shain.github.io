@@ -77,17 +77,17 @@ badges:
 
 - type: soft-skill-indicator
   name: Embedded Software & Robotics
-  percentage: 80
+  percentage: 75
   color: "system"
 
 - type: soft-skill-indicator
   name: Data Science
-  percentage: 80
+  percentage: 75
   color: "system"
 #Soft skills
 - type: soft-skill-indicator
   name: Logical Thinking
-  percentage: 80
+  percentage: 85
   color: "system"
 
 - type: soft-skill-indicator
@@ -97,5 +97,5 @@ badges:
 
 - type: soft-skill-indicator
   name: Quick Understanding
-  percentage: 80
+  percentage: 85
   color: "system"
