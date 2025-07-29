@@ -135,7 +135,7 @@ $progress-bar-colors: (
       height: 90%;
       padding: 1rem;
       border-radius: 50%;
-      background: get-light-color('bg-card-primary');
+      background: get-light-color('bg-card');
       font-size: 1rem;
       color: get-light-color('text-color');
       line-height: initial;
@@ -232,7 +232,7 @@ html[data-theme='dark'] {
       }
 
       .circular-progress-value {
-        background: get-dark-color('bg-card-primary');
+        background: get-dark-color('bg-card');
         color: get-dark-color('text-color');
       }
     }
