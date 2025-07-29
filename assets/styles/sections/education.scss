@@ -177,6 +177,16 @@
   border-right: 2px solid get-light-color('accent-color');
 }
 
+/* When a card is expanded, we show the hidden courses */
+/* This rule is for courses in a TABLE */
+.degree-info.is-expanded .hidden-course {
+  display: table-row !important;
+}
+
+/* This rule is for courses in a LIST (<ul>) */
+.degree-info.is-expanded ul .hidden-course {
+  display: list-item !important;
+}
 html[data-theme='dark'] {
   .education-section {
     .card {

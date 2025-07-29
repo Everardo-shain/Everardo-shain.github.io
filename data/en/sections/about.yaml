@@ -66,7 +66,7 @@ badges:
 #   badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
 #Hard skills
 - type: soft-skill-indicator
-  name: Engineering and Scientific Research
+  name: Scientific Research
   percentage: 85
   color: "system"
 
