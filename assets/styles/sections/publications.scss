@@ -2,7 +2,7 @@
   @include section-title-adjustment();
 
   .card {
-    background: get-light-color('bg-card-primary');
+    background: get-light-color('bg-card');
     border-top: 2px solid get-light-color('accent-color');
     border-left: 1px solid get-light-color('bg-primary');
     border-bottom: 1px solid get-light-color('bg-primary');
@@ -43,7 +43,7 @@
     }
 
     .card-footer {
-      background: get-light-color('bg-card-primary') !important;
+      background: get-light-color('bg-card') !important;
       border: none;
       padding: 0;
       padding-left: 1rem;
@@ -120,7 +120,7 @@
 html[data-theme='dark'] {
   .publications-section {
     .card {
-      background: get-dark-color('bg-card-primary');
+      background: get-dark-color('bg-card');
       border-top: 2px solid get-dark-color('accent-color');
       border-left: 1px solid get-dark-color('bg-primary');
       border-bottom: 1px solid get-dark-color('bg-primary');
@@ -137,7 +137,7 @@ html[data-theme='dark'] {
       }
 
       .card-footer {
-        background: get-dark-color('bg-card-primary') !important;
+        background: get-dark-color('bg-card') !important;
       }
     }
   }
