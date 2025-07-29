@@ -146,6 +146,7 @@ $progress-bar-colors: (
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight: bold
     }
     @include circular-progress-bar-color();
     @include circular-progress-animation-breakpoints();
