@@ -26,7 +26,7 @@ degrees:
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
     showGrades: true
-    collapseAfter: 3
+    collapseAfter: 5
     courses:
     - name: Leadership for Sustainable Development
       grade: 96
@@ -75,7 +75,7 @@ degrees:
     outOf: "4.0 (98.7%)"
   takenCourses:
     showGrades: true
-    collapseAfter: 3
+    collapseAfter: 5
     courses:
     - name: Physics I
       grade: 95
