@@ -21,8 +21,8 @@ $transition-type: ease-out;
 $box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
 
 // themes
-$accent-color-light: #313131;
-$accent-color-dark: #c2c2c2;
+$accent-color-dark: #d1bea8;
+$accent-color-light: darken($accent-color-dark, 10%);
 $themes: (
 
   'light': (
