@@ -32,5 +32,7 @@ skills:
 #   url: "https://www.example.com/"
 
 - name: Languages
-  summary: Advanced English with C1 level certified by Cambridge, domaining engineering terminology by having read and written many scientific and technical documents in English. Spanish as native language.
+  summary: "Advanced English with C1 level certified by Cambridge, domaining engineering terminology by having read and written many scientific and technical documents in English. Spanish as native language."
+- name: Embedded Systems
+  summary: "Programming of embedded systems in Proteus simulated circuits and real circuits. Platforms: Proteus, Arduino, ESP32, LabVIEW, PIC microcontrollers and MATLAB. Programming languages: C/C++, G and MATLAB."
 

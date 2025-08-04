@@ -156,7 +156,7 @@ projects:
 - name: Battery Bank Cooling System
   image: /images/sections/projects/Battery Bank Cooling System/multimedia/imagenes.png
   role: Developer
-  summary: Programmed a battery cooling system with an Arduino Nano and a Labview HMI to define the desired temperature limits plus visualize the current, voltage and temperature.
+  summary: Programmed a battery cooling system with an Arduino Nano and a LabVIEW HMI to define the desired temperature limits plus visualize the current, voltage and temperature.
   tags: ["embedded systems","arduino", "labview"]
 
 - name: Tomato Harvesting Robot
@@ -246,7 +246,7 @@ projects:
 - name: Cleaner Robot
   image: /images/sections/projects/Cleaner Robot/multimedia/imagenes.png
   role: Developer
-  summary: Programmed a simulated robot on Labview that was able to collect 8 cans and place them all on a container at the finish line within 4 minutes while avoiding 3 obstacles.
+  summary: Programmed a simulated robot on LabVIEW that was able to collect 8 cans and place them all on a container at the finish line within 4 minutes while avoiding 3 obstacles.
   tags: ["control and navigation", "navigation", "labview"]
 
 - name: Basketball Game
@@ -258,13 +258,13 @@ projects:
 - name: Millipede Video Game
   image: /images/sections/projects/Millipede Video Game/multimedia/imagenes.png
   role: Developer
-  summary: Programmed on Labview a video game similar to Millipede from Atari, with the goal of surviving through 20 levels of 5 seconds each, with 10 ammunition and 3 lives.
+  summary: Programmed on LabVIEW a video game similar to Millipede from Atari, with the goal of surviving through 20 levels of 5 seconds each, with 10 ammunition and 3 lives.
   tags:  ["software development", "labview"]
 
 # - name: Vending Machine
 #   image: /images/sections/projects/Vending Machine/multimedia/imagenes.png
 #   role: Developer
-#   summary: Programmed a simulated vending machine on Labview, capable of serving 3 drinks while counting coins and available drinks to assure both change and dispensing availability.
+#   summary: Programmed a simulated vending machine on LabVIEW, capable of serving 3 drinks while counting coins and available drinks to assure both change and dispensing availability.
 #   tags: ["labview"]
 
 - name: Soda Fountain
