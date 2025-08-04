@@ -1,45 +1,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light dark">
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<!-- ✅ Prevent Samsung auto-dark mode -->
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-
-<!-- ✅ Inline theme selection script -->
-<script>
-  const saved = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light';
-  let theme = saved;
-  if (saved === 'system') {
-    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-  document.documentElement.setAttribute('data-theme', theme);
-</script>
-
-<!-- ✅ Fallback style to prevent flash of white before dark theme applies -->
-<style>
-  html[data-theme="dark"] {
-    background-color: #121212 !important;
-    color: #e0e0e0 !important;
-  }
-</style>
-
-<!-- ========== CSS Bundle ========== -->
 {{ partial "helpers/style-bundle.html" . }}
 
-<!-- ========== Favicon ========== -->
+<!--================= fab-icon =========================-->
+{{/* add favicon only if the site author has provided the the favicon */}}
 {{ if site.Params.logo.favicon }}
   {{ $favicon := site.Params.logo.favicon }}
+
+  {{/* resize the favicon. don't resize svg because it is not supported */}}
   {{ $favicon = resources.Get $favicon }}
   {{ if and $favicon (ne $favicon.MediaType.SubType "svg") }}
     {{ $favicon = $favicon.Resize "42x" }}
   {{ end }}
-  {{ $favicon = $favicon.RelPermalink }}
-  <link rel="icon" type="image/png" href="{{ $favicon }}" />
-{{ end }}
+  {{ $favicon = $favicon.RelPermalink}}
 
-<!-- ========== RSS Feed ========== -->
+  <link rel="icon" type="image/png" href="{{ $favicon }}" />
+{{end}}
+
 {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
