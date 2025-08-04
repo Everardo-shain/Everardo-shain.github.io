@@ -11,6 +11,13 @@
       padding: 0.7rem;
       padding-bottom: 0rem;
       text-decoration: none !important;
+      .card-title {
+        color: get-light-color('accent-color');
+        &:hover,
+        &:focus{
+          color: get-light-color('hover-over-accent-color');
+        }
+      }
       .card-img-xs {
         margin-right: 0.5rem;
       }
