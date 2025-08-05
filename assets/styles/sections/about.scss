@@ -60,11 +60,11 @@ $progress-bar-colors: (
 
     a {
       font-size: 1.5rem;
-      color: get-light-color('text-color');
+      color: get-light-color('accent-color');
       padding: 0.5rem;
 
       &:hover {
-        color: get-light-color('accent-color');
+        color: get-light-color('hover-over-accent-color');
         @include transition();
       }
     }
@@ -218,10 +218,10 @@ html[data-theme='dark'] {
     }
     .social-link {
       a {
-        color: get-dark-color('text-color');
+        color: get-dark-color('accent-color');
 
         &:hover {
-          color: get-dark-color('accent-color');
+          color: get-dark-color('hover-over-accent-color');
         }
       }
     }
