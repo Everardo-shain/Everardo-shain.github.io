@@ -27,6 +27,15 @@
       padding-top: 0.2rem;
       padding-left: 0.7rem;
     }
+    .card-body p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .card-body ul {
+      margin-top: 0.25rem;
+      margin-bottom: 0;
+    }
+
     &:hover .card-head,
     &:focus .card-head{
       border-bottom: 2px solid get-light-color('hover-over-accent-color');
