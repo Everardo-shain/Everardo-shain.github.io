@@ -30,6 +30,7 @@ skills:
 #   url: "https://www.example.com/"
 
 - name: Embedded Systems
+  icon: "fas fa-microchip"
   summary: |
     Programming of embedded systems software. Experience in circuit design with sensors, actuators and microcontrollers.
     - <strong>Platforms:</strong> Arduino, ESP32, PIC, LabVIEW, MATLAB, MPLAB X, Proteus.
@@ -37,6 +38,7 @@ skills:
   categories: ["mechatronics"]
 
 - name: Problem Solving with Programming
+  icon: "fas fa-code"
   summary: |
     General problem solving using programming languages, including algorithm design and implementation.
     - <strong>Platforms:</strong> Dev-C++, Thonny, VSCode, EMACS, GCC, MATLAB.
@@ -44,6 +46,7 @@ skills:
   categories: ["computational"]
 
 - name: Data Science
+  icon: "fas fa-chart-line"
   summary: |
     Data cleaning and analysis using statistical inference, plus predictive modeling through machine learning techniques. 
     - <strong>Platforms:</strong> Google Cloud, Google Colab, RStudio.
@@ -51,6 +54,7 @@ skills:
   categories: ["computational"]
 
 - name: Automation
+  icon: "fas fa-robot"
   summary: |
     Automation of industrial processes using PLCs. Programming of robotic arms including direct and inverse kinematics.
     - <strong>Platforms:</strong> Siemens PLCs, TIA Portal, UR10e Collaborative Robot, RoboDK.
@@ -58,6 +62,7 @@ skills:
   categories: ["mechatronics"]
 
 - name: Optimization
+  icon: "fas fa-project-diagram"
   summary: |
     Optimization with linear and mixed-integer programming models. Implementation and tuning of metaheuristic algorithms.
     - <strong>Platforms:</strong> GAMS Studio, GCC, RStudio, Thonny.
@@ -65,24 +70,28 @@ skills:
   categories: ["computational"]
 
 - name: CAD Design
+  icon: "fas fa-cube"
   summary: |
     Piece design and assembly, including surface modeling, parametric design and simulation.
     - <strong>Platforms:</strong> Siemens NX, SolidWorks.
   categories: ["mechatronics"]
 
 - name: Scientific Writing
+  icon: "fas fa-file-alt"
   summary: |
     Writing and advanced formatting of theses, reports, and research papers. Familiar with academic writing standards.
     - <strong>Platforms:</strong> LaTeX.
   categories: ["communication and management"]
 
 - name: Project Management
+  icon: "fas fa-tasks"
   summary: |
     Project version control and collaboration using Git. Familiar with Agile methodologies and tools for project management.
     - <strong>Platforms:</strong> GitHub, Jira.
   categories: ["communication and management"]
 
 - name: Languages
+  icon: "fas fa-language"
   summary: |
     - <strong>English:</strong> C1 level certified by Cambridge, familiar with engineering terminology with a thesis written in English. 
     - <strong>Spanish:</strong> native.
