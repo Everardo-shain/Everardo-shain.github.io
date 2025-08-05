@@ -29,6 +29,10 @@
   .card-title {
     font-size: large;
   }
+  .card-title svg {
+    color: get-light-color('accent-color') !important;
+  }
+
 
   .card-body {
     text-align: left;
@@ -128,6 +132,10 @@ html[data-theme='dark'] {
     border: 1px solid get-dark-color('bg-primary');
     @include transition();
   }
+    .card-title svg {
+      color: get-dark-color('accent-color') !important;
+    }
+
     .card-footer {
       background: get-dark-color('bg-card') !important;
     }
