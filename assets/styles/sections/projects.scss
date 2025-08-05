@@ -11,13 +11,6 @@
       padding: 0.7rem;
       padding-bottom: 0rem;
       text-decoration: none !important;
-      .card-title {
-        color: get-light-color('accent-color');
-        &:hover,
-        &:focus{
-          color: get-light-color('hover-over-accent-color');
-        }
-      }
       .card-img-xs {
         margin-right: 0.5rem;
       }
@@ -48,7 +41,7 @@
     text-decoration: none;
       &:hover,
       &:focus {
-        text-decoration: underline;
+        text-decoration: none;
         }
   }
   .filtr-projects {
@@ -119,13 +112,6 @@ html[data-theme='dark'] {
       .card-header {
         border-bottom: 2px solid get-dark-color('accent-color');
         background-color: get-dark-color('bg-card');
-        .card-title {
-          color: get-dark-color('accent-color');
-          &:hover,
-          &:focus{
-            color: get-dark-color('hover-over-accent-color');
-          }
-        }
         .sub-title {
           color: get-dark-color('muted-text-color');
         }
