@@ -5,14 +5,14 @@
   // Conditionally apply styles based on the theme
   @if $theme == 'dark' {
     // Dark theme styles
-    color: get-dark-color('heading-color') !important;
-    border-bottom: 2px solid get-dark-color('heading-color') !important;
-    background: rgba(get-dark-color('heading-color'), 0.1);
+    color: get-dark-color('accent-color') !important;
+    border-bottom: 2px solid get-dark-color('accent-color') !important;
+    background: rgba(get-dark-color('accent-color'), 0.1);
   } @else {
     // Light theme styles (default)
-    color: get-light-color('heading-color') !important;
-    border-bottom: 2px solid get-light-color('heading-color') !important;
-    background: rgba(get-light-color('heading-color'), 0.1);
+    color: get-light-color('accent-color') !important;
+    border-bottom: 2px solid get-light-color('accent-color') !important;
+    background: rgba(get-light-color('accent-color'), 0.1);
   }
 }
 
@@ -133,16 +133,16 @@
   &.transparent-navbar {
     background-color: transparent !important;
     .navbar-brand {
-      color: get-light-color('text-color');
+      color: get-light-color('heading-color');
       font-weight: 600;
     }
     li {
       a {
-        color: get-light-color('text-color');
+        color: get-light-color('heading-color');
       }
     }
     .feather-menu {
-      stroke: get-light-color('text-color');
+      stroke: get-light-color('heading-color');
     }
   }
   img.theme-icon {
@@ -214,7 +214,7 @@
 .feather-menu {
   width: 1.5rem;
   height: 1.5rem;
-  stroke: get-light-color('text-color');
+  stroke: get-light-color('heading-color');
 }
 
 html[data-theme='dark'] {
@@ -287,15 +287,15 @@ html[data-theme='dark'] {
 
     &.transparent-navbar {
       .navbar-brand {
-        color: get-dark-color('text-color');
+        color: get-dark-color('heading-color');
       }
       li {
         a {
-          color: get-dark-color('text-color');
+          color: get-dark-color('heading-color');
         }
       }
       .feather-menu {
-        stroke: get-dark-color('text-color');
+        stroke: get-dark-color('heading-color');
       }
     }
   }
@@ -306,6 +306,6 @@ html[data-theme='dark'] {
 
   .feather-sidebar,
   .feather-menu {
-    stroke: get-dark-color('text-color');
+    stroke: get-dark-color('heading-color');
   }
 }

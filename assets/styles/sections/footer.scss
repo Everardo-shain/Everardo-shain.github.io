@@ -5,7 +5,7 @@
   z-index: 9999;
 
   h5 {
-    color: get-light-color('inverse-text-color');
+    color: get-light-color('heading-color');
   }
 
   a {
@@ -34,11 +34,11 @@
   }
 
   p:first-child {
-    color: get-light-color('inverse-text-color');
+    color: get-light-color('heading-color');
   }
 
   input {
-    background-color: get-light-color('inverse-text-color');
+    background-color: get-light-color('heading-color');
     &:focus {
       background-color: get-light-color('bg-secondary');
     }
@@ -48,15 +48,16 @@
     color: get-light-color('muted-text-color') !important;
     text-align: justify;
     & > strong {
-      color: get-light-color('inverse-text-color') !important;
+      color: get-light-color('heading-color') !important;
     }
   }
 
   #theme {
-    color: get-light-color('inverse-text-color');
+    color: get-light-color('heading-color');
     img {
       width: 32px;
       display: inline-block;
+      filter: invert(1);
     }
   }
   #hugo {
@@ -114,6 +115,9 @@ html[data-theme='dark'] {
 
     #theme {
       color: get-dark-color('text-color');
+      img {
+        filter: none;
+      }
     }
   }
 }

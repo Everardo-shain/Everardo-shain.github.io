@@ -44,7 +44,7 @@
   img {
     width: 148px;
     height: 148px;
-    background-color: get-light-color('bg-secondary');
+    background-color: get-light-color('accent-color');
     padding: 5px;
     margin-bottom: 10px;
   }
@@ -56,7 +56,7 @@
 
   .typing-carousel {
     font-size: 14pt;
-    color: get-light-color('heading-color');
+    color: get-light-color('text-color');
   }
 
   #typing-carousel-data {
@@ -65,7 +65,7 @@
 
   .arrow {
     position: absolute;
-    color: get-light-color('heading-color');
+    color: get-light-color('accent-color');
     font-size: 1.5rem;
     bottom: 0;
   }
@@ -113,7 +113,7 @@ html[data-theme='dark'] {
   .home {
     color: get-dark-color('heading-color');
     img {
-      background-color: get-dark-color('bg-secondary');
+      background-color: get-dark-color('accent-color');
     }
 
     .greeting,
@@ -122,10 +122,10 @@ html[data-theme='dark'] {
     }
 
     .typing-carousel {
-      color: get-dark-color('heading-color');
+      color: get-dark-color('text-color');
     }
     .arrow {
-      color: get-dark-color('heading-color');
+      color: get-dark-color('accent-color');
     }
   }
 }
