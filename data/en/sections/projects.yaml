@@ -57,23 +57,23 @@ projects:
 #   summary:
 #   tags: ["", "", ""]
 
-- name: Next Best View (Master's Thesis)
-  image: /images/sections/projects/NBV/multimedia/imagenes.png
-  role: Researcher and Developer
-  summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
-  tags: ["data and optimization", "optimization", "c"]
-
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
   role: Developer
   summary: Programmed with C a poker simulator that evaluated the input hands and ran a Monte Carlo simulation to predict the winner, heavily using arrays and memory management, plus writing several test cases.
   tags: ["software development", "c"]
 
+- name: Next Best View (Master's Thesis)
+  image: /images/sections/projects/NBV/multimedia/imagenes.png
+  role: Researcher and Developer
+  summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
+  tags: ["data and optimization", "optimization", "c"]
+
 - name: Northeastern Home Goods Vehicle Routing
   image: /images/sections/projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
   role: Analyst and Developer
   summary: Optimized by 15.5% a vehicle routing problem of 45 deliveries on GAMS, and the total 261 deliveries by 12.1% with the Clarke and Wright Savings Algorithm coded on R.
-  tags: ["data and optimization", "optimization","r"]
+  tags: ["data and optimization", "optimization","gams", "r"]
 
 - name: US Children Adoption Statistical Inference
   image: /images/sections/projects/US Children Adoption Statistical Inference/multimedia/imagenes.png
@@ -86,18 +86,6 @@ projects:
   role: Developer
   summary: Implemented a genetic algorithm on Python that optimized 4 parameters of an integrated circuit, minimizing the MSE down to 2.78% using 100 generations of 32 chromosomes with 20 genes.
   tags: ["data and optimization", "optimization", "python"]
-
-- name: Chess Checkmate
-  image: /images/sections/projects/Chess Checkmate/multimedia/imagenes.png
-  role: Developer
-  summary: Coded with Python a program that prints a chess board, generates hypothetic random positions of the King and Queen from opposite teams and determines if there is a checkmate following the rules.
-  tags: ["software development", "python"]
-
-- name: Voronoi Diagram Generator
-  image: /images/sections/projects/Voronoi Diagram Generator/multimedia/imagenes.png
-  role: Developer
-  summary: Coded a Voronoi diagram generator in MATLAB, allowing the generation of images with of 256x256 pixels that contained 16 nodes with 5 elements each.
-  tags: ["software development", "matlab"]
 
 - name: Conveyor Belt
   image: /images/sections/projects/Conveyor Belt/multimedia/imagenes.png
@@ -265,13 +253,7 @@ projects:
 #   image: /images/sections/projects/Vending Machine/multimedia/imagenes.png
 #   role: Developer
 #   summary: Programmed a simulated vending machine on LabVIEW, capable of serving 3 drinks while counting coins and available drinks to assure both change and dispensing availability.
-#   tags: ["labview"]
-
-- name: Soda Fountain
-  image: /images/sections/projects/Soda Fountain/multimedia/imagenes.png
-  role: Developer
-  summary: Contributed to the development of a soda fountain using water pumps and an Arduino UNO board programmed to work via Bluetooth with a mobile app for selecting the beverage.
-  tags: ["embedded systems", "arduino"]
+#   tags: ["software development", "labview"]
 
 - name: Payroll Software
   image: /images/sections/projects/Payroll Software/multimedia/imagenes.png
