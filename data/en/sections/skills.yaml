@@ -15,9 +15,9 @@ buttons:
   filter: "all"
 - name: Mechatronics
   filter: "mechatronics"
-- name: Data Analysis and Programming
+- name: Data Analysis & Programming
   filter: "computational"
-- name: Communication and Management
+- name: Communication & Management
   filter: "communication and management"
 
 # Your Skills.
