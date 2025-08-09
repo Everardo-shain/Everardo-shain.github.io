@@ -1,101 +1,30 @@
-{{ $sectionID := replace (lower .section.name) " " "-" }}
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
 {{ if .section.id }}
   {{ $sectionID = .section.id }}
 {{ end }}
 
-{{ $collapseAfter := .collapseAfter | default 5 }}
-
 <div class="container-fluid anchor pb-5 projects-section" id="{{ $sectionID }}">
   {{ if not (.section.hideTitle) }}
     <h1 class="text-center">
-      <span id="{{ $sectionID }}"></span>{{ .section.name }}
-    </h1>
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
   {{ else }}
     <h1 class="text-center" style="display: none">
-      <span id="{{ $sectionID }}"></span>{{ .section.name }}
-    </h1>
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
   {{ end }}
-
   <div class="container ms-auto text-center">
     <div class="btn-group flex-wrap" role="group" id="project-filter-buttons">
       {{ range .buttons }}
-        <button type="button" class="btn btn-dark project-filtr-control" data-filter="{{ .filter }}">
-          {{ .name }}
-        </button>
+      <button type="button" class="btn btn-dark project-filtr-control" data-filter="{{ .filter }}">
+        {{ .name }}
+      </button>
       {{ end }}
     </div>
   </div>
-
   <div class="container filtr-projects">
     <div class="row" id="project-card-holder">
-      {{ range $index, $project := .projects }}
-        {{ $extraClasses := "" }}
-        {{ if ge $index $collapseAfter }}
-          {{/* These projects will be hidden initially */}}
-          {{ $extraClasses = "d-none project-collapsible" }}
-        {{ end }}
-
-        {{ partial "cards/project" (dict "context" . "extraClasses" $extraClasses) }}
+      {{ range .projects }}
+        {{ partial "cards/project" . }}
       {{ end }}
     </div>
   </div>
-
-{{/* ... inside the projects section template ... */}}
-
-{{ if gt (len .projects) $collapseAfter }}
-  <div id="show-more-container" class="text-center mt-4">
-    <button id="project-show-more-btn" class="btn btn-outline-primary">Show More</button>
-  </div>
-{{ end }}
-
 </div>
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const showMoreBtn = document.getElementById('project-show-more-btn');
-    const showMoreContainer = document.getElementById('show-more-container');
-    const filterButtons = document.querySelectorAll('.project-filtr-control');
-    
-    // --- Logic for the "Show More" / "Show Less" Button ---
-    if (showMoreBtn) {
-      showMoreBtn.addEventListener('click', function () {
-        const hiddenProjects = document.querySelectorAll('.project-collapsible');
-        
-        // Toggle the 'd-none' class to show/hide them
-        hiddenProjects.forEach(project => {
-          project.classList.toggle('d-none');
-        });
-
-        // Change the button text based on its current state
-        if (this.innerText === 'Show More') {
-          this.innerText = 'Show Less';
-        } else {
-          this.innerText = 'Show More';
-        }
-      });
-    }
-
-    // --- Logic for the Filter Buttons ---
-    if (filterButtons.length > 0 && showMoreContainer) {
-      filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          const filterValue = this.getAttribute('data-filter');
-
-          if (filterValue === 'all' || filterValue === '*') {
-            showMoreContainer.style.display = 'block';
-            const allCollapsible = document.querySelectorAll('.project-collapsible');
-            allCollapsible.forEach(p => p.classList.add('d-none'));
-            if (showMoreBtn) {
-              showMoreBtn.innerText = 'Show More';
-            }
-          } else {
-            showMoreContainer.style.display = 'none';
-            const allCollapsible = document.querySelectorAll('.project-collapsible');
-            allCollapsible.forEach(p => p.classList.remove('d-none'));
-          }
-        });
-      });
-    }
-  });
-</script>
