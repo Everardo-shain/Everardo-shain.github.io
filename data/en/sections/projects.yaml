@@ -44,6 +44,8 @@ buttons:
 - name: Design
   filter: "design"
 
+collapseAfter: 1
+
 # your projects
 projects:
 # - name:
