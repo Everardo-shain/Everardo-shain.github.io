@@ -12,16 +12,29 @@
   }
 }
 
+.btn-dark.selected {
+  background-color: get-light-color('selected-accent-color') !important;
+  border-color: get-light-color('selected-accent-color') !important;
+  color: get-light-color('text-over-accent-color') !important;
+  @include transition();
+}
+
+.btn-tag {
+  background-color: get-light-color('text-color') !important;
+  color: get-light-color('bg-card') !important;
+  border: 1px solid get-light-color('text-color') !important;
+}
+
 .btn-info {
   background-color: get-light-color('accent-color') !important;
   color: get-light-color('text-over-accent-color') !important;
   border: 1px solid get-light-color('accent-color') !important;
 
-  &:hover,
-  &:focus {
-    background-color: get-light-color('hover-over-accent-color') !important;
+    &:hover,
+    &:focus {
+      background-color: get-light-color('hover-over-accent-color') !important;
+    }
   }
-}
 
 .btn-outline-info {
   color: get-light-color('accent-color') !important;
@@ -148,6 +161,17 @@ html[data-theme='dark'] {
       background-color: get-dark-color('hover-over-accent-color') !important;
       border-color: get-dark-color('hover-over-accent-color') !important;
     }
+  }
+  .btn-dark.selected {
+  background-color: get-dark-color('selected-accent-color') !important;
+  border-color: get-dark-color('selected-accent-color') !important;
+  color: get-dark-color('text-over-accent-color') !important;
+  @include transition();
+  }
+  .btn-tag {
+  background-color: get-dark-color('text-color') !important;
+  color: get-dark-color('bg-card') !important;
+  border: 1px solid get-dark-color('text-color') !important;
   }
 
   .btn-info {
