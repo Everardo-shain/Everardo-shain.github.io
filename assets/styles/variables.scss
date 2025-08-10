@@ -28,7 +28,8 @@ $themes: (
   'light': (
 
     'accent-color': $accent-color-light,
-    'hover-over-accent-color': lighten($accent-color-light, 10%),
+    'hover-over-accent-color': lighten($accent-color-light, 20%),
+    'selected-accent-color': lighten($accent-color-light, 10%),
     'text-over-accent-color': #ffffff,
     'bg-primary': #ffffff,
     'bg-primary-inverse': #1a1a1a,
@@ -47,7 +48,8 @@ $themes: (
   'dark': (
 
     'accent-color': $accent-color-dark,
-    'hover-over-accent-color': lighten($accent-color-dark, 10%),
+    'hover-over-accent-color': lighten($accent-color-dark, 20%),
+    'selected-accent-color': lighten($accent-color-dark, 10%),
     'text-over-accent-color': #ffffff,
     'bg-primary': #181818,
     'bg-primary-inverse': #1a1a1a,
