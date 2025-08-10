@@ -11,10 +11,6 @@
     @include transition();
   }
   .card a {
-      .card-img-top {
-        transform: scale(0.90);
-        object-fit: cover;
-      }
       &:hover,
       &:focus {
         .card-img-top {
