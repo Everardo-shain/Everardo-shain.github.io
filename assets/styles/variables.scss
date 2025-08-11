@@ -22,7 +22,7 @@ $box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
 
 // themes
 $light-accent-color: #4682B4;
-$dark-accent-color: #4682B4;
+$dark-accent-color: #8ab4f8;
 $themes: (
 
   'light': (
@@ -34,7 +34,7 @@ $themes: (
     'bg-primary': #ffffff,
     'bg-primary-inverse': #1a1a1a,
     'bg-secondary': #f9f9f9,
-    'bg-card': #f1f1f1,
+    'bg-card': #eaeaea,
     'heading-color': #000000,
     'text-color': #2b2b2b,
     'inverse-text-color': #e0e0e0,
@@ -49,9 +49,9 @@ $themes: (
   'dark': (
 
     'accent-color': $dark-accent-color,
-    'hover-over-accent-color': lighten($dark-accent-color, 20%),
+    'hover-over-accent-color': lighten($dark-accent-color, 5%),
     'selected-accent-color': lighten($dark-accent-color, 10%),
-    'text-over-accent-color': #ffffff,
+    'text-over-accent-color': #000000,
     'bg-primary': #181818,
     'bg-primary-inverse': #1a1a1a,
     'bg-secondary': #1f1f1f,
@@ -67,6 +67,49 @@ $themes: (
   ),
 
 );
+
+// // themes default
+// $light-accent-color: #0891b2;
+// $dark-accent-color: #0891b2;
+// $themes: (
+//   'light': (
+//     'accent-color': $light-accent-color,
+//     'hover-over-accent-color': lighten($light-accent-color, 20%),
+//     'selected-accent-color': lighten($light-accent-color, 10%),
+//     'text-over-accent-color': #e4e4e7,
+//     'bg-primary': #f8fafc,
+//     'bg-primary-inverse': #0f172a,
+//     'bg-secondary': #e2e8f0,
+//     'bg-card': #fff,
+//     'heading-color': #1e293b,
+//     'text-color': #334155,
+//     'inverse-text-color': #cbd5e1,
+//     'muted-text-color': #64748b,
+//     'inline-code-color': #dc2626,
+//     'highlight-color': #fde68a,
+//     'footer-color': #0f172a,
+//     'progress-color': $light-accent-color,
+//   ),
+//   'dark': (
+//     'accent-color': $dark-accent-color,
+//     'hover-over-accent-color': lighten($dark-accent-color, 20%),
+//     'selected-accent-color': lighten($dark-accent-color, 10%),
+//     'text-over-accent-color': #e4e4e7,
+//     'bg-primary': #1f2937,
+//     'bg-primary-inverse': #0f172a,
+//     'bg-secondary': #111827,
+//     'bg-card': #1e293b,
+//     'heading-color': #f1f5f9,
+//     'text-color': #cbd5e1,
+//     'inverse-text-color': #0f172a,
+//     'muted-text-color': #64748b,
+//     'inline-code-color': #dc2626,
+//     'highlight-color': #fde68a,
+//     'footer-color': #0f172a,
+//     'progress-color': $dark-accent-color,
+//   ),
+// );
+
 $brand-colors: (
   'facebook': #3b5998,
   'twitter': #1da1f2,
