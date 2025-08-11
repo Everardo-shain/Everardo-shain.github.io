@@ -38,7 +38,7 @@
   @include transition();
 
   .navbar-brand {
-    color: get-light-color('heading-color');
+    color: get-light-color('accent-color');
     text-decoration: none !important;
     font-weight: 600;
     img {
@@ -78,7 +78,7 @@
   #top-navbar-divider {
     $divider-height: 25px;
     margin-top: (42px-$divider-height)/2;
-    background-color: get-light-color('heading-color');
+    background-color: get-light-color('accent-color');
     height: $divider-height;
     width: 2px;
   }
@@ -140,7 +140,7 @@
   &.transparent-navbar {
     background-color: transparent !important;
     .navbar-brand {
-      color: get-light-color('heading-color');
+      color: get-light-color('accent-color');
       font-weight: 600;
     }
     li {
@@ -190,7 +190,7 @@
       width: auto;
       margin-right: 15px;
       margin-left: 15px;
-      border-top: 2px solid get-light-color('heading-color');
+      border-top: 2px solid get-light-color('accent-color');
     }
 
     .dropdown-menu {
@@ -233,7 +233,7 @@ html[data-theme='dark'] {
     background-color: get-dark-color('bg-primary');
 
     .navbar-brand {
-      color: get-dark-color('heading-color');
+      color: get-dark-color('accent-color');
     }
     .sidebar-icon {
       filter: invert(0.5);
@@ -251,7 +251,7 @@ html[data-theme='dark'] {
       @include nav-item-hover-effect('dark');
     }
     #top-navbar-divider {
-      background-color: get-dark-color('heading-color');
+      background-color: get-dark-color('accent-color');
     }
     .nav-link {
       &.active,
@@ -297,7 +297,7 @@ html[data-theme='dark'] {
 
     &.transparent-navbar {
       .navbar-brand {
-        color: get-dark-color('heading-color');
+        color: get-dark-color('accent-color');
       }
       li {
         a {
@@ -323,7 +323,7 @@ html[data-theme='dark'] {
       }
     }
     #top-navbar-divider {
-      border-top: 2px solid get-dark-color('heading-color');
+      border-top: 2px solid get-dark-color('accent-color');
     }
 
     .languageSelector {

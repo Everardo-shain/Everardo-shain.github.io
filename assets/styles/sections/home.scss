@@ -51,12 +51,12 @@
 
   .greeting,
   .greeting-subtitle {
-    color: get-light-color('heading-color');
+    color: get-light-color('accent-color');
   }
 
   .typing-carousel {
     font-size: 14pt;
-    color: get-light-color('text-color');
+    color: get-light-color('heading-color');
   }
 
   #typing-carousel-data {
@@ -118,11 +118,11 @@ html[data-theme='dark'] {
 
     .greeting,
     .greeting-subtitle {
-      color: get-dark-color('heading-color');
+      color: get-dark-color('accent-color');
     }
 
     .typing-carousel {
-      color: get-dark-color('text-color');
+      color: get-dark-color('heading-color');
     }
     .arrow {
       color: get-dark-color('accent-color');
