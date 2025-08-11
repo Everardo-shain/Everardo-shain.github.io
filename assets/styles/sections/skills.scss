@@ -40,6 +40,10 @@
     &:focus .card-head{
       border-bottom: 2px solid get-light-color('hover-over-accent-color');
     }
+    &:hover .card-title svg,
+    &:focus .card-title svg{
+      color: get-light-color('hover-over-accent-color') !important;
+    }
   }
 
   @include media('<=medium') {
@@ -67,6 +71,10 @@ html[data-theme='dark'] {
       &:hover .card-head,
       &:focus .card-head{
         border-bottom: 2px solid get-dark-color('hover-over-accent-color');
+      }
+      &:hover .card-title svg,
+      &:focus .card-title svg{
+        color: get-dark-color('hover-over-accent-color') !important;
       }
     }
   }
