@@ -86,7 +86,7 @@ skills:
 - name: Project Management
   icon: "fas fa-tasks"
   summary: |
-    Project version control and collaboration using Git. Familiar with Agile methodologies and tools for project management.
+    Project version control and collaboration with basic Git knownledge. Familiar with tools for project management.
     - <strong>Platforms:</strong> GitHub, Jira.
   categories: ["communication and management"]
 

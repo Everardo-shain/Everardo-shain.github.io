@@ -23,13 +23,11 @@
 .btn-tag {
   background-color: get-light-color('accent-color') !important;
   color: get-light-color('text-over-accent-color') !important;
-  border: 1px solid get-light-color('accent-color') !important;
 }
 
 .btn-info {
   background-color: get-light-color('accent-color') !important;
   color: get-light-color('text-over-accent-color') !important;
-  border: 1px solid get-light-color('accent-color') !important;
 
     &:hover,
     &:focus {
@@ -175,13 +173,11 @@ html[data-theme='dark'] {
   .btn-tag {
   background-color: get-dark-color('accent-color') !important;
   color: get-dark-color('text-over-accent-color') !important;
-  border: 1px solid get-dark-color('accent-color') !important;
   }
 
   .btn-info {
   background-color: get-dark-color('accent-color') !important;
   color: get-dark-color('text-over-accent-color') !important;
-  border: 1px solid get-dark-color('accent-color') !important;
 
     &:hover,
     &:focus {
