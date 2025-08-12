@@ -49,12 +49,23 @@ body.kind-page {
 
           .page-item {
             & > a {
-              color: get-light-color('accent-color');
+              background-color: get-light-color('bg-card') !important;
+              color: get-light-color('heading-color') !important;
+              border: none !important;
+              text-decoration: none !important;
+
+              &:hover {
+                background-color: get-light-color('hover-over-button-color') !important;
+              }
             }
 
             &.active > a {
-              background-color: get-light-color('accent-color');
-              color: get-light-color('text-over-accent-color');
+              background-color: get-light-color('accent-color') !important;
+              color: get-light-color('text-over-accent-color') !important;
+            }
+            
+            &.disabled > a {
+              color: get-light-color('muted-text-color') !important;
             }
           }
         }
@@ -184,19 +195,22 @@ html[data-theme='dark'] {
             .page-item {
               & > a {
                 background-color: get-dark-color('bg-card') !important;
-                color: get-dark-color('text-color') !important;
-                border: 1px solid get-dark-color('muted-text-color') !important;
+                color: get-dark-color('heading-color') !important;
+                border: none !important;
                 text-decoration: none !important;
 
                 &:hover {
-                  background-color: get-dark-color('hover-over-accent-color') !important;
-                  color: get-dark-color('text-over-accent-color') !important;
+                  background-color: get-dark-color('hover-over-button-color') !important;
                 }
               }
 
               &.active > a {
                 background-color: get-dark-color('accent-color') !important;
                 color: get-dark-color('text-over-accent-color') !important;
+              }
+              
+              &.disabled > a {
+                color: get-dark-color('muted-text-color') !important;
               }
             }
           }
