@@ -48,19 +48,19 @@ projects:
 #   summary:
 #   tags: ["", "", ""]
 
+- name: Next Best View | Master's Thesis
+  image: /images/sections/projects/NBV/multimedia/imagenes.png
+  role: Researcher and Developer
+  summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
+  tags: ["optimization", "c"]
+  categories: ["data and optimization", "featured"]
+
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
   role: Developer
   summary: Programmed with C a poker simulator that evaluated the input hands and ran a Monte Carlo simulation to predict the winner, heavily using arrays and memory management, plus writing several test cases.
   tags: ["software development", "c"]
   categories: ["software development"]
-
-- name: Next Best View (Master's Thesis)
-  image: /images/sections/projects/NBV/multimedia/imagenes.png
-  role: Researcher and Developer
-  summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
-  tags: ["optimization", "c"]
-  categories: ["data and optimization", "featured"]
 
 - name: Northeastern Home Goods Vehicle Routing
   image: /images/sections/projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
@@ -83,19 +83,12 @@ projects:
   tags: ["optimization", "python"]
   categories: ["data and optimization"]
 
-- name: Conveyor Belt
-  image: /images/sections/projects/Conveyor Belt/multimedia/imagenes.png
+- name: Industrial AGV
+  image: /images/sections/projects/Industrial AGV/multimedia/imagenes.png
   role: Developer
-  summary: Programmed a conveyor belt using ladder on a PLC with TIA Portal, fulfilling the requirements of filling 5 bags with 5 items each while rejecting undesired objects, plus sealing each bag with heat.
-  tags: ["automation", "plc"]
-  categories: ["automation"]
-
-- name: Laser Harp
-  image: /images/sections/projects/Laser Harp/multimedia/imagenes.png
-  role: Developer
-  summary: Programmed a laser harp using Arduino IDE on an ESP32, capable of reproducing 8 different 8-bit musical notes on an EK1236 amplifier using multiple KY-008 sensors as laser strings.
-  tags:  ["embedded", "arduino"]
-  categories: ["embedded"]
+  summary: Contributed to the navigation programming of an industrial Ackermann AGV using Arduino, ROS on a NVIDIA Jetson Xavier device and a RPLIDAR sensor, successfully avoiding collisions inside a laboratory.
+  tags: ["navigation", "arduino", "ros"]
+  categories: ["featured", "control and navigation"]
 
 - name: Industrial Robotics Tower of Hanoi
   image: /images/sections/projects/Industrial Robotics Tower of Hanoi/multimedia/imagenes.png
@@ -104,46 +97,11 @@ projects:
   tags: ["automation","python","ur10e"]
   categories: ["automation"]
 
-- name: Bicycle Assembly
-  image: /images/sections/projects/Bicycle Assembly/multimedia/imagenes.png
-  role: CAD Designer
-  summary: Designed on Siemens NX a bicycle assembly including wheels, pedals, seat, sprockets, handle and frame. Parametric design was used for its dimensions and by giving the user the option to include a basket.
-  tags: ["cad", "siemens nx"]
-  categories: ["design"]
-
-- name: Step Ladder Assembly
-  image: /images/sections/projects/Step Ladder Assembly/multimedia/imagenes.png
-  role: CAD Designer
-  summary: Designed on Siemens NX a step ladder assembly including screws, rubber feet, rails and steps. Parametric design was used for its dimensions and shape (vertical, W shaped, V shaped, closed).
-  tags: ["cad", "siemens nx"]
-  categories: ["design"]
-
 - name: Car Design
   image: /images/sections/projects/Car Design/multimedia/imagenes.png
   role: CAD Designer
   summary: Designed the exterior of a car using Siemens NX, applying surface modeling techniques and creating brackets for a complete assembly with an existing chassis model.
   tags: ["cad", "siemens nx"]
-  categories: ["design"]
-
-- name: Robociety (Robotics Student Association)
-  image: /images/sections/projects/Robociety/multimedia/imagenes.png
-  role: Developer and Team Member
-  summary: Programmed on Arduino a Sumo robot for international competition Robofest 2022 and a Mini Sumo robot for international competition Robomatrix 2022, where both robots successfully completed at least one round.
-  tags: ["embedded", "arduino"]
-  categories: ["featured", "embedded"]
-
-- name: Industrial AGV
-  image: /images/sections/projects/Industrial AGV/multimedia/imagenes.png
-  role: Developer
-  summary: Contributed to the navigation programming of an industrial Ackermann AGV using Arduino, ROS on a NVIDIA Jetson Xavier device and a RPLIDAR sensor, successfully avoiding collisions inside a laboratory.
-  tags: ["navigation", "arduino", "ros"]
-  categories: ["featured", "control and navigation"]
-
-- name: Power Source
-  image: /images/sections/projects/Power Source/multimedia/imagenes.png
-  role: Electronics Designer
-  summary: Contributed to the development of a power source with short circuit and overcurrent protection, giving outputs from 1.2 to 30.6 Volts. The simulation was made with Proteus, and a real prototype was built.
-  tags: ["electronic design", "proteus"]
   categories: ["design"]
 
 - name: Battery Bank Cooling System
@@ -153,26 +111,33 @@ projects:
   tags: ["embedded","arduino", "labview"]
   categories: ["embedded"]
 
-- name: Tomato Harvesting Robot
-  image: /images/sections/projects/Tomato Harvesting Robot/multimedia/imagenes.png
+- name: Laser Harp
+  image: /images/sections/projects/Laser Harp/multimedia/imagenes.png
   role: Developer
-  summary: Contributed to the design and programming of a robotic gripper with Arduino, mounted on a UR10e robot successfully completing the tasks of collecting a tomato and placing it on a container.
-  tags: ["automation", "arduino", "ur10e"]
-  categories: ["featured", "automation"]
+  summary: Programmed a laser harp using Arduino IDE on an ESP32, capable of reproducing 8 different 8-bit musical notes on an EK1236 amplifier using multiple KY-008 sensors as laser strings.
+  tags:  ["embedded", "arduino"]
+  categories: ["embedded"]
 
-- name: IMDB Sentiment Analysis
-  image: /images/sections/projects/IMDB Sentiment Analysis/multimedia/imagenes.png
-  role: Developer
-  summary: Contributed to the sentiment analysis of IMDB comments by coding on Python a tokenizer of 300 elements using spaCy and a CNN model with a test loss of 0.302 and a test accuracy of 88.38%.
-  tags: ["data science", "machine learning", "python"]
-  categories: ["data and optimization"]
+- name: Step Ladder Assembly
+  image: /images/sections/projects/Step Ladder Assembly/multimedia/imagenes.png
+  role: CAD Designer
+  summary: Designed on Siemens NX a step ladder assembly including screws, rubber feet, rails and steps. Parametric design was used for its dimensions and shape (vertical, W shaped, V shaped, closed).
+  tags: ["cad", "siemens nx"]
+  categories: ["design"]
 
-- name: Airline Passengers Prediction
-  image: /images/sections/projects/Airline Passengers Prediction/multimedia/imagenes.png
-  role: Developer
-  summary: Coded on Python a LSTM model to predict the number of passengers per date of an airline company, having a loss of 0.00162 with a learning rate of 0.01 in 2000 epochs.
-  tags: ["data science", "machine learning", "python"]
-  categories: ["data and optimization"]
+- name: Robomatrix 2022 | Robociety
+  image: /images/sections/projects/Robomatrix 2022/multimedia/imagenes.png
+  role: Developer and Team Member
+  summary: Programmed on Arduino a Mini Sumo robot for international competition Robomatrix 2022 as a member of Robociety student association, successfully beating an opponent without falling from the ring.
+  tags: ["embedded", "arduino"]
+  categories: ["embedded"]
+
+- name: Bicycle Assembly
+  image: /images/sections/projects/Bicycle Assembly/multimedia/imagenes.png
+  role: CAD Designer
+  summary: Designed on Siemens NX a bicycle assembly including wheels, pedals, seat, sprockets, handle and frame. Parametric design was used for its dimensions and by giving the user the option to include a basket.
+  tags: ["cad", "siemens nx"]
+  categories: ["design"]
 
 - name: Turret Tracking
   image: /images/sections/projects/Turret Tracking/multimedia/imagenes.png
@@ -181,12 +146,12 @@ projects:
   tags: ["control systems", "matlab", "arduino"]
   categories: ["control and navigation"]
 
-- name: Upright CNC Router
-  image: /images/sections/projects/Upright CNC Router/multimedia/imagenes.png
+- name: Conveyor Belt
+  image: /images/sections/projects/Conveyor Belt/multimedia/imagenes.png
   role: Developer
-  summary: Programmed the control system of a simulated Upright CNC Router with Simulink in MATLAB, achieving the drawing of 3 basic shapes and the trajectory between 3 input coordinates.
-  tags: ["control systems", "matlab"]
-  categories: ["control and navigation"]
+  summary: Programmed a conveyor belt using ladder on a PLC with TIA Portal, fulfilling the requirements of filling 5 bags with 5 items each while rejecting undesired objects, plus sealing each bag with heat.
+  tags: ["automation", "plc"]
+  categories: ["automation"]
 
 - name: Scooter Design
   image: /images/sections/projects/Scooter Design/multimedia/imagenes.png
@@ -195,47 +160,19 @@ projects:
   tags: ["project design"]
   categories: ["design"]
 
-- name: Car Motor System
-  image: /images/sections/projects/Car Motor System/multimedia/imagenes.png
+- name: IMDB Sentiment Analysis
+  image: /images/sections/projects/IMDB Sentiment Analysis/multimedia/imagenes.png
   role: Developer
-  summary: Programmed on C the Proteus circuit of a car motor system with MPLAB X IDE on a PIC16f877a microcontroller, controlling the motor behavior on 3 weather condition scenarios.
-  tags: ["embedded", "proteus", "c","microcontroller"]
-  categories: ["embedded"]
-
-- name: Car Alarm System
-  image: /images/sections/projects/Car Alarm System/multimedia/imagenes.png
-  role: Developer
-  summary: Programmed on assembly language the Proteus circuit of a car alarm system with MPLAB X IDE on a PIC16F84A microcontroller by including the car key buttons, plus light and sound indicators.
-  tags: ["embedded", "proteus","assembly","microcontroller"]
-  categories: ["embedded"]
-
-- name: Weather Conditions Prediction
-  image: /images/sections/projects/Weather Conditions Prediction/multimedia/imagenes.png
-  role: Developer
-  summary: Implemented 2 Machine Learning algorithms (KNN and Decision tree) on Python with data from accelerometer and temperature sensors, with both accuracies higher than 97%.
+  summary: Contributed to the sentiment analysis of IMDB comments by coding on Python a tokenizer of 300 elements using spaCy and a CNN model with a test loss of 0.302 and a test accuracy of 88.38%.
   tags: ["data science", "machine learning", "python"]
-  categories: ["featured", "data and optimization"]
+  categories: ["data and optimization"]
 
-- name: Audio Filtering
-  image: /images/sections/projects/Audio Filtering/multimedia/imagenes.png
+- name: Upright CNC Router
+  image: /images/sections/projects/Upright CNC Router/multimedia/imagenes.png
   role: Developer
-  summary: Programmed on MATLAB an audio filtering system that took a piece of a song and added high frequency noise to then filter it using a low-pass filter to return to the original song.
-  tags: ["software development", "signal processing", "matlab"]
-  categories: ["software development"]
-
-- name: Elevator
-  image: /images/sections/projects/Elevator/multimedia/imagenes.png
-  role: Developer
-  summary: Programmed a simulated 4-floor elevator using SCL and ladder language on a PLC with TIA Portal, fulfilling tasks of a real elevator including weight limit, alarm, variable speed, pressing memory and an HMI.
-  tags: ["automation", "plc"]
-  categories: ["featured", "automation"]
-
-- name: Sorting Line
-  image: /images/sections/projects/Sorting Line/multimedia/imagenes.png
-  role: Developer
-  summary: Programmed a simulated sorting line using ladder language on a PLC with TIA Portal, successfully sorting parcels from 4 different types using sensors and pistons without overfilling the containers.
-  tags: ["automation", "plc"]
-  categories: ["automation"]
+  summary: Programmed the control system of a simulated Upright CNC Router with Simulink in MATLAB, achieving the drawing of 3 basic shapes and the trajectory between 3 input coordinates.
+  tags: ["control systems", "matlab"]
+  categories: ["control and navigation"]
 
 - name: Smart Bulb
   image: /images/sections/projects/Smart Bulb/multimedia/imagenes.png
@@ -244,12 +181,82 @@ projects:
   tags: ["embedded", "microcontroller"]
   categories: ["embedded"]
 
+- name: Robofest 2022 | Robociety
+  image: /images/sections/projects/Robofest 2022/multimedia/imagenes.png
+  role: Developer and Team Member
+  summary: Programmed on Arduino a Sumo robot for international competition Robofest 2022 as a member of Robociety student association, successfully pushing 3 bottles off the table without falling.
+  tags: ["embedded", "arduino"]
+  categories: ["featured", "embedded"]
+
+- name: Airline Passengers Prediction
+  image: /images/sections/projects/Airline Passengers Prediction/multimedia/imagenes.png
+  role: Developer
+  summary: Coded on Python a LSTM model to predict the number of passengers per date of an airline company, having a loss of 0.00162 with a learning rate of 0.01 in 2000 epochs.
+  tags: ["data science", "machine learning", "python"]
+  categories: ["data and optimization"]
+
+- name: Tomato Harvesting Robot
+  image: /images/sections/projects/Tomato Harvesting Robot/multimedia/imagenes.png
+  role: Developer
+  summary: Contributed to the design and programming of a robotic gripper with Arduino, mounted on a UR10e robot successfully completing the tasks of collecting a tomato and placing it on a container.
+  tags: ["automation", "arduino", "ur10e"]
+  categories: ["featured", "automation"]
+  
+- name: Car Motor System
+  image: /images/sections/projects/Car Motor System/multimedia/imagenes.png
+  role: Developer
+  summary: Programmed on C the Proteus circuit of a car motor system with MPLAB X IDE on a PIC16f877a microcontroller, controlling the motor behavior on 3 weather condition scenarios.
+  tags: ["embedded", "proteus", "c","microcontroller"]
+  categories: ["embedded"]
+
+- name: Elevator
+  image: /images/sections/projects/Elevator/multimedia/imagenes.png
+  role: Developer
+  summary: Programmed a simulated 4-floor elevator using SCL and ladder language on a PLC with TIA Portal, fulfilling tasks of a real elevator including weight limit, alarm, variable speed, pressing memory and an HMI.
+  tags: ["automation", "plc"]
+  categories: ["featured", "automation"]
+
+- name: Power Source
+  image: /images/sections/projects/Power Source/multimedia/imagenes.png
+  role: Electronics Designer
+  summary: Contributed to the development of a power source with short circuit and overcurrent protection, giving outputs from 1.2 to 30.6 Volts. The simulation was made with Proteus, and a real prototype was built.
+  tags: ["electronic design", "proteus"]
+  categories: ["design"]
+
+- name: Weather Conditions Prediction
+  image: /images/sections/projects/Weather Conditions Prediction/multimedia/imagenes.png
+  role: Developer
+  summary: Implemented 2 Machine Learning algorithms (KNN and Decision tree) on Python with data from accelerometer and temperature sensors, with both accuracies higher than 97%.
+  tags: ["data science", "machine learning", "python"]
+  categories: ["featured", "data and optimization"]
+
+- name: Car Alarm System
+  image: /images/sections/projects/Car Alarm System/multimedia/imagenes.png
+  role: Developer
+  summary: Programmed on assembly language the Proteus circuit of a car alarm system with MPLAB X IDE on a PIC16F84A microcontroller by including the car key buttons, plus light and sound indicators.
+  tags: ["embedded", "proteus","assembly","microcontroller"]
+  categories: ["embedded"]
+
+- name: Sorting Line
+  image: /images/sections/projects/Sorting Line/multimedia/imagenes.png
+  role: Developer
+  summary: Programmed a simulated sorting line using ladder language on a PLC with TIA Portal, successfully sorting parcels from 4 different types using sensors and pistons without overfilling the containers.
+  tags: ["automation", "plc"]
+  categories: ["automation"]
+
 - name: Traffic Light Simulation
   image: /images/sections/projects/Traffic Light Simulation/multimedia/imagenes.png
   role: Developer
   summary: Programmed with ladder language the PLC of a LogixPro traffic light simulator, defining 70 and 30 seconds for green and yellow lights, plus 100 seconds when using the crosswalk button.
   tags: ["automation", "plc"]
   categories: ["automation"]
+
+- name: Audio Filtering
+  image: /images/sections/projects/Audio Filtering/multimedia/imagenes.png
+  role: Developer
+  summary: Programmed on MATLAB an audio filtering system that took a piece of a song and added high frequency noise to then filter it using a low-pass filter to return to the original song.
+  tags: ["software development", "signal processing", "matlab"]
+  categories: ["software development"]
 
 - name: Cleaner Robot
   image: /images/sections/projects/Cleaner Robot/multimedia/imagenes.png
@@ -258,13 +265,6 @@ projects:
   tags: ["navigation", "labview"]
   categories: ["control and navigation"]
 
-- name: Basketball Game
-  image: /images/sections/projects/Basketball Game/multimedia/imagenes.png
-  role: Developer
-  summary: Contributed to the design of an electronic circuit for a multiplayer basketball game with GAL16V8 PALs programmed with CUPL, 74161 binary counters and 7448 decoders for seven-segment displays.
-  tags: ["electronic design"]
-  categories: ["design"]
-
 - name: Millipede Video Game
   image: /images/sections/projects/Millipede Video Game/multimedia/imagenes.png
   role: Developer
@@ -272,24 +272,31 @@ projects:
   tags:  ["software development", "labview"]
   categories: ["software development"]
 
-# - name: Vending Machine
-#   image: /images/sections/projects/Vending Machine/multimedia/imagenes.png
-#   role: Developer
-#   summary: Programmed a simulated vending machine on LabVIEW, capable of serving 3 drinks while counting coins and available drinks to assure both change and dispensing availability.
-#   tags: ["software development", "labview"]
-#   categories: ["software development"]
-
-- name: Payroll Software
-  image: /images/sections/projects/Payroll Software/multimedia/imagenes.png
+- name: Vending Machine
+  image: /images/sections/projects/Vending Machine/multimedia/imagenes.png
   role: Developer
-  summary: Coded with C++ a program that makes payroll registrations on a text file database and makes salary queries by payroll, country, division and department plus a complete report with all entries.
-  tags: ["software development", "c++"]
+  summary: Programmed a simulated vending machine on LabVIEW, capable of serving 3 drinks while counting coins and available drinks to assure both change and dispensing availability.
+  tags: ["software development", "labview"]
   categories: ["software development"]
+
+- name: Basketball Game
+  image: /images/sections/projects/Basketball Game/multimedia/imagenes.png
+  role: Developer
+  summary: Contributed to the design of an electronic circuit for a multiplayer basketball game with GAL16V8 PALs programmed with CUPL, 74161 binary counters and 7448 decoders for seven-segment displays.
+  tags: ["electronic design"]
+  categories: ["design"]
 
 - name: Router Access
   image: /images/sections/projects/Router Access/multimedia/imagenes.png
   role: Developer
   summary: Coded with C++ a router access validation program, where users get an assigned access level if their account and password match the database, plus also adding their connection date into an access list file.
+  tags: ["software development", "c++"]
+  categories: ["software development"]
+
+- name: Payroll Software
+  image: /images/sections/projects/Payroll Software/multimedia/imagenes.png
+  role: Developer
+  summary: Coded with C++ a program that makes payroll registrations on a text file database and makes salary queries by payroll, country, division and department plus a complete report with all entries.
   tags: ["software development", "c++"]
   categories: ["software development"]
 

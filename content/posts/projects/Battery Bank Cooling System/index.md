@@ -1,6 +1,6 @@
 ---
 title: "Battery Bank Cooling System"
-date: 2020-06-08T08:06:25+06:00
+date: 2022-11-22T08:06:25+06:00
 description: Battery Bank Cooling System project
 menu:
   sidebar:

@@ -1,6 +1,6 @@
 ---
 title: "IC Genetic Algorithm"
-date: 2020-06-08T08:06:25+06:00
+date: 2023-06-06T08:06:25+06:00
 description: IC Genetic Algorithm project
 menu:
   sidebar:

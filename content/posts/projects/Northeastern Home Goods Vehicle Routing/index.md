@@ -1,6 +1,6 @@
 ---
 title: "Northeastern Home Goods Vehicle Routing"
-date: 2020-06-08T08:06:25+06:00
+date: 2024-06-07T08:06:25+06:00
 description: Northeastern Home Goods Vehicle Routing project
 menu:
   sidebar:

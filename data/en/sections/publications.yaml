@@ -12,8 +12,8 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: "Paper"
-  filter: "paper"
+- name: "Article"
+  filter: "article"
 - name: "Thesis"
   filter: "thesis"
 
@@ -32,8 +32,8 @@ publications:
   paper:
     summary: This paper presents the tuning and comparison of various optimization algorithms on the Next Best View (NBV) problem. A simulated 5 Degree-of-Freedom (DOF) mobile robot with a mounted simulated range sensor was used on a Virtual Reality Modeling Language (VRML) environment, and the space discretization was made using a voxel map. The optimization methods tested were Nelder-Mead, an Evolution Strategy, and Simulated Annealing. Their repeatability was tested on a laboratory model, a room with a cube and a pyramid inside it, and a study room with multiple furniture and windows.
     url: https://ieeexplore.ieee.org/document/10781375
-  categories: ["paper"]
-  tags: ["Paper","Next Best View", "Objective Function","Optimization Algorithms"]
+  categories: ["article"]
+  tags: ["Article","Next Best View", "Objective Function","Optimization Algorithms"]
 - title: View planning for three-dimensional environment reconstruction using the Next Best View method
   publishedIn:
     name: Instituto Tecnológico y de Estudios Superiores de Monterrey

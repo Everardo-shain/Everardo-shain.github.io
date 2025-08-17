@@ -1,6 +1,6 @@
 ---
 title: "Industrial AGV"
-date: 2020-06-08T08:06:25+06:00
+date: 2022-12-05T08:06:25+06:00
 description: Industrial AGV project
 menu:
   sidebar:

@@ -1,6 +1,6 @@
 ---
-title: "Next Best View (Master's Thesis)"
-date: 2020-06-08T08:06:25+06:00
+title: "Next Best View | Master's Thesis"
+date: 2024-12-03T08:06:25+06:00
 description: Next Best View project
 menu:
   sidebar:

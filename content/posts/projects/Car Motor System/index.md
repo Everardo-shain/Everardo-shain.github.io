@@ -1,6 +1,6 @@
 ---
 title: "Car Motor System"
-date: 2020-06-08T08:06:25+06:00
+date: 2021-11-29T08:06:25+06:00
 description: Car Motor System project
 menu:
   sidebar:
