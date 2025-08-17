@@ -1,6 +1,6 @@
 ---
 title: "Bicycle Assembly"
-date: 2022-06-08T08:06:25+06:00
+date: 2022-10-19T08:06:25+06:00
 description: Bicycle Assembly project
 menu:
   sidebar:

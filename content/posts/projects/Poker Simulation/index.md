@@ -1,6 +1,6 @@
 ---
 title: "Poker Simulation"
-date: 2020-06-08T08:06:25+06:00
+date: 2024-08-13T08:06:25+06:00
 description: Poker Simulation project
 menu:
   sidebar:

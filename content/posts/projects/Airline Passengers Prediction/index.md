@@ -1,6 +1,6 @@
 ---
 title: "Airline Passengers Prediction"
-date: 2020-06-08T08:06:25+06:00
+date: 2022-03-18T08:06:25+06:00
 description: Airline Passengers Prediction project
 menu:
   sidebar:
