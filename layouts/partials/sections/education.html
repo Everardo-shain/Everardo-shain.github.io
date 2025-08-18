@@ -31,17 +31,27 @@
                     </td>
                     <td class="details">
                         <div class="degree-info card" id="degree-card-{{ $index }}">
-
                             {{ $logoImage:= resources.Get .institution.logo}}
-                            {{ $darkLogoImage:= resources.Get .institution.darkLogo}}
+                            {{ $darkLogoImage:= resources.Get .institution.darkLogo}}                           
                             {{ if $logoImage }}
+                            {{ $logoResized := $logoImage.Resize "500x" }}
+                            {{ $logoWebp := $logoImage.Resize "500x webp" }}
                             <div class="logo-holder"> 
-                                <img class="company-logo light-logo" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+                                <picture>
+                                <source srcset="{{ $logoWebp.RelPermalink }}" type="image/webp">
+                                <img class="company-logo light-logo" src="{{ $logoResized.RelPermalink }}" alt="{{ .name }}">
+                                </picture>
                                 {{ if $darkLogoImage }}
-                                <img class="company-logo dark-logo" src="{{ $darkLogoImage.RelPermalink }}" alt="{{ .name }}" />
+                                {{ $darkLogoResized := $darkLogoImage.Resize "500x" }}
+                                {{ $darkLogoWebp := $darkLogoImage.Resize "500x webp" }}
+                                <picture>
+                                <source srcset="{{ $darkLogoWebp.RelPermalink }}" type="image/webp">
+                                <img class="company-logo dark-logo" src="{{ $darkLogoResized.RelPermalink }}" alt="{{ .name }}">
+                                </picture>
                                 {{ end }}
                             </div>
                             {{ end }}
+
 
                             <div class="row">
                                 <div class="col-lg-9 col-md-8">

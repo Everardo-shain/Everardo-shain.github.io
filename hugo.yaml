@@ -58,9 +58,9 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/site/background-light.webp
+  background: /images/site/background-light.png
   # Background image of the landing page for dark theme
-  darkBackground: /images/site/background-dark.webp
+  darkBackground: /images/site/background-dark.png
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
