@@ -10,10 +10,10 @@ menu:
     weight: 76
 hero: multimedia/imagenes.png
 tags:
-- Embedded Systems
+- Embedded
 - Arduino
 categories:
-- Embedded Systems
+- Embedded
 ---
 
 ## Overview

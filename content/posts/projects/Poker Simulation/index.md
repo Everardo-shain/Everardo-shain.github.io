@@ -10,10 +10,10 @@ menu:
     weight: 65
 hero: multimedia/imagenes.png
 tags:
-- Software development
+- Software
 - C
 categories:
-- Software development
+- Software
 ---
 
 ## Overview

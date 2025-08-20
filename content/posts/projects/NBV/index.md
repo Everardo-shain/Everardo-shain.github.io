@@ -10,7 +10,6 @@ menu:
     weight: 66
 hero: multimedia/imagenes.png
 tags:
-- Data and Optimization
 - Optimization
 - C
 categories:

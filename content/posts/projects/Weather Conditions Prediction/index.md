@@ -10,7 +10,6 @@ menu:
     weight: 88
 hero: multimedia/imagenes.png
 tags:
-- Data and Optimization
 - Data Science
 - Machine Learning
 - Python

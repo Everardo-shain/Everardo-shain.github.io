@@ -22,7 +22,7 @@ buttons:
   filter: "data and optimization"
 
 - name: Software
-  filter: "software development"
+  filter: "software"
 
 - name: Embedded
   filter: "embedded"
@@ -62,8 +62,8 @@ projects:
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
   role: Developer
   summary: Programmed with C a poker simulator that evaluated the input hands and ran a Monte Carlo simulation to predict the winner, heavily using arrays and memory management, plus writing several test cases.
-  tags: ["software development", "c"]
-  categories: ["featured", "software development"]
+  tags: ["software", "c"]
+  categories: ["featured", "software"]
 
 - name: Northeastern Home Goods Vehicle Routing
   image: /images/sections/projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
@@ -247,7 +247,7 @@ projects:
 - name: Car Alarm System
   image: /images/sections/projects/Car Alarm System/multimedia/imagenes.png
   role: Developer
-  summary: Programmed on assembly language the Proteus circuit of a car alarm system with MPLAB X IDE on a PIC16F84A microcontroller by including the car key buttons, plus light and sound indicators.
+  summary: Programmed on assembly language the Proteus circuit of a car alarm system with MPLAB X IDE on a PIC16F84A microcontroller by simulating doors and key buttons, plus light and sound indicators.
   tags: ["embedded", "proteus","assembly","microcontroller"]
   categories: ["embedded"]
 
@@ -270,8 +270,8 @@ projects:
   image: /images/sections/projects/Audio Filtering/multimedia/imagenes.png
   role: Developer
   summary: Programmed on MATLAB an audio filtering system that took a piece of a song and added high frequency noise to then filter it using a low-pass filter to return to the original song.
-  tags: ["software development", "signal processing", "matlab"]
-  categories: ["software development"]
+  tags: ["software", "signal processing", "matlab"]
+  categories: ["software"]
 
 - name: Cleaner Robot
   image: /images/sections/projects/Cleaner Robot/multimedia/imagenes.png
@@ -285,16 +285,16 @@ projects:
   image: /images/sections/projects/Millipede Video Game/multimedia/imagenes.png
   role: Developer
   summary: Programmed on LabVIEW a video game similar to Millipede from Atari, with the goal of surviving through 20 levels of 5 seconds each, with 10 ammunition and 3 lives.
-  tags:  ["software development", "labview"]
-  categories: ["software development"]
+  tags:  ["software", "labview"]
+  categories: ["software"]
   video: https://youtu.be/ofYekjYC_y0
 
 - name: Vending Machine
   image: /images/sections/projects/Vending Machine/multimedia/imagenes.png
   role: Developer
   summary: Programmed a simulated vending machine on LabVIEW, capable of serving 3 drinks while counting coins and available drinks to assure both change and dispensing availability.
-  tags: ["software development", "labview"]
-  categories: ["software development"]
+  tags: ["software", "labview"]
+  categories: ["software"]
   video: https://youtu.be/WnUSUwC09L8
 
 - name: Basketball Game
@@ -308,19 +308,19 @@ projects:
   image: /images/sections/projects/Router Access/multimedia/imagenes.png
   role: Developer
   summary: Coded with C++ a router access validation program, where users get an assigned access level if their account and password match the database, plus also adding their connection date into an access list file.
-  tags: ["software development", "c++"]
-  categories: ["software development"]
+  tags: ["software", "c++"]
+  categories: ["software"]
 
 - name: Payroll Software
   image: /images/sections/projects/Payroll Software/multimedia/imagenes.png
   role: Developer
   summary: Coded with C++ a program that makes payroll registrations on a text file database and makes salary queries by payroll, country, division and department plus a complete report with all entries.
-  tags: ["software development", "c++"]
-  categories: ["software development"]
+  tags: ["software", "c++"]
+  categories: ["software"]
 
 - name: Battleship
   image: /images/sections/projects/Battleship/multimedia/imagenes.png
   role: Developer
   summary: Programmed with C++ a two-player battleship game that requested both boards as text files and displayed them on an executable file, asking for both players’ moves and showing the final result.
-  tags: ["software development", "c++"]
-  categories: ["software development"]
+  tags: ["software", "c++"]
+  categories: ["software"]
