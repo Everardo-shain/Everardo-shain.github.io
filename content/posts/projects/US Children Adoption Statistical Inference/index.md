@@ -10,7 +10,6 @@ menu:
     weight: 68
 hero: multimedia/imagenes.png
 tags:
-- Data and Optimization
 - Data Science
 - Statistical Inference
 - R

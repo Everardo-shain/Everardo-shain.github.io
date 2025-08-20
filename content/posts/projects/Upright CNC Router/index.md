@@ -10,7 +10,6 @@ menu:
     weight: 84
 hero: multimedia/imagenes.png
 tags:
-- Control and Navigation
 - Control Systems
 - MATLAB
 categories:

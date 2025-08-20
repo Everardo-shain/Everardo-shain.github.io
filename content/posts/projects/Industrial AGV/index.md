@@ -10,7 +10,6 @@ menu:
     weight: 77
 hero: multimedia/imagenes.png
 tags:
-- Control and Navigation
 - Navigation
 - Arduino
 - ROS
