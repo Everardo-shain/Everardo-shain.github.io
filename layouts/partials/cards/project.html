@@ -5,19 +5,20 @@
   <div class="card mt-1">
     <div class="card">
       {{ if .image }}
-      <a href="{{ if .image }}{{ .image }}{{ else }}javascript:void(0){{ end }}" {{ if .image}}target="_blank" rel="noopener"{{ end }}>
-      <div class="card-head">
-        {{ $imageImage:= resources.Get .image}}
-        {{ if $imageImage }}
-          {{ $imageResized := $imageImage.Resize "1000x" }}
-          {{ $imageWebp := $imageImage.Resize "1000x webp" }}
-          <picture>
-          <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp">
-          <img class="card-img-top" src="{{ $imageResized.RelPermalink }}" alt="{{ .name }}">
-          </picture>
-        {{ end }}
-      </div>
-      </a>
+      {{ $imageImage:= resources.Get .image}}
+      {{ if $imageImage }}
+        {{ $imageResized := $imageImage.Resize "1000x" }}
+        {{ $imageWebp := $imageImage.Resize "1000x webp" }}
+        <a href="{{ $imageImage.RelPermalink }}" target="_blank" rel="noopener">
+        <div class="card-head">
+
+            <picture>
+            <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp">
+            <img class="card-img-top" src="{{ $imageResized.RelPermalink }}" alt="{{ .name }}">
+            </picture>
+        </div>
+        </a>
+      {{ end }}
       {{ end }}
       <div class="card-header">
         <div>
