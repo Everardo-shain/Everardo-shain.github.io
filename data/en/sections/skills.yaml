@@ -13,6 +13,7 @@ section:
 buttons:
 - name: All
   filter: "all"
+  icon: "fas fa-border-all"
 - name: Mechatronics
   filter: "mechatronics"
 - name: Data Analysis & Programming

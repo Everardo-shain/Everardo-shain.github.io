@@ -16,6 +16,7 @@
     <div class="btn-group flex-wrap" role="group" id="skill-filter-buttons">
       {{ range .buttons }}
       <button type="button" class="btn btn-dark skill-filtr-control" data-filter="{{ .filter }}">
+        {{ if .icon }}<i class="{{ .icon }}"></i>{{ end }}
         {{ .name }}
       </button>
       {{ end }}

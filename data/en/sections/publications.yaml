@@ -12,6 +12,7 @@ section:
 buttons:
 - name: All
   filter: "all"
+  icon: "fas fa-border-all"
 - name: "Article"
   filter: "article"
 - name: "Thesis"
