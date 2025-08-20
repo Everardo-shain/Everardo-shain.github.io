@@ -81,8 +81,8 @@
                 class="btn btn-outline-info btn-sm"
                 href="{{ .url }}"
                 target="#"
-                >{{ i18n "project_details" }}</a
-              >
+                ><i class="fas fa-circle-info me-1"></i>{{ i18n "project_details" }}
+              </a>
             </span>
             {{ else if .video }}
             <span>
@@ -90,7 +90,7 @@
                 class="btn btn-outline-info btn-sm"
                 href="{{ .video }}"
                 target="#"
-                >{{ i18n "project_video" }}</a
+                ><i class="fas fa-play me-1"></i>{{ i18n "project_video" }}</a
               >
             </span>
             {{ end }}

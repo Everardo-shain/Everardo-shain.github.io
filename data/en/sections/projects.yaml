@@ -12,9 +12,11 @@ section:
 buttons:
 - name: Featured
   filter: "featured"
+  icon: "fas fa-star"
 
 - name: All
   filter: "all"
+  icon: "fas fa-border-all"
 
 - name: Data & Optimization
   filter: "data and optimization"
@@ -54,13 +56,14 @@ projects:
   summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
   tags: ["optimization", "c"]
   categories: ["data and optimization", "featured"]
+  url: https://www.example.com/
 
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
   role: Developer
   summary: Programmed with C a poker simulator that evaluated the input hands and ran a Monte Carlo simulation to predict the winner, heavily using arrays and memory management, plus writing several test cases.
   tags: ["software development", "c"]
-  categories: ["software development"]
+  categories: ["featured", "software development"]
 
 - name: Northeastern Home Goods Vehicle Routing
   image: /images/sections/projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
@@ -89,6 +92,7 @@ projects:
   summary: Contributed to the navigation programming of an industrial Ackermann AGV using Arduino, ROS on a NVIDIA Jetson Xavier device and a RPLIDAR sensor, successfully avoiding collisions inside a laboratory.
   tags: ["navigation", "arduino", "ros"]
   categories: ["featured", "control and navigation"]
+  video: https://youtu.be/e6znDIl7ap0
 
 - name: Industrial Robotics Tower of Hanoi
   image: /images/sections/projects/Industrial Robotics Tower of Hanoi/multimedia/imagenes.png
@@ -96,6 +100,7 @@ projects:
   summary: Coded the inverse kinematics of a UR10e robot using Python and tested it by solving a Tower of Hanoi with 7 movements where the relative error of the robot pose was under 0.1%.
   tags: ["automation","python","ur10e"]
   categories: ["automation"]
+  video: https://youtu.be/PPkQLMn-2hs
 
 - name: Car Design
   image: /images/sections/projects/Car Design/multimedia/imagenes.png
@@ -117,6 +122,7 @@ projects:
   summary: Programmed a laser harp using Arduino IDE on an ESP32, capable of reproducing 8 different 8-bit musical notes on an EK1236 amplifier using multiple KY-008 sensors as laser strings.
   tags:  ["embedded", "arduino"]
   categories: ["embedded"]
+  video: https://youtu.be/3o-LQzRDszI
 
 - name: Step Ladder Assembly
   image: /images/sections/projects/Step Ladder Assembly/multimedia/imagenes.png
@@ -131,6 +137,7 @@ projects:
   summary: Programmed on Arduino a Mini Sumo robot for international competition Robomatrix 2022 as a member of Robociety student association, successfully beating an opponent without falling from the ring.
   tags: ["embedded", "arduino"]
   categories: ["embedded"]
+  video: https://youtu.be/fhyYnLaLY4I
 
 - name: Bicycle Assembly
   image: /images/sections/projects/Bicycle Assembly/multimedia/imagenes.png
@@ -145,6 +152,7 @@ projects:
   summary: Programmed on Arduino and MATLAB the control system of a laser turret that successfully tracked a red circle using computer vision and computerized control.
   tags: ["control systems", "matlab", "arduino"]
   categories: ["control and navigation"]
+  video: https://youtu.be/KQ9zRreEm9I
 
 - name: Conveyor Belt
   image: /images/sections/projects/Conveyor Belt/multimedia/imagenes.png
@@ -152,6 +160,7 @@ projects:
   summary: Programmed a conveyor belt using ladder on a PLC with TIA Portal, fulfilling the requirements of filling 5 bags with 5 items each while rejecting undesired objects, plus sealing each bag with heat.
   tags: ["automation", "plc"]
   categories: ["automation"]
+  video: https://youtu.be/xhTHO3_LCNc
 
 - name: Scooter Design
   image: /images/sections/projects/Scooter Design/multimedia/imagenes.png
@@ -172,7 +181,8 @@ projects:
   role: Developer
   summary: Programmed the control system of a simulated Upright CNC Router with Simulink in MATLAB, achieving the drawing of 3 basic shapes and the trajectory between 3 input coordinates.
   tags: ["control systems", "matlab"]
-  categories: ["control and navigation"]
+  categories: ["featured", "control and navigation"]
+  video: https://youtu.be/5scmf3VBpIU
 
 - name: Smart Bulb
   image: /images/sections/projects/Smart Bulb/multimedia/imagenes.png
@@ -180,6 +190,7 @@ projects:
   summary: Developed a smart bulb by creating an app with MIT App Inventor with a scroll bar to regulate via Bluetooth the intensity of a bulb in an electronic circuit controlled by a PIC16F877A microcontroller.
   tags: ["embedded", "microcontroller"]
   categories: ["embedded"]
+  video: https://youtu.be/FWT_69kZMYQ
 
 - name: Robofest 2022 | Robociety
   image: /images/sections/projects/Robofest 2022/multimedia/imagenes.png
@@ -187,6 +198,7 @@ projects:
   summary: Programmed on Arduino a Sumo robot for international competition Robofest 2022 as a member of Robociety student association, successfully pushing 3 bottles off the table without falling.
   tags: ["embedded", "arduino"]
   categories: ["featured", "embedded"]
+  video: https://youtu.be/e-Wuxif8ChU
 
 - name: Airline Passengers Prediction
   image: /images/sections/projects/Airline Passengers Prediction/multimedia/imagenes.png
@@ -201,6 +213,7 @@ projects:
   summary: Contributed to the design and programming of a robotic gripper with Arduino, mounted on a UR10e robot successfully completing the tasks of collecting a tomato and placing it on a container.
   tags: ["automation", "arduino", "ur10e"]
   categories: ["featured", "automation"]
+  video: https://youtu.be/NaoElE4skmY
   
 - name: Car Motor System
   image: /images/sections/projects/Car Motor System/multimedia/imagenes.png
@@ -215,6 +228,7 @@ projects:
   summary: Programmed a simulated 4-floor elevator using SCL and ladder language on a PLC with TIA Portal, fulfilling tasks of a real elevator including weight limit, alarm, variable speed, pressing memory and an HMI.
   tags: ["automation", "plc"]
   categories: ["featured", "automation"]
+  video: https://youtu.be/OM1dn-VYwz8
 
 - name: Power Source
   image: /images/sections/projects/Power Source/multimedia/imagenes.png
@@ -250,6 +264,7 @@ projects:
   summary: Programmed with ladder language the PLC of a LogixPro traffic light simulator, defining 70 and 30 seconds for green and yellow lights, plus 100 seconds when using the crosswalk button.
   tags: ["automation", "plc"]
   categories: ["automation"]
+  video: https://youtu.be/Rve9ntNXj7c
 
 - name: Audio Filtering
   image: /images/sections/projects/Audio Filtering/multimedia/imagenes.png
@@ -264,6 +279,7 @@ projects:
   summary: Programmed a simulated robot on LabVIEW that was able to collect 8 cans and place them all on a container at the finish line within 4 minutes while avoiding 3 obstacles.
   tags: ["navigation", "labview"]
   categories: ["control and navigation"]
+  video: https://youtu.be/SyzPRuBWdbQ
 
 - name: Millipede Video Game
   image: /images/sections/projects/Millipede Video Game/multimedia/imagenes.png
@@ -271,6 +287,7 @@ projects:
   summary: Programmed on LabVIEW a video game similar to Millipede from Atari, with the goal of surviving through 20 levels of 5 seconds each, with 10 ammunition and 3 lives.
   tags:  ["software development", "labview"]
   categories: ["software development"]
+  video: https://youtu.be/ofYekjYC_y0
 
 - name: Vending Machine
   image: /images/sections/projects/Vending Machine/multimedia/imagenes.png
@@ -278,6 +295,7 @@ projects:
   summary: Programmed a simulated vending machine on LabVIEW, capable of serving 3 drinks while counting coins and available drinks to assure both change and dispensing availability.
   tags: ["software development", "labview"]
   categories: ["software development"]
+  video: https://youtu.be/WnUSUwC09L8
 
 - name: Basketball Game
   image: /images/sections/projects/Basketball Game/multimedia/imagenes.png
