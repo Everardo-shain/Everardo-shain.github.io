@@ -1,220 +1,97 @@
-import { getDeviceState } from '../core'
+function showAchievements() {
+  const gallery = document.getElementById('gallery');
+  const holder = document.getElementById('achievements-holder');
+  if (!gallery || !holder) return;
 
-function fourColumnRow (gallery, entries, i) {
-  const entry1 = document.createElement('div')
-  entry1.classList.add('col-lg-6', 'm-0', 'p-0')
-  entry1.appendChild(entries[i].cloneNode(true))
-  entry1.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry1)
-  i++
+  gallery.innerHTML = "";
 
-  const entry2 = document.createElement('div')
-  entry2.classList.add('col-lg-3', 'm-0', 'p-0')
-  entry2.appendChild(entries[i].cloneNode(true))
-  entry2.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry2)
-  i++
+  const children = holder.children;
 
-  const entry3 = document.createElement('div')
-  entry3.classList.add('col-lg-3', 'm-0', 'p-0')
-  entry3.appendChild(entries[i].cloneNode(true))
-  entry3.children[0].classList.add('img-type-2')
-  i++
-  entry3.appendChild(entries[i].cloneNode(true))
-  entry3.children[1].classList.add('img-type-2')
-  gallery.appendChild(entry3)
-  i++
-}
+  Array.from(children).forEach(child => {
+    const clone = child.cloneNode(true);
+    clone.classList.remove("d-none");
+    gallery.appendChild(clone);
 
-function fourColumnReversedRow (gallery, entries, i) {
-  const entry1 = document.createElement('div')
-  entry1.classList.add('col-lg-3', 'm-0', 'p-0')
-  entry1.appendChild(entries[i].cloneNode(true))
-  entry1.children[0].classList.add('img-type-2')
-  i++
-  entry1.appendChild(entries[i].cloneNode(true))
-  entry1.children[1].classList.add('img-type-2')
-  gallery.appendChild(entry1)
-  i++
+    const picture = clone.querySelector("picture");
+    const img = clone.querySelector(".achievement-img");
+    const source = picture ? picture.querySelector("source") : null;
 
-  const entry2 = document.createElement('div')
-  entry2.classList.add('col-lg-3', 'm-0', 'p-0')
-  entry2.appendChild(entries[i].cloneNode(true))
-  entry2.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry2)
-  i++
+    const smallSrc = clone.dataset.small;
+    const largeSrc = clone.dataset.large;
+    const smallSrcWebp = clone.dataset.smallWebp;
+    const largeSrcWebp = clone.dataset.largeWebp;
 
-  const entry3 = document.createElement('div')
-  entry3.classList.add('col-lg-6', 'm-0', 'p-0')
-  entry3.appendChild(entries[i].cloneNode(true))
-  entry3.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry3)
-  i++
-}
+    const caption = clone.querySelector(".caption");
+    const title = clone.querySelector(".title");
 
-function threeColumnRow (gallery, entries, i) {
-  console.log(i)
-  const entry1 = document.createElement('div')
-  entry1.classList.add('col-lg-6', 'col-md-6', 'm-0', 'p-0')
-  entry1.appendChild(entries[i].cloneNode(true))
-  entry1.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry1)
-  i++
+    // Click anywhere to expand/collapse
+    clone.addEventListener("click", () => {
+      const isExpanded = clone.classList.contains("achievement-details");
+      const allEntries = gallery.querySelectorAll(".achievement-entry");
 
-  const entry2 = document.createElement('div')
-  entry2.classList.add('col-lg-3', 'col-md-3', 'm-0', 'p-0')
-  entry2.appendChild(entries[i].cloneNode(true))
-  entry2.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry2)
-  i++
+      if (isExpanded) {
+        // Collapse: restore previous scroll position
+        clone.classList.remove("achievement-details");
+        gallery.classList.remove("expanded");
 
-  const entry3 = document.createElement('div')
-  entry3.classList.add('col-lg-3', 'col-md-3', 'm-0', 'p-0')
-  entry3.appendChild(entries[i].cloneNode(true))
-  entry3.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry3)
-  i++
-}
+        if (img && smallSrc) img.src = smallSrc;
+        if (source && smallSrcWebp) source.srcset = smallSrcWebp;
+        if (caption) caption.classList.toggle("hidden");
+        if (title) title.classList.toggle("hidden");
 
-function threeColumnReversedRow (gallery, entries, i) {
-  const entry1 = document.createElement('div')
-  entry1.classList.add('col-lg-3', 'col-md-3', 'm-0', 'p-0')
-  entry1.appendChild(entries[i].cloneNode(true))
-  entry1.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry1)
-  i++
+        allEntries.forEach(e => e.classList.remove("hidden"));
 
-  const entry2 = document.createElement('div')
-  entry2.classList.add('col-lg-3', 'col-md-3', 'm-0', 'p-0')
-  entry2.appendChild(entries[i].cloneNode(true))
-  entry2.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry2)
-  i++
-
-  const entry3 = document.createElement('div')
-  entry3.classList.add('col-lg-6', 'col-md-3', 'm-0', 'p-0')
-  entry3.appendChild(entries[i].cloneNode(true))
-  entry3.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry3)
-  i++
-}
-
-function twoColumnRow (gallery, entries, i) {
-  const entry1 = document.createElement('div')
-  entry1.classList.add('col-6', 'm-0', 'p-0')
-  entry1.appendChild(entries[i].cloneNode(true))
-  entry1.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry1)
-  i++
-
-  const entry2 = document.createElement('div')
-  entry2.classList.add('col-6', 'm-0', 'p-0')
-  entry2.appendChild(entries[i].cloneNode(true))
-  entry2.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry2)
-  i++
-}
-
-function singleColumnRow (gallery, entries, i) {
-  const entry1 = document.createElement('div')
-  entry1.classList.add('col-12', 'm-0', 'p-0')
-  entry1.appendChild(entries[i].cloneNode(true))
-  entry1.children[0].classList.add('img-type-1')
-  gallery.appendChild(entry1)
-  i++
-}
-
-function showAchievements () {
-  const { isLaptop, isTablet } = getDeviceState()
-  // show achievements from achievements-holder div
-  const gallery = document.getElementById('gallery')
-  if (gallery == null) {
-    return
-  }
-  gallery.innerHTML = ''
-  const entries = document.getElementById('achievements-holder').children
-  let len = entries.length
-  let i = 0
-  let rowNumber = 1
-  while (i < len) {
-    if (isLaptop) {
-      if (i + 4 <= len) {
-        if (rowNumber % 2) {
-          fourColumnRow(gallery, entries, i)
-        } else {
-          fourColumnReversedRow(gallery, entries, i)
+        // Scroll back to the position before expanding
+        if (clone.dataset.scrollY) {
+          window.scrollTo({ top: parseFloat(clone.dataset.scrollY), behavior: "smooth" });
         }
-        i += 4
-      } else if (i + 3 <= len) {
-        if (rowNumber % 2) {
-          threeColumnRow(gallery, entries, i)
-        } else {
-          threeColumnReversedRow(gallery, entries, i)
-        }
-        i += 3
-      } else if (i + 2 <= len) {
-        twoColumnRow(gallery, entries, i)
-        i += 2
-      } else {
-        singleColumnRow(gallery, entries, i)
-        i++
-      }
-    } else if (isTablet) {
-      if (i + 2 <= len) {
-        twoColumnRow(gallery, entries, i)
-        i += 2
-      } else {
-        singleColumnRow(gallery, entries, i)
-        i++
-      }
-    } else {
-      singleColumnRow(gallery, entries, i)
-      i++
-    }
-    rowNumber++
-  }
 
-  // show full image on click
-  const elements = document.getElementsByClassName('achievement-entry')
-  len = elements.length
-  for (let i = 0; i < len; i++) {
-    elements[i].onclick = function () {
-      const achievements = document.getElementsByClassName('achievement-entry')
-      const len2 = achievements.length
-      for (let j = 0; j < len2; j++) {
-        achievements[j].classList.toggle('hidden')
-      }
-      this.classList.toggle('achievement-details')
-      this.classList.toggle('hidden')
-      this.parentElement.classList.toggle('col-lg-12')
-      this.parentElement.classList.toggle('col-md-12')
-      this.parentElement.classList.toggle('col-sm-12')
-      if (this.children.SmallImage.hasAttribute('active')) {
-        const mainLogo = this.children.LargeImage.getAttribute('Style')
-        this.children.LargeImage.setAttribute('active', true)
-        this.children.SmallImage.removeAttribute('active')
-
-        this.setAttribute('Style', mainLogo)
       } else {
-        const mainLogo = this.children.SmallImage.getAttribute('Style')
-        this.children.SmallImage.setAttribute('active', true)
-        this.children.LargeImage.removeAttribute('active')
-        this.setAttribute('Style', mainLogo)
-      }
+        // Store current scroll position before expanding
+        clone.dataset.scrollY = window.scrollY;
 
-      if (this.children.caption !== undefined) {
-        this.children.caption.classList.toggle('hidden')
+        // Expand: hide all other entries
+        clone.classList.add("achievement-details");
+        gallery.classList.add("expanded");
+
+        if (img && largeSrc) img.src = largeSrc;
+        if (source && largeSrcWebp) source.srcset = largeSrcWebp;
+        if (caption) caption.classList.toggle("hidden");
+        if (title) title.classList.toggle("hidden");
+
+        allEntries.forEach(e => {
+          if (e !== clone) e.classList.add("hidden");
+        });
+
+        gallery.scrollIntoView({ behavior: "smooth", block: "end" });
       }
-      if (this.children['enlarge-icon'] !== undefined) {
-        this.getElementsByClassName('fa-xmark')[0].classList.toggle('hidden')
-        this.getElementsByClassName('fa-magnifying-glass-plus')[0].classList.toggle('hidden')
-      }
-      if (this.children['achievement-title'] !== undefined) {
-        this.children['achievement-title'].classList.toggle('hidden')
-      }
-    }
-  }
+    });
+  });
+
+  // Initialize Masonry
+  window.msnry = new Masonry(gallery, {
+    itemSelector: '.achievement-entry',
+    columnWidth: '.achievement-entry',
+    percentPosition: true,
+    gutter: 15
+  });
+
+  // Preload large images for better expand performance
+  gallery.querySelectorAll(".achievement-entry").forEach(clone => {
+    const large = clone.dataset.large;
+    const largeWebp = clone.dataset.largeWebp;
+
+    if (large) new Image().src = large;
+    if (largeWebp) new Image().src = largeWebp;
+  });
 }
 
-['DOMContentLoaded', 'resize'].forEach((event) =>
-  document.addEventListener(event, showAchievements))
+// Initialize on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', showAchievements);
+
+// Debounced resize for responsive Masonry
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(showAchievements, 200);
+});

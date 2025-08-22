@@ -1,29 +1,35 @@
 {{ $achievementImage := resources.Get .image }}
-{{ $achievementImageLg := ""}}
-{{ $achievementImageSm := ""}}
+{{ $achievementImageLg := "" }}
+{{ $achievementImageSm := "" }}
+{{ $achievementImageLgWebp := "" }}
+{{ $achievementImageSmWebp := "" }}
 
-{{/* resize the images. don't resize svg image because its not supported */}}
 {{ if $achievementImage }}
-  {{ $achievementImageSm = $achievementImage.Resize "x700" }}
-  {{ $achievementImageSm =  $achievementImageSm.RelPermalink }}
-  {{ $achievementImageLg = $achievementImage.Resize "x1500" }}
-  {{ $achievementImageLg =  $achievementImageLg.RelPermalink }}
+  {{ $achievementImageSm = ($achievementImage.Resize "x500").RelPermalink }}
+  {{ $achievementImageLg = ($achievementImage.Resize "x1500").RelPermalink }}
+  {{ $achievementImageSmWebp = ($achievementImage.Resize "x500 webp").RelPermalink }}
+  {{ $achievementImageLgWebp = ($achievementImage.Resize "x1500 webp").RelPermalink }}
 {{ end }}
-{{/*  don't use "background-image: url('{{ $achievementImageSm }}');" Otherwise the images won't show in https://themes.gohugo.io/ */}}
-<div 
-  class="achievement-entry text-center"
-  style="background-image: url('{{ $achievementImageSm }}');"
->
-  <i class="fa-solid fa-xmark hidden"></i>
-  <i class="fa-solid fa-magnifying-glass-plus" id="enlarge-icon"></i>
+
+<div class="achievement-entry text-center d-none"
+     data-small="{{ $achievementImageSm }}"
+     data-large="{{ $achievementImageLg }}"
+     data-small-webp="{{ $achievementImageSmWebp }}"
+     data-large-webp="{{ $achievementImageLgWebp }}">
+  
+  <picture>
+  <source srcset="{{ $achievementImageSmWebp }}" type="image/webp">
+  <img src="{{ $achievementImageSm }}" alt="{{ .title }}" class="achievement-img" >
+  </picture>
+
+  <i class="fa-solid fa-up-right-and-down-left-from-center expand-icon" id="expand-icon"></i>
+  <i class="fa-solid fa-down-left-and-up-right-to-center collapse-icon" id="collapse-icon"></i>
   <h4 class="title" id="achievement-title">{{ .title }}</h4>
   <div class="caption hidden col-lg-6 text-start" id="caption">
     <h4>{{ .title }}</h4>
     <p>{{ .summary | markdownify }}</p>
     {{ if .url }}
-      <a class="btn btn-info ms-1 ps-2 mb-2" href="{{ .url }}" target="_blank" rel="noopener" role="button">{{ i18n "project_details"}}</a>
+      <a class="btn btn-info ms-1 ps-2 mb-2" href="{{ .url }}" target="_blank" rel="noopener" role="button">{{ i18n "project_details" }}</a>
     {{ end }}
   </div>
-  <span style="background-image: url('{{ $achievementImageSm }}');" class="d-none" id="SmallImage" active="true"></span>
-<span  style="background-image: url('{{ $achievementImageLg }}');" class="d-none" id="LargeImage"></span>
 </div>

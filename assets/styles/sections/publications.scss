@@ -4,9 +4,9 @@
   .card {
     background: get-light-color('bg-card');
     border-top: 2px solid get-light-color('accent-color');
-    border-left: 1px solid get-light-color('bg-primary');
-    border-bottom: 1px solid get-light-color('bg-primary');
-    border-right: 1px solid get-light-color('bg-primary');
+    border-left: 1px solid get-light-color('bg-card');
+    border-bottom: 1px solid get-light-color('bg-card');
+    border-right: 1px solid get-light-color('bg-card');
     &:hover,
     &:focus {
       border-top: 2px solid get-light-color('hover-over-accent-color');
@@ -122,9 +122,9 @@ html[data-theme='dark'] {
     .card {
       background: get-dark-color('bg-card');
       border-top: 2px solid get-dark-color('accent-color');
-      border-left: 1px solid get-dark-color('bg-primary');
-      border-bottom: 1px solid get-dark-color('bg-primary');
-      border-right: 1px solid get-dark-color('bg-primary');
+      border-left: 1px solid get-dark-color('bg-card');
+      border-bottom: 1px solid get-dark-color('bg-card');
+      border-right: 1px solid get-dark-color('bg-card');
       &:hover,
       &:focus {
         border-top: 2px solid get-dark-color('hover-over-accent-color');

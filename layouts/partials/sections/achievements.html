@@ -12,8 +12,7 @@
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
   {{ end }}
   <div class="container">
-    <div class="row" id="gallery">
-    </div>
+    <div id="gallery"></div>
   </div>
   <!-- achievements-holder holds achievement-entry -->
   <div class="d-none" id="achievements-holder">
@@ -22,3 +21,6 @@
     {{ end }}
   </div>
 </div>
+
+<!-- Masonry.js library -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
