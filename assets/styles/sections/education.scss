@@ -83,9 +83,9 @@
           margin-top: 0.5rem;
           margin-bottom: 0.5rem;
           border-left: 2px solid get-light-color('accent-color');
-          border-top: 1px solid get-light-color('bg-primary');
-          border-bottom: 1px solid get-light-color('bg-primary');
-          border-right: 1px solid get-light-color('bg-primary');
+          border-top: 1px solid get-light-color('bg-card');
+          border-bottom: 1px solid get-light-color('bg-card');
+          border-right: 1px solid get-light-color('bg-card');
           border-radius: 5px;
 
           h5 {
@@ -218,9 +218,9 @@ html[data-theme='dark'] {
         .details {
           .degree-info {
             border-left: 2px solid get-dark-color('accent-color');
-            border-top: 1px solid get-dark-color('bg-primary');
-            border-bottom: 1px solid get-dark-color('bg-primary');
-            border-right: 1px solid get-dark-color('bg-primary');
+            border-top: 1px solid get-dark-color('bg-card');
+            border-bottom: 1px solid get-dark-color('bg-card');
+            border-right: 1px solid get-dark-color('bg-card');
 
             .timeframe {
               color: get-dark-color('muted-text-color');

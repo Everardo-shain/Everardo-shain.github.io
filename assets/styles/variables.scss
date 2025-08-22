@@ -34,7 +34,7 @@ $themes: (
     'hover-over-button-color': darken($light-card, 10%),
     'text-over-accent-color': $light-card,
     'bg-primary': #ffffff,
-    'bg-primary-inverse': #1a1a1a,
+    'bg-primary-inverse': #181818,
     'bg-secondary': #f9f9f9,
     'bg-card': $light-card,
     'heading-color': #000000,
@@ -45,27 +45,30 @@ $themes: (
     'highlight-color': #bdbdbd,
     'footer-color': $light-card,
     'progress-color': $light-accent-color,
+    'box-over-image': $light-card,
+    'text-over-box': #2b2b2b,
 
   ),
 
   'dark': (
-
     'accent-color': $dark-accent-color,
     'hover-over-accent-color': lighten($dark-accent-color, 10%),
     'hover-over-button-color': lighten($dark-card, 10%),
     'text-over-accent-color': $dark-card,
     'bg-primary': #181818,
-    'bg-primary-inverse': #1a1a1a,
+    'bg-primary-inverse': #ffffff,
     'bg-secondary': #1f1f1f,
     'bg-card': $dark-card,
     'heading-color': #ffffff,
     'text-color': #e0e0e0,
-    'inverse-text-color': #e0e0e0,
+    'inverse-text-color': #2b2b2b,
     'muted-text-color': #9c9c9c,
     'inline-code-color': #bbbbbb,
     'highlight-color': #444444,
     'footer-color': $dark-card,
     'progress-color': $dark-accent-color,
+    'box-over-image': $dark-card,
+    'text-over-box': #e0e0e0,
   ),
 
 );
