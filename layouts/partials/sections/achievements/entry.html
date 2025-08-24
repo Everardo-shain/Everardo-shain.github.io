@@ -16,15 +16,21 @@
      data-large="{{ $achievementImageLg }}"
      data-small-webp="{{ $achievementImageSmWebp }}"
      data-large-webp="{{ $achievementImageLgWebp }}">
-  
-  <picture>
-  <source srcset="{{ $achievementImageSmWebp }}" type="image/webp">
-  <img src="{{ $achievementImageSm }}" alt="{{ .title }}" class="achievement-img" >
-  </picture>
 
-  <i class="fa-solid fa-up-right-and-down-left-from-center expand-icon" id="expand-icon"></i>
-  <i class="fa-solid fa-down-left-and-up-right-to-center collapse-icon" id="collapse-icon"></i>
+  <!-- Image wrapper for relative positioning -->
+  <div class="achievement-image-wrapper">
+    <picture>
+      <source srcset="{{ $achievementImageSmWebp }}" type="image/webp">
+      <img src="{{ $achievementImageSm }}" alt="{{ .title }}" class="achievement-img">
+    </picture>
+
+    <!-- Icons now positioned relative to the wrapper (image) -->
+    <i class="fa-solid fa-up-right-and-down-left-from-center expand-icon"></i>
+    <i class="fa-solid fa-down-left-and-up-right-to-center collapse-icon"></i>
+  </div>
+
   <h4 class="title" id="achievement-title">{{ .title }}</h4>
+
   <div class="caption hidden col-lg-6 text-start" id="caption">
     <h4>{{ .title }}</h4>
     <p>{{ .summary | markdownify }}</p>
