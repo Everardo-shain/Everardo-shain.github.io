@@ -24,14 +24,43 @@ function showAchievements() {
     const caption = clone.querySelector(".caption");
     const title = clone.querySelector(".title");
 
+    const wrapper = clone.querySelector(".achievement-image-wrapper");
+
+    //Hover/focus handling for parent class
+    [caption, wrapper].forEach(el => {
+      if (!el) return;
+
+      el.addEventListener("mouseenter", () => {
+        if (clone.classList.contains("achievement-details")) { 
+          clone.classList.add("achievement-details-hover");
+        }
+      });
+
+      el.addEventListener("mouseleave", () => {
+        clone.classList.remove("achievement-details-hover");
+      });
+
+      el.addEventListener("focus", () => {
+        if (clone.classList.contains("achievement-details")) { 
+          clone.classList.add("achievement-details-hover");
+        }
+      });
+
+      el.addEventListener("blur", () => {
+        clone.classList.remove("achievement-details-hover");
+      });
+    });
+
     // Click anywhere to expand/collapse
-    clone.addEventListener("click", () => {
+    clone.addEventListener("click", (e) => {
+      if(!e.target.closest(".achievement-image-wrapper,.caption")) return;
       const isExpanded = clone.classList.contains("achievement-details");
       const allEntries = gallery.querySelectorAll(".achievement-entry");
 
       if (isExpanded) {
         // Collapse: restore previous scroll position
         clone.classList.remove("achievement-details");
+        clone.classList.remove("achievement-details-hover");
         gallery.classList.remove("expanded");
 
         if (img && smallSrc) img.src = smallSrc;
@@ -52,6 +81,7 @@ function showAchievements() {
 
         // Expand: hide all other entries
         clone.classList.add("achievement-details");
+        clone.classList.remove("achievement-details-hover");
         gallery.classList.add("expanded");
 
         if (img && largeSrc) img.src = largeSrc;
@@ -64,6 +94,17 @@ function showAchievements() {
         });
 
         gallery.scrollIntoView({ behavior: "smooth", block: "end" });
+      }
+    });
+
+    clone.addEventListener("click", (e) => {
+      if(!e.target.closest(".achievement-image-wrapper,.caption")) return;
+      const isExpanded = clone.classList.contains("achievement-details");
+      const allEntries = gallery.querySelectorAll(".achievement-entry");
+      
+      if (isExpanded) {
+        // Collapse: restore previous scroll position
+        clone.classList.add("achievement-details-hover");
       }
     });
   });
