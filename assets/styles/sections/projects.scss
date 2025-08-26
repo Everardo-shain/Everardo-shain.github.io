@@ -47,7 +47,9 @@
   .filtr-projects {
     padding: 1rem !important;
   }
-
+  .filtr-item[style*="opacity: 0"] {
+    z-index: -999;
+  }
   .project-card-footer {
     display: flex;
     .badge {

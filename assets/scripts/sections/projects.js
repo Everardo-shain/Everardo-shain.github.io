@@ -6,28 +6,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectCardHolder = document.getElementById('project-card-holder');
 
   if (projectCardHolder != null && projectCardHolder.children.length !== 0) {
+
+    // ================== Keep one filter button selected =====================
+    const projectButtons = document.querySelectorAll('.project-filtr-control');
+    let defaultFilter = 'all'; // fallback if no buttons
+
+    if (projectButtons.length > 0) {
+      // Default: use the first button’s filter
+      defaultFilter = projectButtons[0].dataset.filter;
+      projectButtons[0].classList.add('selected');
+    }
+
+    projectButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        projectButtons.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+    });
+
     // Initialize Filterizr and keep a reference
     const filterizrInstance = new Filterizr('.filtr-projects', {
       layout: 'sameWidth',
-      controlsSelector: '.project-filtr-control'
-    });
-
-    // Set default filter to 'featured'
-    filterizrInstance.filter('featured');
-
-    // ================== Keep one filter button selected =====================
-    const buttons = document.querySelectorAll('.project-filtr-control');
-
-    if (buttons.length > 0) {
-      // Default: select the first button
-      buttons[0].classList.add('selected');
-    }
-
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        buttons.forEach(b => b.classList.remove('selected'));
-        btn.classList.add('selected');
-      });
+      controlsSelector: '.project-filtr-control',
+      filter: defaultFilter
     });
   }
 });
