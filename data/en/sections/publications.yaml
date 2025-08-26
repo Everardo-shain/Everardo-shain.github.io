@@ -34,7 +34,7 @@ publications:
     summary: This paper presents the tuning and comparison of various optimization algorithms on the Next Best View (NBV) problem. A simulated 5 Degree-of-Freedom (DOF) mobile robot with a mounted simulated range sensor was used on a Virtual Reality Modeling Language (VRML) environment, and the space discretization was made using a voxel map. The optimization methods tested were Nelder-Mead, an Evolution Strategy, and Simulated Annealing. Their repeatability was tested on a laboratory model, a room with a cube and a pyramid inside it, and a study room with multiple furniture and windows.
     url: https://ieeexplore.ieee.org/document/10781375
   categories: ["article"]
-  tags: ["Article","Next Best View", "Objective Function","Optimization Algorithms"]
+  tags: ["article","next best view", "objective function","optimization algorithms"]
 - title: View planning for three-dimensional environment reconstruction using the Next Best View method
   publishedIn:
     name: Instituto Tecnológico y de Estudios Superiores de Monterrey
@@ -49,4 +49,4 @@ publications:
     summary: This master's thesis describes the impact of the objective function and optimization methods on the Next Best View problem, which consists in finding the next position that the sensor or camera needs to take to scan an object or scenery in its totality. A multi-factor objective function was designed including area and motion factors. Global optimization tasks such as a backstepping technique to escape local minima and a dynamic change in the objective function were implemented. Optimization methods such as Nelder-Mead, an Evolution Strategy, and Simulated Annealing were tuned and compared on three different scenarios.
     url: https://repositorio.tec.mx/items/e2855326-09cd-47a7-8094-6b66793b2796
   categories: ["thesis"]
-  tags: ["Thesis","Next Best View", "Objective Function","Optimization Algorithms"]
+  tags: ["thesis","next best view", "objective function","optimization algorithms"]

@@ -56,7 +56,6 @@ projects:
   summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
   tags: ["optimization", "c"]
   categories: ["data and optimization", "featured"]
-  url: https://www.example.com/
 
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png

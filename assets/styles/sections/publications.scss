@@ -58,7 +58,20 @@
   .filtr-publications {
     padding: 1rem !important;
   }
+  .tags {
+    width: 70%;
+  }
 
+  .details-btn {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    span {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
   .btn-group {
     justify-content: center;
   }
@@ -95,8 +108,7 @@
     }
     .details-btn {
       .btn {
-        margin-top: 0.5rem;
-        margin-left: auto;
+        margin-top: 0.3125rem;
       }
     }
 
@@ -105,7 +117,6 @@
         padding-left: 0.5rem;
 
         .tags {
-          flex: 100%;
           max-width: 100%;
 
           .btn {
