@@ -6,7 +6,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: $box-shadow;
+    box-shadow: $light-box-shadow;
     border: 1px solid get-light-color('bg-card');
     @include transition();
   }
@@ -141,7 +141,7 @@ html[data-theme='dark'] {
     background: get-dark-color('bg-card');
   &:hover,
   &:focus {
-    box-shadow: $box-shadow;
+    box-shadow: $dark-box-shadow;
     border: 1px solid get-dark-color('bg-card');
     @include transition();
   }

@@ -22,13 +22,14 @@
 
 .btn-tag {
   background-color: get-light-color('accent-color') !important;
+  border-color: get-light-color('accent-color') !important;
   color: get-light-color('text-over-accent-color') !important;
 }
 
 .btn-info {
   background-color: get-light-color('accent-color') !important;
   color: get-light-color('text-over-accent-color') !important;
-
+  border-color: get-light-color('accent-color') !important;
     &:hover,
     &:focus {
       background-color: get-light-color('hover-over-accent-color') !important;
@@ -39,7 +40,6 @@
 .btn-outline-info {
   color: get-light-color('accent-color') !important;
   border-color: get-light-color('accent-color') !important;
-
   &:hover,
   &:focus {
     background-color: get-light-color('hover-over-button-color') !important;
@@ -49,7 +49,6 @@
 
 .btn-link {
   color: get-light-color('accent-color');
-
   &:hover,
   &:focus {
     color: get-light-color('hover-over-accent-color');
@@ -107,6 +106,7 @@
 
 .filled-button {
   background-color: get-light-color('accent-color') !important;
+  border-color: get-light-color('accent-color') !important;
   color: get-light-color('text-over-accent-color') !important;
   @include transition();
 
@@ -173,12 +173,13 @@ html[data-theme='dark'] {
   .btn-tag {
   background-color: get-dark-color('accent-color') !important;
   color: get-dark-color('text-over-accent-color') !important;
+  border-color: get-dark-color('accent-color') !important;
   }
 
   .btn-info {
   background-color: get-dark-color('accent-color') !important;
   color: get-dark-color('text-over-accent-color') !important;
-
+  border-color: get-dark-color('accent-color') !important;
     &:hover,
     &:focus {
       background-color: get-dark-color('hover-over-accent-color') !important;
@@ -225,7 +226,7 @@ html[data-theme='dark'] {
   .filled-button {
     background-color: get-dark-color('accent-color') !important;
     color: get-dark-color('text-over-accent-color') !important;
-
+    border-color: get-dark-color('accent-color') !important;
     &:hover,
     &:active {
       background-color: get-dark-color('hover-over-accent-color') !important;
