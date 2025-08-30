@@ -47,7 +47,7 @@
     padding: 1rem !important;
   }
   .filtr-item[style*="opacity: 0"] {
-    z-index: -999;
+    pointer-events: none;
   }
   @include media('<=medium') {
     padding-left: 0;
