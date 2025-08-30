@@ -42,6 +42,7 @@
           color: get-light-color('muted-text-color');
           font-size: 0rem;
           opacity: 0;
+          pointer-events: none;
           border-radius: var(--bs-border-radius);
         }
         .expand-icon{
@@ -107,6 +108,9 @@
             display: block;
           }
         }
+      }
+      &.hidden {
+        pointer-events: none;
       }
       &.achievement-details-hover{
         cursor: pointer;
