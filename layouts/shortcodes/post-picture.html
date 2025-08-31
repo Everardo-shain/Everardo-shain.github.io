@@ -1,0 +1,16 @@
+{{- $file := .Get "file" -}}
+{{- $alt := .Get "alt" | default "" -}}
+
+{{- $image := .Page.Resources.GetMatch $file -}}
+{{- if $image -}}
+  {{- $imageResized := $image.Resize "2000x" -}}
+  {{- $imageWebp := $image.Resize "2000x webp" -}}
+
+  <picture>
+    <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp">
+    <img src="{{ $imageResized.RelPermalink }}" alt="{{ $alt }}">
+  </picture>
+{{- else -}}
+  <!-- fallback if image not found -->
+  <img src="{{ $file }}" alt="{{ $alt }}">
+{{- end -}}

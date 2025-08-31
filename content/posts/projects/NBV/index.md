@@ -7,7 +7,7 @@ menu:
     name: Next Best View
     identifier: next-best-view
     parent: projects
-    weight: 66
+    weight: 10
 hero: multimedia/imagenes.png
 tags:
 - Optimization
@@ -25,8 +25,7 @@ Key features sample
 ## Tools
 Tools sample
 
-## Media
-
+## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 10px;">
-  <img src="multimedia/imagenes.png" alt=" ">
+    {{< lightbox-img src="multimedia/imagenes.png">}}
 </div>

@@ -7,7 +7,7 @@ menu:
     name: Poker Simulation
     identifier: poker-simulation
     parent: projects
-    weight: 65
+    weight: 20
 hero: multimedia/imagenes.png
 tags:
 - Software
@@ -25,8 +25,7 @@ Key features sample
 ## Tools
 Tools sample
 
-## Media
-
+## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 10px;">
-  <img src="multimedia/imagenes.png" alt=" ">
+    {{< lightbox-img src="multimedia/imagenes.png">}}
 </div>

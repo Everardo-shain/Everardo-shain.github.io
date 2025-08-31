@@ -1,0 +1,22 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $image := resources.Get $src -}}
+{{- if $image -}}
+  {{- $imageResized := $image.Resize "2000x" -}}
+  {{- $imageWebp := $image.Resize "2000x webp" -}}
+  
+  <a href="{{ $imageRelPermalink := $image.RelPermalink }}" 
+     class="glightbox" 
+     data-gallery="post-gallery" 
+     data-title="{{ $alt }}">
+    <picture>
+      <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp">
+      <img src="{{ $imageResized.RelPermalink }}" alt="{{ $alt }}">
+    </picture>
+  </a>
+{{- else -}}
+  <!-- fallback if image not found -->
+  <a href="{{ $src }}" class="glightbox" data-gallery="post-gallery" data-title="{{ $alt }}">
+    <img src="{{ $src }}" alt="{{ $alt }}">
+  </a>
+{{- end -}}

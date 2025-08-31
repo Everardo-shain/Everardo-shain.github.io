@@ -7,7 +7,7 @@ menu:
     name: Robofest 2022
     identifier: robofest 2022
     parent: projects
-    weight: 76
+    weight: 60
 hero: multimedia/imagenes.png
 tags:
 - Embedded
@@ -25,8 +25,10 @@ Key features sample
 ## Tools
 Tools sample
 
-## Media
+## Video
+{{< youtube e-Wuxif8ChU>}}
 
+## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 10px;">
-  <img src="multimedia/imagenes.png" alt=" ">
+    {{< lightbox-img src="multimedia/imagenes.png">}}
 </div>

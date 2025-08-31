@@ -7,7 +7,7 @@ menu:
     name: Tomato Harvesting Robot
     identifier: tomato-harvesting-robot
     parent: projects
-    weight: 80
+    weight: 70
 hero: multimedia/imagenes.png
 tags:
 - Automation
@@ -26,8 +26,10 @@ Key features sample
 ## Tools
 Tools sample
 
-## Media
+## Video
+{{< youtube NaoElE4skmY>}}
 
+## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 10px;">
-  <img src="multimedia/imagenes.png" alt=" ">
+    {{< lightbox-img src="multimedia/imagenes.png">}}
 </div>

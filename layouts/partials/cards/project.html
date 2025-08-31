@@ -64,7 +64,20 @@
             </div>
           {{ end }}
           <div class="project-btn-holder">
-            {{ if .repo }}
+            {{ if .post }}
+            <span>
+              {{ $p := site.GetPage .post }}
+              {{ if $p }}
+                <a
+                  class="btn btn-outline-info btn-sm"
+                  href="{{ $p.RelPermalink }}"
+                  target="_blank"
+                >
+                  <i class="fas fa-book-open me-1"></i>{{ i18n "read" }}
+                </a>
+              {{ end }}
+            </span>
+            {{ else if .repo }}
             <!-- Place this tag where you want the button to render. -->
             <a
               class="github-button project-btn d-none"

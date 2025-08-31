@@ -56,6 +56,7 @@ projects:
   summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
   tags: ["optimization", "c"]
   categories: ["data and optimization", "featured"]
+  post: "posts/projects/NBV/index.md"
 
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
@@ -63,6 +64,7 @@ projects:
   summary: Programmed with C a poker simulator that evaluated the input hands and ran a Monte Carlo simulation to predict the winner, heavily using arrays and memory management, plus writing several test cases.
   tags: ["software", "c"]
   categories: ["featured", "software"]
+  post: "posts/projects/Poker Simulation/index.md"
 
 - name: Northeastern Home Goods Vehicle Routing
   image: /images/sections/projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
@@ -77,6 +79,7 @@ projects:
   summary: Formulated and tested 3 children adoption hypotheses with the Mann-Whitney U test and bootstrapping using R language, with the tests achieving good power of at least 80%.
   tags: ["data science", "statistical inference", "r"]
   categories: ["featured", "data and optimization"]
+  post: "posts/projects/US Children Adoption Statistical Inference/index.md"
 
 - name: IC Genetic Algorithm
   image: /images/sections/projects/IC Genetic Algorithm/multimedia/imagenes.png
@@ -92,6 +95,7 @@ projects:
   tags: ["navigation", "arduino", "ros"]
   categories: ["featured", "control and navigation"]
   video: https://youtu.be/e6znDIl7ap0
+  post: "posts/projects/Industrial AGV/index.md"
 
 - name: Industrial Robotics Tower of Hanoi
   image: /images/sections/projects/Industrial Robotics Tower of Hanoi/multimedia/imagenes.png
@@ -182,6 +186,7 @@ projects:
   tags: ["control systems", "matlab"]
   categories: ["featured", "control and navigation"]
   video: https://youtu.be/5scmf3VBpIU
+  post: "posts/projects/Upright CNC Router/index.md"
 
 - name: Smart Bulb
   image: /images/sections/projects/Smart Bulb/multimedia/imagenes.png
@@ -198,6 +203,7 @@ projects:
   tags: ["embedded", "arduino"]
   categories: ["featured", "embedded"]
   video: https://youtu.be/e-Wuxif8ChU
+  post: "posts/projects/Robofest 2022/index.md"
 
 - name: Airline Passengers Prediction
   image: /images/sections/projects/Airline Passengers Prediction/multimedia/imagenes.png
@@ -213,7 +219,8 @@ projects:
   tags: ["automation", "arduino", "ur10e"]
   categories: ["featured", "automation"]
   video: https://youtu.be/NaoElE4skmY
-  
+  post: "posts/projects/Tomato Harvesting Robot/index.md"
+
 - name: Car Motor System
   image: /images/sections/projects/Car Motor System/multimedia/imagenes.png
   role: Developer
@@ -228,6 +235,7 @@ projects:
   tags: ["automation", "plc"]
   categories: ["featured", "automation"]
   video: https://youtu.be/OM1dn-VYwz8
+  post: "posts/projects/Elevator/index.md"
 
 - name: Power Source
   image: /images/sections/projects/Power Source/multimedia/imagenes.png
@@ -242,6 +250,7 @@ projects:
   summary: Implemented 2 Machine Learning algorithms (KNN and Decision tree) on Python with data from accelerometer and temperature sensors, with both accuracies higher than 97%.
   tags: ["data science", "machine learning", "python"]
   categories: ["featured", "data and optimization"]
+  post: "posts/projects/Weather Conditions Prediction/index.md"
 
 - name: Car Alarm System
   image: /images/sections/projects/Car Alarm System/multimedia/imagenes.png

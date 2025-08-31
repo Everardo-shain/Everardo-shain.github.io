@@ -16,11 +16,11 @@ body.kind-page {
       order: 2;
       padding: 0;
       position: relative;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
 
       .content {
-        padding-top: 1.5rem;
+        padding-top: 2rem;
 
         .read-area {
           background-color: get-light-color('bg-primary');
@@ -28,7 +28,7 @@ body.kind-page {
           .hero-area {
             margin-top: 3rem;
             width: 100%;
-            height: 400px;
+            height: 200px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -116,7 +116,7 @@ body.kind-page {
 
       .toc-holder {
         position: sticky;
-        top: 4.5rem;
+        top: 5rem;
         padding-top: 1rem;
         overflow-x: hidden;
         overflow-y: auto;
