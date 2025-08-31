@@ -7,7 +7,7 @@ menu:
     name: Industrial AGV
     identifier: industrial-agv
     parent: projects
-    weight: 77
+    weight: 40
 hero: multimedia/imagenes.png
 tags:
 - Navigation
@@ -26,8 +26,10 @@ Key features sample
 ## Tools
 Tools sample
 
-## Media
+## Video
+{{< youtube e6znDIl7ap0>}}
 
+## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 10px;">
-  <img src="multimedia/imagenes.png" alt=" ">
+    {{< lightbox-img src="multimedia/imagenes.png">}}
 </div>

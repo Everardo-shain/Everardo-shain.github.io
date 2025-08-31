@@ -7,7 +7,7 @@ menu:
     name: US Children Adoption Statistical Inference
     identifier: children-adoption
     parent: projects
-    weight: 68
+    weight: 30
 hero: multimedia/imagenes.png
 tags:
 - Data Science
@@ -26,8 +26,7 @@ Key features sample
 ## Tools
 Tools sample
 
-## Media
-
+## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 10px;">
-  <img src="multimedia/imagenes.png" alt=" ">
+    {{< lightbox-img src="multimedia/imagenes.png">}}
 </div>

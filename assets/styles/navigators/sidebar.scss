@@ -3,9 +3,8 @@
   flex: 20%;
   max-width: 20%;
   @include transition();
-
   .sidebar-holder {
-    top: 2.5rem;
+    top: 3rem;
     position: sticky;
     background-color: get-light-color('bg-primary');
     height: 100vh;
@@ -129,8 +128,8 @@
   }
 
   @include media('<=ultra-large') {
-    flex: 15%;
-    max-width: 15%;
+    flex: 20%;
+    max-width: 20%;
 
     .sidebar-holder {
       max-width: 100%;
