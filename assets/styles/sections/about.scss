@@ -7,7 +7,8 @@ $progress-bar-colors: (
   'green': #2dca73,
   'sky': #00c9e3,
   'orange': #ff7c7c,
-  'system': get-light-color('progress-color'),
+  'system-1': get-light-color('progress-color'),
+  'system-2': get-light-color('progress-color-sec'),
 );
 
 @mixin circular-progress-bar-color() {
@@ -210,9 +211,14 @@ $progress-bar-colors: (
 html[data-theme='dark'] {
  .about-section {
     .circular-progress {
-      &.system {
+      &.system-1 {
         .circular-progress-bar {
           border-color: get-dark-color('progress-color');
+        }
+      }
+      &.system-2 {
+        .circular-progress-bar {
+          border-color: get-dark-color('progress-color-sec');
         }
       }
     }

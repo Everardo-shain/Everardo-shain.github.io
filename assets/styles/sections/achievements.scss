@@ -124,7 +124,7 @@
 
         .card {
           .card-head {
-            border-bottom: 2px solid get-light-color('hover-over-accent-color');
+            border-bottom: 2px solid get-light-color('hover-over-accent-color-sec');
           }
         }
       }
@@ -148,9 +148,10 @@
         background-color: get-light-color('bg-card') !important;
         height: -moz-fit-content;
         height: fit-content;
+        aspect-ratio: unset;
         padding: 0.7rem;
         padding-bottom: 0rem;
-        border-bottom: 2px solid get-light-color('accent-color');
+        border-bottom: 2px solid get-light-color('accent-color-sec');
       }
 
       .card-body {
@@ -196,7 +197,7 @@ html[data-theme='dark'] {
         &.achievement-details-hover{
           .card {
             .card-head {
-              border-bottom: 2px solid get-dark-color('hover-over-accent-color');
+              border-bottom: 2px solid get-dark-color('hover-over-accent-color-sec');
             }
           }
         }
@@ -209,7 +210,7 @@ html[data-theme='dark'] {
         background-color: get-dark-color('bg-card') !important;
         .card-head {
           background-color: get-dark-color('bg-card') !important;
-          border-bottom: 2px solid get-dark-color('accent-color');
+          border-bottom: 2px solid get-dark-color('accent-color-sec');
         }
       }
     }

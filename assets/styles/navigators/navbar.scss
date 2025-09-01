@@ -78,7 +78,7 @@
   #top-navbar-divider {
     $divider-height: 25px;
     margin-top: (42px-$divider-height)/2;
-    background-color: get-light-color('accent-color');
+    background-color: get-light-color('accent-color-sec');
     height: $divider-height;
     width: 2px;
   }
@@ -190,7 +190,7 @@
       width: auto;
       margin-right: 15px;
       margin-left: 15px;
-      border-top: 2px solid get-light-color('accent-color');
+      border-top: 2px solid get-light-color('accent-color-sec');
     }
 
     .dropdown-menu {
@@ -251,7 +251,7 @@ html[data-theme='dark'] {
       @include nav-item-hover-effect('dark');
     }
     #top-navbar-divider {
-      background-color: get-dark-color('accent-color');
+      background-color: get-dark-color('accent-color-sec');
     }
     .nav-link {
       &.active,
@@ -323,7 +323,7 @@ html[data-theme='dark'] {
       }
     }
     #top-navbar-divider {
-      border-top: 2px solid get-dark-color('accent-color');
+      border-top: 2px solid get-dark-color('accent-color-sec');
     }
 
     .languageSelector {

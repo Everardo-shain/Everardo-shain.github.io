@@ -21,6 +21,8 @@ $transition-type: ease-out;
 // themes
 $light-accent-color: #0b57d0;
 $dark-accent-color: #8ab4f8;
+$light-accent-color-sec: #ff0000;
+$dark-accent-color-sec: #f54a4a;
 $light-card: #eaeaea;
 $dark-card: #313131;
 
@@ -31,9 +33,10 @@ $dark-box-shadow: 0px 0px 25px lighten($dark-card, 30%);
 $themes: (
 
   'light': (
-
     'accent-color': $light-accent-color,
     'hover-over-accent-color': darken($light-accent-color, 10%),
+    'accent-color-sec': $light-accent-color-sec,
+    'hover-over-accent-color-sec': darken($light-accent-color-sec, 10%),
     'hover-over-button-color': darken($light-card, 10%),
     'text-over-accent-color': $light-card,
     'bg-primary': #ffffff,
@@ -47,7 +50,8 @@ $themes: (
     'inline-code-color': #444444,
     'highlight-color': #bdbdbd,
     'footer-color': $light-card,
-    'progress-color': $light-accent-color,
+    'progress-color': $light-accent-color,    
+    'progress-color-sec': $light-accent-color-sec,
     'box-over-image': $light-card,
     'text-over-box': #2b2b2b,
 
@@ -55,7 +59,9 @@ $themes: (
 
   'dark': (
     'accent-color': $dark-accent-color,
-    'hover-over-accent-color': lighten($dark-accent-color, 10%),
+    'hover-over-accent-color': darken($dark-accent-color, 10%),
+    'accent-color-sec': $dark-accent-color-sec,
+    'hover-over-accent-color-sec': darken($dark-accent-color-sec, 10%),
     'hover-over-button-color': lighten($dark-card, 10%),
     'text-over-accent-color': $dark-card,
     'bg-primary': #181818,
@@ -69,7 +75,8 @@ $themes: (
     'inline-code-color': #bbbbbb,
     'highlight-color': #444444,
     'footer-color': $dark-card,
-    'progress-color': $dark-accent-color,
+    'progress-color': $dark-accent-color,    
+    'progress-color-sec': $dark-accent-color-sec,
     'box-over-image': $dark-card,
     'text-over-box': #e0e0e0,
   ),
