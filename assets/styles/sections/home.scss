@@ -65,7 +65,7 @@
 
   .arrow {
     position: absolute;
-    color: get-light-color('accent-color');
+    color: get-light-color('accent-color-sec');
     font-size: 1.5rem;
     bottom: 0;
   }
@@ -125,7 +125,7 @@ html[data-theme='dark'] {
       color: get-dark-color('heading-color');
     }
     .arrow {
-      color: get-dark-color('accent-color');
+      color: get-dark-color('accent-color-sec');
     }
   }
 }

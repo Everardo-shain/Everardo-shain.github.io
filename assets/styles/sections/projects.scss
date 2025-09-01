@@ -6,7 +6,7 @@
     border-right: 1px solid get-light-color('bg-card');
     background-color: get-light-color('bg-card');
     .card-header {
-      border-bottom: 2px solid get-light-color('accent-color');
+      border-bottom: 2px solid get-light-color('accent-color-sec');
       background-color: get-light-color('bg-card');
       padding: 0.7rem;
       padding-bottom: 0rem;
@@ -34,7 +34,7 @@
     }
     &:hover .card-header,
     &:focus .card-header{
-      border-bottom: 2px solid get-light-color('hover-over-accent-color');
+      border-bottom: 2px solid get-light-color('hover-over-accent-color-sec');
     }
   }
   .card a {
@@ -112,7 +112,7 @@ html[data-theme='dark'] {
       border-right: 1px solid get-dark-color('bg-card');
       background-color: get-dark-color('bg-card');
       .card-header {
-        border-bottom: 2px solid get-dark-color('accent-color');
+        border-bottom: 2px solid get-dark-color('accent-color-sec');
         background-color: get-dark-color('bg-card');
         .sub-title {
           color: get-dark-color('muted-text-color');
@@ -120,7 +120,7 @@ html[data-theme='dark'] {
       }
     &:hover .card-header,
     &:focus .card-header{
-      border-bottom: 2px solid get-dark-color('hover-over-accent-color');
+      border-bottom: 2px solid get-dark-color('hover-over-accent-color-sec');
     }
     }
   }
