@@ -11,6 +11,7 @@
       background-color: get-light-color('bg-card') !important;
       height: -moz-fit-content;
       height: fit-content;
+      aspect-ratio: unset;
       padding: 0.7rem;
       padding-bottom: 0rem;
       border-bottom: 2px solid get-light-color('accent-color');

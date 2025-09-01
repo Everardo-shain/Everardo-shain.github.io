@@ -1,0 +1,29 @@
+{{/* check if there is any banner image in the same folder as the markdown file */}}
+{{ $bannerImage := .Page.Resources.GetMatch "banner.{jpg,png,svg}"}}
+
+{{/*  if banner image is specified in the page front-matter, then use that  */}}
+{{ if .Params.banner }}
+  {{/*  try to read from the page bundle  */}}
+  {{ $bannerImage = .Resources.Get .Params.banner }}
+  {{/*  if the image does not exist in the page bundle,try looking in the assets folder  */}}
+  {{ if not $bannerImage }}
+    {{ $bannerImage = resources.Get .Params.banner }}
+  {{ end }}
+{{ end }}
+{{ .Scratch.Set "bannerScratch" $bannerImage }}
+
+{{/* if banner image is not provided, then use the default banner image */}}
+{{ if not $bannerImage }}
+  {{ $bannerImage := resources.Get "images/default-banner.jpg"}}
+  {{ .Scratch.Set "bannerScratch" $bannerImage }}
+{{ end }}
+
+{{ $bannerImage := .Scratch.Get "bannerScratch" }}
+
+<!-- {{/* resize banner image. don't resize if the image is an svg */}}
+{{ if and $bannerImage (ne $bannerImage.MediaType.SubType "svg") }}
+  {{ $bannerImage := $bannerImage.Resize "148x" }}
+{{ end }} -->
+
+{{/*  return the banner image  */}}
+{{ return $bannerImage.Permalink }}

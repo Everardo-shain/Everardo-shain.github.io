@@ -34,7 +34,7 @@
   <div class="content">
     <div class="container p-0 read-area">
       <!--Hero Area-->
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ partial "helpers/get-hero.html" . }});'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ partial "helpers/get-banner.html" . }});'>
       </div>
 
       <!--Content Start-->
@@ -43,7 +43,7 @@
         <div class="author-profile ms-auto align-self-lg-center">
           <img class="rounded-circle" src='{{ partial "helpers/get-author-image.html" . }}' alt="Author Image">
           <h5 class="author-name">{{ partial "helpers/get-author-name.html" . }}</h5>
-          <p class="text-muted">{{ .Page.Date | time.Format ":date_full" }}{{ if site.Params.features.readingTime }} | {{ .ReadingTime }} {{i18n "minute" .ReadingTime }}{{ end }}</p>
+          <p class="text-muted">{{ .Page.Date | time.Format ":date_full" }}{{ if site.Params.features.readingTime.enable }} | {{ .ReadingTime }} {{i18n "minute" .ReadingTime }}{{ end }}</p>
         </div>
         {{ else }}
         <div style="margin-bottom: 80px;"></div>
