@@ -1,23 +1,33 @@
 <div class="post-card">
   <div class="card">
     <div class="card-head">
-      <a href="{{ .RelPermalink | relLangURL }}" class="post-card-link">
-        <img class="card-img-top" src='{{ partial "helpers/get-hero.html" . }}' alt="Hero Image">
-      </a>
+      {{ $imageImage:=  partial "helpers/get-hero.html" . }}
+      {{ if $imageImage }}
+        {{ $imageResized := $imageImage.Resize "1000x" }}
+        {{ $imageWebp := $imageImage.Resize "1000x webp" }}
+        <a href="{{ .RelPermalink | relLangURL }}" class="post-card-link">
+        <div class="card-head">
+            <picture>
+            <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp">
+            <img class="card-img-top" src="{{ $imageResized.RelPermalink }}" alt="Hero Image">
+            </picture>
+        </div>
+        </a>
+      {{ end }}
     </div>
     <div class="card-body">
       <a href="{{ .RelPermalink | relLangURL }}" class="post-card-link">
         <h5 class="card-title">{{ .Title }}</h5>
-        <p class="card-text post-summary">{{ .Summary | plainify }}</p>
+        <!-- <p class="card-text post-summary">{{ .Summary | plainify }}</p> -->
       </a>
-      {{ if and site.Params.features.tags.enable site.Params.features.tags.on_card }}
+      <!-- {{ if and site.Params.features.tags.enable site.Params.features.tags.on_card }}
         {{ partial "misc/tags.html" .Params.tags }}
-      {{ end }}
+      {{ end }} -->
     </div>
     <div class="card-footer">
       <span class="float-start">
           {{ .Date | time.Format ":date_full" }}
-          {{ if site.Params.features.readingTime }} | {{.ReadingTime}} {{ i18n "minute" .ReadingTime }} {{ end }}</span>
+          {{ if site.Params.features.readingTime.enable }} | {{.ReadingTime}} {{ i18n "minute" .ReadingTime }} {{ end }}</span>
       <a
       href="{{ .RelPermalink | relLangURL }}"
       class="float-end btn btn-outline-info btn-sm"

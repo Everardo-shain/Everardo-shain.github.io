@@ -16,12 +16,11 @@ categories:
 - Automation
 ---
 
-## Overview
 This project involves programming a simulated 4-floor elevator on a PLC using TIA Portal. Most of the code is written in SCL, with less than 30% implemented in ladder logic. The simulation replicates real-world elevator functionality and meets all 11 requirements defined in the project guidelines, including the development of a fully functional HMI.
 
 Peer-review meetings with the project supervisor and exhaustive research were conducted on the proper functioning of real-world elevators, as some corner cases were not defined in the project requirements.
 
-
+---
 
 ## Key Features
 - Moves up and down without exceeding the limits, according to elevator logic.  
