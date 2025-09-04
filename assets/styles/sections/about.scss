@@ -153,6 +153,171 @@ $progress-bar-colors: (
     @include circular-progress-animation-keyframes($progress: 0, $degree: 0, $keyframes: 20);
   }
 
+  .hard-skill {
+    --width: 170px;
+    --border: 16px;
+    --stretch: 1.2;
+    --vertical-center: 2/3;
+    --size: calc(var(--width) * var(--stretch));
+
+    width: var(--width);
+    height: var(--size);
+    margin: auto;
+    position: relative;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hard-skill .diamond-wrapper {
+    width: var(--width);
+    height: var(--size);
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+    margin: auto;
+  }
+  .hard-skill .diamond-wrapper .diamond {
+    background: linear-gradient(
+      to bottom right,
+      transparent 50%,
+      get-light-color('accent-color') 50%
+    );
+    border: calc(var(--border)*0.5) solid get-light-color('bg-card');
+    outline: calc(var(--border)*0.125) solid get-light-color('accent-color-sec');
+
+    width: calc(var(--size)/ sqrt(2) - var(--border));
+    height: calc(var(--size)/ sqrt(2) - var(--border));
+    outline-offset: calc(var(--border)*0.375);
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    position: absolute;
+    margin: auto;
+  }
+  .hard-skill .name {
+    background: get-light-color('bg-card');
+    color: get-light-color('heading-color');
+    border: 2px solid get-light-color('accent-color-sec');
+
+    width: var(--width);
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  .hard-skill .deco {
+    color: get-light-color('heading-color');
+
+    top: calc(var(--border) * sqrt(2) * (1 - var(--vertical-center)) + var(--vertical-center) * ((100% - 3rem) / 2));
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .hard-skill .icon-holder {
+    color: get-light-color('bg-primary');
+
+    bottom: calc(var(--border) * sqrt(2) * (1 - var(--vertical-center)) + var(--vertical-center) * ((100% - 3rem) / 2));
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .soft-skill-wrapper {
+    --size: 170px;
+    --border: 16px;
+    --vertical-center: 2/3;
+
+    width: var(--size);
+    height: var(--size);
+    margin: auto;
+    position: relative;
+    display: flex;
+  }
+  .soft-skill{
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      transparent 50%
+    );
+    border: calc(var(--border)*0.5) solid get-light-color('accent-color');
+    outline: calc(var(--border)*0.125) solid get-light-color('accent-color-sec');
+
+    width: calc(var(--size) - var(--border) - 4px);
+    height: calc(var(--size) - var(--border) - 4px);
+    outline-offset: calc(var(--border)*0.375);
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .soft-skill .name {
+    background: get-light-color('bg-card');
+    color: get-light-color('heading-color');
+    border: 2px solid get-light-color('accent-color-sec');
+
+    width: var(--size);
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.25rem;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  .soft-skill .deco {
+    color: get-light-color('heading-color');
+
+    font-size: 1rem;
+    top: calc(0.575587 * (100% - 3rem) / 2);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .soft-skill .icon-holder {
+    color: get-light-color('accent-color');
+
+    bottom: calc(0.575587 * (100% - 3rem) / 2);
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
   @include media('<=large') {
     .circular-progress {
       margin-bottom: 20px;
@@ -241,6 +406,46 @@ html[data-theme='dark'] {
         background: get-dark-color('bg-card');
         color: get-dark-color('text-color');
       }
+    }
+    .hard-skill .diamond-wrapper .diamond {
+      background: linear-gradient(
+        to bottom right,
+        transparent 50%,
+        get-dark-color('accent-color') 50%
+      );
+      border: calc(var(--border)*0.5) solid get-dark-color('bg-card');
+      outline: calc(var(--border)*0.125) solid get-dark-color('accent-color-sec');
+    }
+    .hard-skill .name {
+      background: get-dark-color('bg-card');
+      color: get-dark-color('heading-color');
+      border: 2px solid get-dark-color('accent-color-sec');
+    }
+    .hard-skill .deco {
+      color: get-dark-color('heading-color');
+    }
+    .hard-skill .icon-holder {
+      color: get-dark-color('bg-primary');
+    }
+    .soft-skill{
+      background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        transparent 50%
+      );
+      border: calc(var(--border)*0.5) solid get-dark-color('accent-color');
+      outline: calc(var(--border)*0.125) solid get-dark-color('accent-color-sec');
+    }
+    .soft-skill .name {
+      background: get-dark-color('bg-card');
+      color: get-dark-color('heading-color');
+      border: 2px solid get-dark-color('accent-color-sec');
+    }
+    .soft-skill .deco {
+      color: get-dark-color('heading-color');
+    }
+    .soft-skill .icon-holder {
+      color: get-dark-color('accent-color');
     }
   }
 }

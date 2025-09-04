@@ -64,38 +64,31 @@ badges:
 #   name: Artificial Intelligence and Machine Learning
 #   url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
 #   badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
-#Hard skills
-# - type: soft-skill-indicator
+
+#Progress skills
+# - type: progress-skill-indicator
 #   name: 
 #   percentage: 
 #   color: "system"
 
-- type: soft-skill-indicator
+#Hard skills
+- type: hard-skill-indicator
   name: Scientific Research
-  percentage: 80
-  color: "system-1"
-
-- type: soft-skill-indicator
+  icon: fa-microscope
+- type: hard-skill-indicator
   name: Embedded Software & Automation
-  percentage: 75
-  color: "system-1"
-
-- type: soft-skill-indicator
+  icon: fa-microchip
+- type: hard-skill-indicator
   name: Data Science
-  percentage: 75
-  color: "system-1"
+  icon: fa-chart-line
+
 #Soft skills
 - type: soft-skill-indicator
   name: Logical Thinking
-  percentage: 85
-  color: "system-1"
-
+  icon: fa-puzzle-piece
 - type: soft-skill-indicator
   name: Self-Learning
-  percentage: 80
-  color: "system-1"
-
+  icon: fa-book-open
 - type: soft-skill-indicator
   name: Quick Understanding
-  percentage: 85
-  color: "system-1"
+  icon: fa-bolt
