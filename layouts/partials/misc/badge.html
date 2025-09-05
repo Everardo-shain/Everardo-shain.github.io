@@ -1,4 +1,4 @@
-<div class="col-6 col-lg-4 p-2">
+<div class="col-6 col-lg-4 p-2 d-flex justify-content-center align-items-center">
 {{ if eq .type "certification" }}
     {{/* Verifiable certificate badge from https://www.credly.com */}}
     <div class="certificate-badge">
@@ -40,7 +40,7 @@
 {{ else if eq .type "soft-skill-indicator" }}
   <div class="soft-skill-wrapper">
     <div class="soft-skill">
-      <div class="deco">✦✦✦</div>
+      <div class="deco">✦</div>
       <div class="name">{{ .name }}</div>
       <span class="icon-holder">
           <i class="fas {{ .icon }}"></i>
@@ -52,7 +52,7 @@
     <div class="diamond-wrapper">
       <div class="diamond"></div>
     </div>
-    <div class="deco">✦✦✦</div>
+    <div class="deco">✦</div>
     <div class="name">{{ .name }}</div>
     <div class="icon-holder">
         <i class="fas {{ .icon }}"></i>

@@ -155,9 +155,13 @@ $progress-bar-colors: (
 
   .hard-skill {
     --width: 170px;
-    --border: 16px;
+    --border: 9px;
+    --outline: 7px;
+    --outline-offset: 5px;
+    --outline-size: 2px;
+    --extra-space: 6px;
     --stretch: 1.2;
-    --vertical-center: 2/3;
+    --vertical-center: calc(2/3);
     --size: calc(var(--width) * var(--stretch));
 
     width: var(--width);
@@ -184,12 +188,12 @@ $progress-bar-colors: (
       transparent 50%,
       get-light-color('accent-color') 50%
     );
-    border: calc(var(--border)*0.5) solid get-light-color('bg-card');
-    outline: calc(var(--border)*0.125) solid get-light-color('accent-color-sec');
+    border: var(--border) solid get-light-color('inverse-bg-card');
+    outline: var(--outline-size) solid get-light-color('accent-color-sec');
 
-    width: calc(var(--size)/ sqrt(2) - var(--border));
-    height: calc(var(--size)/ sqrt(2) - var(--border));
-    outline-offset: calc(var(--border)*0.375);
+    width: calc(var(--size)/ sqrt(2) - 2 * var(--outline));
+    height: calc(var(--size)/ sqrt(2) - 2 * var(--outline));
+    outline-offset: var(--outline-offset);
     border-radius: 5px;
     top: 50%;
     left: 50%;
@@ -198,9 +202,9 @@ $progress-bar-colors: (
     margin: auto;
   }
   .hard-skill .name {
-    background: get-light-color('bg-card');
-    color: get-light-color('heading-color');
-    border: 2px solid get-light-color('accent-color-sec');
+    background: get-light-color('inverse-bg-card');
+    color: get-light-color('inverse-text-color');
+    // border: 2px solid get-light-color('accent-color-sec');
 
     width: var(--width);
     height: 3rem;
@@ -216,12 +220,12 @@ $progress-bar-colors: (
     z-index: 10;
   }
   .hard-skill .deco {
-    color: get-light-color('heading-color');
+    color: get-light-color('bg-primary');
 
-    top: calc(var(--border) * sqrt(2) * (1 - var(--vertical-center)) + var(--vertical-center) * ((100% - 3rem) / 2));
+    bottom: calc((var(--outline) + var(--border)) * sqrt(2) * (1 - var(--vertical-center)) + var(--vertical-center) * ((100% - 3rem) / 2));
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1rem;
+    transform: translate(-50%, 50%);
+    font-size: 1.25rem;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -229,11 +233,11 @@ $progress-bar-colors: (
     z-index: 1;
   }
   .hard-skill .icon-holder {
-    color: get-light-color('bg-primary');
+    color: get-light-color('accent-color');
 
-    bottom: calc(var(--border) * sqrt(2) * (1 - var(--vertical-center)) + var(--vertical-center) * ((100% - 3rem) / 2));
+    top: calc((var(--outline) + var(--border)) * sqrt(2) * (1 - var(--vertical-center)) + var(--vertical-center) * ((100% - 3rem) / 2));
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     font-size: 1.5rem;
     position: absolute;
     display: flex;
@@ -244,8 +248,11 @@ $progress-bar-colors: (
 
   .soft-skill-wrapper {
     --size: 170px;
-    --border: 16px;
-    --vertical-center: 2/3;
+    --border: 9px;
+    --outline: 7px;
+    --outline-offset: 5px;
+    --outline-size: 2px;
+    --extra-space: 6px;
 
     width: var(--size);
     height: var(--size);
@@ -256,15 +263,15 @@ $progress-bar-colors: (
   .soft-skill{
     background: linear-gradient(
       to bottom,
-      transparent 50%,
+      get-light-color('accent-color') 50%,
       transparent 50%
     );
-    border: calc(var(--border)*0.5) solid get-light-color('accent-color');
-    outline: calc(var(--border)*0.125) solid get-light-color('accent-color-sec');
+    border: var(--border) solid get-light-color('inverse-bg-card');
+    outline: var(--outline-size) solid get-light-color('accent-color-sec');
 
-    width: calc(var(--size) - var(--border) - 4px);
-    height: calc(var(--size) - var(--border) - 4px);
-    outline-offset: calc(var(--border)*0.375);
+    width: calc(var(--size) - 2 * var(--outline) - var(--extra-space));
+    height: calc(var(--size) - 2 * var(--outline) - var(--extra-space));
+    outline-offset: var(--outline-offset);
     border-radius: 50%;
     margin: auto;
     position: relative;
@@ -274,9 +281,9 @@ $progress-bar-colors: (
     justify-content: center;
   }
   .soft-skill .name {
-    background: get-light-color('bg-card');
-    color: get-light-color('heading-color');
-    border: 2px solid get-light-color('accent-color-sec');
+    background: get-light-color('inverse-bg-card');
+    color: get-light-color('inverse-text-color');
+    // border: 2px solid get-light-color('accent-color-sec');
 
     width: var(--size);
     height: 3rem;
@@ -292,9 +299,9 @@ $progress-bar-colors: (
     z-index: 10;
   }
   .soft-skill .deco {
-    color: get-light-color('heading-color');
+    color: get-light-color('bg-primary');
 
-    font-size: 1rem;
+    font-size: 1.25rem;
     top: calc(0.575587 * (100% - 3rem) / 2);
     left: 50%;
     transform: translate(-50%, -50%);
@@ -413,36 +420,36 @@ html[data-theme='dark'] {
         transparent 50%,
         get-dark-color('accent-color') 50%
       );
-      border: calc(var(--border)*0.5) solid get-dark-color('bg-card');
-      outline: calc(var(--border)*0.125) solid get-dark-color('accent-color-sec');
+      border: var(--border) solid get-dark-color('bg-card');
+      outline: var(--outline-size) solid get-dark-color('accent-color-sec');
     }
     .hard-skill .name {
       background: get-dark-color('bg-card');
-      color: get-dark-color('heading-color');
-      border: 2px solid get-dark-color('accent-color-sec');
+      color: get-dark-color('text-color');
+      // border: 2px solid get-dark-color('accent-color-sec');
     }
     .hard-skill .deco {
-      color: get-dark-color('heading-color');
+      color: get-dark-color('bg-primary');
     }
     .hard-skill .icon-holder {
-      color: get-dark-color('bg-primary');
+      color: get-dark-color('accent-color');
     }
     .soft-skill{
       background: linear-gradient(
         to bottom,
-        transparent 50%,
+        get-dark-color('accent-color') 50%,
         transparent 50%
       );
-      border: calc(var(--border)*0.5) solid get-dark-color('accent-color');
-      outline: calc(var(--border)*0.125) solid get-dark-color('accent-color-sec');
+      border: var(--border) solid get-dark-color('bg-card');
+      outline: var(--outline-size) solid get-dark-color('accent-color-sec');
     }
     .soft-skill .name {
       background: get-dark-color('bg-card');
-      color: get-dark-color('heading-color');
-      border: 2px solid get-dark-color('accent-color-sec');
+      color: get-dark-color('text-color');
+      // border: 2px solid get-dark-color('accent-color-sec');
     }
     .soft-skill .deco {
-      color: get-dark-color('heading-color');
+      color: get-dark-color('bg-primary');
     }
     .soft-skill .icon-holder {
       color: get-dark-color('accent-color');
