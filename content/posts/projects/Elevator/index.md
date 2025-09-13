@@ -8,7 +8,7 @@ menu:
     identifier: elevator
     parent: projects
     weight: 80
-hero: multimedia/imagenes.png
+hero: hero.png
 tags:
 - Automation
 - PLC
@@ -16,9 +16,20 @@ categories:
 - Automation
 ---
 
+## Overview
+
 This project involves programming a simulated 4-floor elevator on a PLC using TIA Portal. Most of the code is written in SCL, with less than 30% implemented in ladder logic. The simulation replicates real-world elevator functionality and meets all 11 requirements defined in the project guidelines, including the development of a fully functional HMI.
 
 Peer-review meetings with the project supervisor and exhaustive research were conducted on the proper functioning of real-world elevators, as some corner cases were not defined in the project requirements.
+
+---
+
+## Tools
+- **SCL**: main programming language.
+- **Ladder**: secondary programming language.
+- **4-Story Elevator 2D Virtual Machine**: simulation of the elevator sensors and actuators.
+- **TIA Portal**: SCL and ladder programming logic, HMI design.
+- **SIMATIC S7-PLCSIM Advanced V3.0**: simulation of a SIMATIC S7-1500 CPU 1516-3 PN/DP.
 
 ---
 
@@ -35,14 +46,14 @@ Peer-review meetings with the project supervisor and exhaustive research were co
 - There is an HMI showing simulations of the elevator doors, as well as an HMI with the internal elevator panel.  
 - The HMI panel includes a button that activates the elevator’s master mode, which disables the automatic mode memory. In master mode, the elevator performs requested actions in real time without storing them in memory. Additional buttons allow door opening and closing.
 
-## Tools
-- **4-Story Elevator 2D Virtual Machine**: simulation of the elevator sensors and actuators
-- **TIA Portal**: SCL and ladder programming logic, HMI design
-- **SIMATIC S7-PLCSIM Advanced V3.0**: simulation of a SIMATIC S7-1500 CPU 1516-3 PN/DP
+---
+
 ## Video
 {{< youtube OM1dn-VYwz8 >}}
 
+---
+
 ## Gallery
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 10px;">
-    {{< lightbox-img src="multimedia/imagenes.png">}}
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
+    {{< lightbox-img src="gallery/elevator.png" alt="Elevator simulation and HMI">}}
 </div>

@@ -61,7 +61,7 @@ projects:
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
   role: Developer
-  summary: Programmed with C a poker simulator that evaluated the input hands and ran a Monte Carlo simulation to predict the winner, heavily using arrays and memory management, plus writing several test cases.
+  summary: Programmed with C a poker simulator for hand evaluation and winning prediction running a Monte Carlo simulation, using arrays, pointers, debugging and memory management, plus writing test cases.
   tags: ["software", "c"]
   categories: ["featured", "software"]
   post: "posts/projects/Poker Simulation/index.md"
@@ -244,13 +244,13 @@ projects:
   tags: ["electronic design", "proteus"]
   categories: ["design"]
 
-- name: Weather Conditions Prediction
-  image: /images/sections/projects/Weather Conditions Prediction/multimedia/imagenes.png
+- name: IoT Sensor Data Classification
+  image: /images/sections/projects/IoT Sensor Data Classification/multimedia/imagenes.png
   role: Developer
   summary: Implemented 2 Machine Learning algorithms (KNN and Decision tree) on Python with data from accelerometer and temperature sensors, with both accuracies higher than 97%.
-  tags: ["data science", "machine learning", "python"]
+  tags: ["data science", "machine learning", "IoT", "python", "arduino"]
   categories: ["featured", "data and optimization"]
-  post: "posts/projects/Weather Conditions Prediction/index.md"
+  post: "posts/projects/IoT Sensor Data Classification/index.md"
 
 - name: Car Alarm System
   image: /images/sections/projects/Car Alarm System/multimedia/imagenes.png

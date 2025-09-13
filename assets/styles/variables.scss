@@ -19,7 +19,7 @@ $transition-type: ease-out;
 
 
 // themes
-$light-accent-color: #0b57d0;
+$light-accent-color: #0077b8;
 $dark-accent-color: #8ab4f8;
 $light-accent-color-sec: #ff0000;
 $dark-accent-color-sec: #f54a4a;
@@ -40,6 +40,7 @@ $themes: (
     'hover-over-accent-color-sec': lighten($light-accent-color-sec, 20%),
     'hover-over-button-color': darken($light-card, 10%),
     'text-over-accent-color': $light-card,
+    'body': #ffffff,
     'bg-primary': #ffffff,
     'bg-secondary': #f9f9f9,
     'bg-card': $light-card,
@@ -50,12 +51,12 @@ $themes: (
     'muted-text-color': #777777,
     'inline-code-color': #444444,
     'highlight-color': #bdbdbd,
-    'footer-color': $light-card,
     'progress-color': $light-accent-color,    
     'progress-color-sec': $light-accent-color-sec,
     'box-over-image': $light-card,
     'text-over-box': #2b2b2b,
-
+    'navbar': #ffffff,
+    'footer-color': $light-card,
   ),
 
   'dark': (
@@ -65,6 +66,7 @@ $themes: (
     'hover-over-accent-color-sec': darken($dark-accent-color-sec, 20%),
     'hover-over-button-color': lighten($dark-card, 10%),
     'text-over-accent-color': $dark-card,
+    'body': #181818,
     'bg-primary': #181818,
     'bg-secondary': #1f1f1f,
     'bg-card': $dark-card,
@@ -75,11 +77,12 @@ $themes: (
     'muted-text-color': #9c9c9c,
     'inline-code-color': #bbbbbb,
     'highlight-color': #444444,
-    'footer-color': $dark-card,
     'progress-color': $dark-accent-color,    
     'progress-color-sec': $dark-accent-color-sec,
     'box-over-image': $dark-card,
     'text-over-box': #e0e0e0,
+    'navbar': #181818,
+    'footer-color': $dark-card,
   ),
 
 );

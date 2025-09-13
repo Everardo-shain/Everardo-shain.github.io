@@ -20,10 +20,7 @@
 
 {{ $bannerImage := .Scratch.Get "bannerScratch" }}
 
-<!-- {{/* resize banner image. don't resize if the image is an svg */}}
-{{ if and $bannerImage (ne $bannerImage.MediaType.SubType "svg") }}
-  {{ $bannerImage := $bannerImage.Resize "148x" }}
-{{ end }} -->
+{{ $bannerImage := $bannerImage.Resize "800x" }}
 
 {{/*  return the banner image  */}}
 {{ return $bannerImage.Permalink }}
