@@ -44,7 +44,7 @@
   img {
     width: 148px;
     height: 148px;
-    background-color: get-light-color('bg-card');
+    background-color: transparent;
     padding: 5px;
     margin-bottom: 10px;
   }
@@ -56,7 +56,7 @@
 
   .typing-carousel {
     font-size: 14pt;
-    color: get-light-color('heading-color');
+    color: get-light-color('transparent-navbar-text-color');
   }
 
   #typing-carousel-data {
@@ -113,7 +113,7 @@ html[data-theme='dark'] {
   .home {
     color: get-dark-color('heading-color');
     img {
-      background-color: get-dark-color('bg-card');
+      background-color: transparent;
     }
 
     .greeting,
@@ -122,7 +122,7 @@ html[data-theme='dark'] {
     }
 
     .typing-carousel {
-      color: get-dark-color('heading-color');
+      color: get-dark-color('transparent-navbar-text-color');
     }
     .arrow {
       color: get-dark-color('accent-color-sec');

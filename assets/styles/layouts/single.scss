@@ -192,13 +192,13 @@ body.kind-page {
     border: none;
     bottom: 0rem;
     right: 1rem;
-    color: get-light-color('accent-color-sec');
+    color: get-light-color('accent-color');
     font-size: 24pt;
     z-index: 900000;
     visibility: hidden;
 
     &:hover {
-      color: get-light-color('hover-over-accent-color-sec');
+      color: get-light-color('hover-over-accent-color');
     }
     &.show {
       visibility: visible;
@@ -383,9 +383,9 @@ html[data-theme='dark'] {
       }
 
       #scroll-to-top {
-        color: get-dark-color('accent-color-sec');
+        color: get-dark-color('accent-color');
         &:hover {
-          color: get-dark-color('hover-over-accent-color-sec');
+          color: get-dark-color('hover-over-accent-color');
         }
 
         i {

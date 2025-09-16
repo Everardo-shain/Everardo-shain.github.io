@@ -22,7 +22,6 @@
   }
 }
 
-
 .top-navbar {
   position: fixed;
   left: 0;
@@ -32,13 +31,24 @@
   z-index: 99999;
   margin: 0px;
   padding-top: 0.4rem;
-  color: get-light-color('heading-color');
-  text-align: center;
-  background-color: get-light-color('navbar');
-  @include transition();
+  color: transparent;
+  // border: 10px solid;
+  // border-image-slice: 1;
+  // border-width: 6px;
+  // border-image-source: linear-gradient(45deg, get-light-color('accent-color-grad') 0%,
+  //                                     get-light-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+  //                                     get-light-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+  //                                     get-light-color('accent-color-grad') 100%,);
+  // border-left: 0;
+  // border-right: 0;
+  // border-top: 0;
+  background: linear-gradient(45deg, get-light-color('accent-color-grad') 0%,
+                                      get-light-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+                                      get-light-color('navbar') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+                                      get-light-color('navbar') 100%,);  text-align: center;
 
   .navbar-brand {
-    color: get-light-color('accent-color');
+    color: get-light-color('navbar');
     text-decoration: none !important;
     font-weight: 600;
     img {
@@ -46,8 +56,14 @@
       padding: 5px;
       margin-left: -10px;
     }
+    svg{
+      width: 42px;
+      height: 42px;
+      padding: 5px;
+      margin-left: -10px;
+      color: get-light-color('navbar');
+    }
   }
-
   img {
     display: inline-block;
   }
@@ -89,7 +105,7 @@
     }
   }
   .dropdown-menu {
-    box-shadow: $light-box-shadow;
+    //box-shadow: $light-box-shadow;
     background-color: get-light-color('navbar');
     border: 1px solid rgba(get-light-color('heading-color'), 0.1);
     max-height: 0vh;
@@ -140,22 +156,50 @@
 
   &.transparent-navbar {
     background-color: transparent !important;
+    background: none !important;
     .navbar-brand {
       color: get-light-color('accent-color');
       font-weight: 600;
+      svg{
+        color: get-light-color('accent-color');
+      }
     }
     li {
       a {
-        color: get-light-color('heading-color');
+        color: get-light-color('transparent-navbar-text-color');
       }
     }
     .feather-menu {
-      stroke: get-light-color('heading-color');
+      stroke: get-light-color('transparent-navbar-text-color');
+    }
+    .theme-icon svg{
+      fill:  get-light-color('transparent-navbar-text-color');
+    }
+    .nav-link {
+      &.active,
+      &.show {
+        color: get-light-color('transparent-navbar-text-color');
+      }
     }
   }
 
   &.shadow {
-    box-shadow: $light-box-shadow !important;
+    .navbar-brand {
+      color: get-light-color('navbar');
+      svg{
+        color: get-light-color('navbar');
+      }
+    }
+  }
+  &.menu-open {
+    background: none;
+    background-color: get-light-color('navbar');
+    .navbar-brand {
+      color: get-light-color('accent-color');
+      svg{
+        color: get-light-color('accent-color');
+      }
+    }
   }
   #themeMenu {
     width: 25px;
@@ -204,14 +248,6 @@
       @include transition();
     }
 
-    .languageSelector {
-      position: fixed;
-      right: 0.5rem;
-      bottom: 1rem;
-      z-index: 10000000;
-      background-color: get-light-color('navbar');
-      box-shadow: $light-box-shadow;
-    }
     #themeMenu {
       width: 100%;
     }
@@ -234,11 +270,27 @@
 
 html[data-theme='dark'] {
   .top-navbar {
-    color: get-dark-color('heading-color');
-    background-color: get-dark-color('navbar');
+    color: transparent;
+    // border: 10px solid;
+    // border-image-slice: 1;
+    // border-width: 6px;
+    // border-image-source: linear-gradient(45deg, get-dark-color('accent-color-grad') 0%,
+    //                                     get-dark-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+    //                                     get-dark-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+    //                                     get-dark-color('accent-color-grad') 100%,);
+    // border-left: 0;
+    // border-right: 0;
+    // border-top: 0;
+    background: linear-gradient(45deg, get-dark-color('accent-color-grad') 0%,
+                                        get-dark-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+                                        get-dark-color('navbar') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+                                        get-dark-color('navbar') 100%,);
 
     .navbar-brand {
-      color: get-dark-color('accent-color');
+      color: get-dark-color('navbar');
+      svg{
+        color: get-dark-color('navbar');
+      }
     }
     .sidebar-icon {
       filter: invert(0.5);
@@ -265,7 +317,7 @@ html[data-theme='dark'] {
       }
     }
     .dropdown-menu {
-      box-shadow: $dark-box-shadow;
+      // box-shadow: $dark-box-shadow;
       background-color: get-dark-color('navbar');
       border: 1px solid rgba(get-dark-color('heading-color'), 0.1);
 
@@ -303,19 +355,38 @@ html[data-theme='dark'] {
     &.transparent-navbar {
       .navbar-brand {
         color: get-dark-color('accent-color');
+        svg{
+          color: get-dark-color('accent-color');
+        }
       }
       li {
         a {
-          color: get-dark-color('heading-color');
+          color: get-dark-color('transparent-navbar-text-color');
         }
       }
       .feather-menu {
-        stroke: get-dark-color('heading-color');
+        stroke: get-dark-color('transparent-navbar-text-color');
+      }
+      .theme-icon svg{
+        fill:  get-dark-color('transparent-navbar-text-color');
+      }
+      .nav-link {
+        &.active,
+        &.show {
+          color: get-dark-color('transparent-navbar-text-color');
+        }
       }
     }
 
-    &.shadow {
-      box-shadow: $dark-box-shadow !important;
+    &.menu-open {
+      background: none;
+      background-color: get-dark-color('navbar');
+      .navbar-brand {
+        color: get-dark-color('accent-color');
+        svg{
+          color: get-dark-color('accent-color');
+        }
+      }
     }
   }
 
@@ -335,10 +406,6 @@ html[data-theme='dark'] {
       border-top: 2px solid get-dark-color('accent-color-sec');
     }
 
-    .languageSelector {
-      background-color: get-dark-color('navbar');
-      box-shadow: $dark-box-shadow;
-    }
   }
   #themeMenu {
     .theme-icon svg{
