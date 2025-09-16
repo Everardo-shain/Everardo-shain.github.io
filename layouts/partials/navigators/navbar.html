@@ -13,7 +13,6 @@
 {{/* by default, don't use any logo */}}
 {{ $mainLogo := "" }}
 {{ $invertedLogo := "" }}
-{{ $darkLogo := "" }}
 
 {{/*  if custom logo has been provided, use them  */}}
 {{ if site.Params.logo.main }}
@@ -22,33 +21,14 @@
 {{ if site.Params.logo.inverted }}
   {{ $invertedLogo = site.Params.logo.inverted }}
 {{ end }}
-{{ if site.Params.logo.dark }}
-  {{ $darkLogo = site.Params.logo.dark }}
-{{ end }}
 
 {{/* resize the logos. don't resize svg because it is not supported */}}
 {{ if $mainLogo }}
   {{ $mainLogo = resources.Get $mainLogo}}
-  {{ if and $mainLogo (not (or (eq $mainLogo.MediaType.SubType "svg") (eq $mainLogo.MediaType.SubType "gif"))) }}
-    {{ $mainLogo = $mainLogo.Resize "42x" }}
-  {{ end }}
-  {{ $mainLogo = $mainLogo.RelPermalink}}
 {{ end }}
 
 {{ if $invertedLogo }}
   {{ $invertedLogo = resources.Get $invertedLogo}}
-  {{ if and $invertedLogo (not (or (eq $invertedLogo.MediaType.SubType "svg") (eq $invertedLogo.MediaType.SubType "gif"))) }}
-    {{ $invertedLogo = $invertedLogo.Resize "42x" }}
-  {{ end }}
-  {{ $invertedLogo = $invertedLogo.RelPermalink}}
-{{ end }}
-
-{{ if $darkLogo }}
-  {{ $darkLogo = resources.Get $darkLogo}}
-  {{ if and $darkLogo (not (or (eq $darkLogo.MediaType.SubType "svg") (eq $darkLogo.MediaType.SubType "gif"))) }}
-    {{ $darkLogo = $darkLogo.Resize "42x" }}
-  {{ end }}
-  {{ $darkLogo = $darkLogo.RelPermalink}}
 {{ end }}
 
 {{ $logo := $mainLogo }}
@@ -79,9 +59,16 @@
     </button>
     {{ end }}
     <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
-      {{ if $logo }}
-        <img src="{{ $logo }}" id="logo" alt="Logo">
-      {{ end }}
+      <span id="logo-slot">
+        {{ if $logo }}
+          {{ if eq $logo.MediaType.SubType "svg" }}
+            {{ $logo.Content | safeHTML }}
+          {{ else }}
+            {{ $logo = $logo.Resize "42x" }}
+            <img src="{{ $logo.RelPermalink }}" alt="Logo">
+          {{ end }}
+        {{ end }}
+      </span>
       {{- $navBarTitle -}}
     </a>
     <button
@@ -161,12 +148,25 @@
   </div>
   <!-- Store the logo information in a hidden img for the JS -->
   {{ if $mainLogo }}
-    <img src="{{ $mainLogo }}" class="d-none" id="main-logo" alt="Logo">
+    <span class="d-none" id="main-logo-slot">
+      {{ if eq $mainLogo.MediaType.SubType "svg" }}
+        {{ $mainLogo.Content | safeHTML }}
+      {{ else }}
+        {{ $mainLogo = $mainLogo.Resize "42x" }}
+        <img src="{{ $mainLogo.RelPermalink }}" alt="Logo">
+      {{ end }}
+    </span>
   {{ end }}
+
   {{ if $invertedLogo }}
-    <img src="{{ $invertedLogo }}" class="d-none" id="inverted-logo" alt="Inverted Logo">
-  {{ end }}
-  {{ if $darkLogo }}
-    <img src="{{ $darkLogo }}" class="d-none" id="dark-logo" alt="Dark Logo">
+    <span class="d-none" id="inverted-logo-slot">
+      {{ if eq $invertedLogo.MediaType.SubType "svg" }}
+        {{ $invertedLogo.Content | safeHTML }}
+      {{ else }}
+        {{ $invertedLogo = $invertedLogo.Resize "42x" }}
+        <img src="{{ $invertedLogo.RelPermalink }}" alt="Logo">
+      {{ end }}
+    </span>
   {{ end }}
 </nav>
+

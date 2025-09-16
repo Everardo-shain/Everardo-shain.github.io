@@ -1,57 +1,95 @@
 const updateNavBar = () => {
-  const topNavbar = document.getElementById('top-navbar')
-  const navbarToggler = document.getElementById('navbar-toggler')
-  const themeIcon = document.getElementById('navbar-theme-icon-svg')
+  const topNavbar = document.getElementById('top-navbar');
+  const navbarToggler = document.getElementById('navbar-toggler');
 
+  // If menu is open, force solid navbar
+  if (topNavbar?.classList.contains('menu-open')) {
+    topNavbar.classList.remove('transparent-navbar');
+    topNavbar.classList.add('shadow');
+
+    navbarToggler?.classList.remove('navbar-dark');
+    navbarToggler?.classList.add('navbar-light');
+
+    swapLogo('main-logo-slot'); // solid navbar logo
+    return; // skip scroll logic
+  }
+
+  // Otherwise, apply scroll-based styling
   if (window.scrollY > 40) {
-    topNavbar?.classList.remove('transparent-navbar')
-    topNavbar?.classList.add('shadow')
+    topNavbar?.classList.remove('transparent-navbar');
+    topNavbar?.classList.add('shadow');
 
-    navbarToggler?.classList.remove('navbar-dark')
-    navbarToggler?.classList.add('navbar-light')
+    navbarToggler?.classList.remove('navbar-dark');
+    navbarToggler?.classList.add('navbar-light');
 
-    // get the main logo from hidden img tag
-    const mainLogo = document.getElementById('main-logo')
-    if (mainLogo) {
-      const logoURL = mainLogo.getAttribute('src')
-      document.getElementById('logo')?.setAttribute('src', logoURL)
-    }
+    swapLogo('main-logo-slot');
   } else {
-    topNavbar?.classList.remove('shadow')
-    topNavbar?.classList.add('transparent-navbar')
+    topNavbar?.classList.remove('shadow');
+    topNavbar?.classList.add('transparent-navbar');
 
-    navbarToggler?.classList.remove('navbar-light')
-    navbarToggler?.classList.add('navbar-dark')
+    navbarToggler?.classList.remove('navbar-light');
+    navbarToggler?.classList.add('navbar-dark');
 
-    // get the inverted logo from hidden img tag
-    const invertedLogo = document.getElementById('inverted-logo')
-    if (invertedLogo) {
-      const logoURL = invertedLogo.getAttribute('src')
-      document.getElementById('logo')?.setAttribute('src', logoURL)
-    }
+    swapLogo('inverted-logo-slot');
+  }
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  const topNavbar = document.getElementById('top-navbar');
+  const navMain = document.querySelector('.navbar-collapse');
+
+  if (topNavbar && navMain) {
+    // Track Bootstrap collapse events
+    navMain.addEventListener('show.bs.collapse', () => {
+      topNavbar.classList.add('menu-open');
+      updateNavBar(); // reapply styles immediately
+    });
+
+    navMain.addEventListener('hide.bs.collapse', () => {
+      topNavbar.classList.remove('menu-open');
+      updateNavBar(); // restore scroll-based styles
+    });
+  }
+
+  // Existing scroll-based behavior
+  if (topNavbar?.classList.contains('homepage')) {
+    document.addEventListener('scroll', updateNavBar);
+    updateNavBar();
+  }
+
+  // Close menu when clicking a link
+  const navMains = document.getElementsByClassName('navbar-collapse');
+  Array.from(navMains).forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && !e.target.classList.contains('dropdown-toggle')) {
+        el.classList.add('collapse');
+        el.classList.remove('show');
+      }
+    });
+  });
+});
+
+// gradient updater stays the same
+function swapLogo(slotId) {
+  const fromSlot = document.getElementById(slotId);
+  const logoSlot = document.getElementById('logo-slot');
+
+  if (fromSlot && logoSlot) {
+    logoSlot.innerHTML = fromSlot.innerHTML;
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  // change navbar style on scroll
-  // ==================================================
-  // When the user scrolls down 80px from the top of the document,
-  // resize the navbar's padding and the logo's font size
-  const topNavbar = document.getElementById('top-navbar')
-  if (topNavbar?.classList.contains('homepage')) {
-    document.addEventListener('scroll', updateNavBar)
-    updateNavBar()
-  }
+function updateGradient() {
+  const brand = document.querySelector('.navbar-brand');
+  const navbar = document.querySelector('.navbar');
 
-  // Creates a click handler to collapse the navigation when
-  // anchors in the mobile nav pop up are clicked
-  const navMain = document.getElementsByClassName('navbar-collapse')
-  Array.from(navMain).forEach(function (el) {
-    el.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A' && !e.target.classList.contains("dropdown-toggle")) {
-        el.classList.add('collapse')
-        el.classList.remove('show')
-      }
-    })
-  })
-})
+  const brandLeft = brand.offsetLeft;
+  const brandEnd = brandLeft + brand.offsetWidth;
+  const brandEndPercent = (brandEnd / navbar.offsetWidth) * 100;
+
+  navbar.style.setProperty('--brand-width-percent', `${brandEndPercent}%`);
+  navbar.style.setProperty('--navbar-height', `${navbar.offsetHeight}px`);
+}
+
+updateGradient();
+window.addEventListener('resize', updateGradient);

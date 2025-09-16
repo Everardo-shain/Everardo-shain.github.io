@@ -23,6 +23,8 @@ $light-accent-color: #0077b8;
 $dark-accent-color: #8ab4f8;
 $light-accent-color-sec: #ff0000;
 $dark-accent-color-sec: #f54a4a;
+$light-accent-color-grad: $light-accent-color;
+$dark-accent-color-grad: $dark-accent-color;
 $light-card: #eaeaea;
 $dark-card: #313131;
 
@@ -38,6 +40,8 @@ $themes: (
     'hover-over-accent-color': lighten($light-accent-color, 20%),
     'accent-color-sec': $light-accent-color-sec,
     'hover-over-accent-color-sec': lighten($light-accent-color-sec, 20%),
+    'accent-color-grad': $light-accent-color-grad,
+    'hover-over-accent-color-grad': lighten($light-accent-color-grad, 20%),
     'hover-over-button-color': darken($light-card, 10%),
     'text-over-accent-color': $light-card,
     'body': #ffffff,
@@ -49,6 +53,7 @@ $themes: (
     'text-color': #2b2b2b,
     'inverse-text-color': #e0e0e0,
     'muted-text-color': #777777,
+    'transparent-navbar-text-color': #ffffff,
     'inline-code-color': #444444,
     'highlight-color': #bdbdbd,
     'progress-color': $light-accent-color,    
@@ -65,6 +70,8 @@ $themes: (
     'accent-color-sec': $dark-accent-color-sec,
     'hover-over-accent-color-sec': darken($dark-accent-color-sec, 20%),
     'hover-over-button-color': lighten($dark-card, 10%),
+    'accent-color-grad': $dark-accent-color-grad,
+    'hover-over-accent-color-grad': darken($dark-accent-color-grad, 20%),
     'text-over-accent-color': $dark-card,
     'body': #181818,
     'bg-primary': #181818,
@@ -75,13 +82,14 @@ $themes: (
     'text-color': #e0e0e0,
     'inverse-text-color': #2b2b2b,
     'muted-text-color': #9c9c9c,
+    'transparent-navbar-text-color': #ffffff,
     'inline-code-color': #bbbbbb,
     'highlight-color': #444444,
     'progress-color': $dark-accent-color,    
     'progress-color-sec': $dark-accent-color-sec,
     'box-over-image': $dark-card,
     'text-over-box': #e0e0e0,
-    'navbar': #181818,
+    'navbar': #1f1f1f,
     'footer-color': $dark-card,
   ),
 
