@@ -32,14 +32,15 @@
   margin: 0px;
   padding-top: 0.4rem;
   color: transparent;
-  border-bottom: 1px solid rgba(get-light-color('heading-color'), 0.1);
+  // border-bottom: 1px solid darken(get-light-color('navbar'), 10%);
+
   // border: 10px solid;
   // border-image-slice: 1;
-  // border-width: 6px;
+  // border-width: 1px;
   // border-image-source: linear-gradient(45deg, get-light-color('accent-color-grad') 0%,
   //                                     get-light-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
-  //                                     get-light-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
-  //                                     get-light-color('accent-color-grad') 100%,);
+  //                                     darken(get-light-color('navbar'), 10%) calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+  //                                     darken(get-light-color('navbar'), 10%) 100%,);
   // border-left: 0;
   // border-right: 0;
   // border-top: 0;
@@ -108,7 +109,7 @@
   .dropdown-menu {
     //box-shadow: $light-box-shadow;
     background-color: get-light-color('navbar');
-    border: 1px solid rgba(get-light-color('heading-color'), 0.1);
+    border: 1px solid darken(get-light-color('navbar'), 10%);
     max-height: 0vh;
     overflow: hidden;
     display: block;
@@ -273,14 +274,15 @@
 html[data-theme='dark'] {
   .top-navbar {
     color: transparent;
-    border-bottom: 1px solid rgba(get-dark-color('heading-color'), 0.1);
+    // border-bottom: 1px solid lighten(get-dark-color('navbar'), 10%);
+
     // border: 10px solid;
     // border-image-slice: 1;
-    // border-width: 6px;
+    // border-width: 1px;
     // border-image-source: linear-gradient(45deg, get-dark-color('accent-color-grad') 0%,
     //                                     get-dark-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
-    //                                     get-dark-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
-    //                                     get-dark-color('accent-color-grad') 100%,);
+    //                                     lighten(get-dark-color('navbar'), 10%) calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
+    //                                     lighten(get-dark-color('navbar'), 10%) 100%,);
     // border-left: 0;
     // border-right: 0;
     // border-top: 0;
@@ -322,7 +324,7 @@ html[data-theme='dark'] {
     .dropdown-menu {
       // box-shadow: $dark-box-shadow;
       background-color: get-dark-color('navbar');
-      border: 1px solid rgba(get-dark-color('heading-color'), 0.1);
+      border: 1px solid lighten(get-dark-color('navbar'), 10%);
 
       &.show {
         a {
@@ -338,7 +340,6 @@ html[data-theme='dark'] {
       &.show,
       &.collapsing {
         background-color: get-dark-color('navbar');
-
         li {
           a {
             color: get-dark-color('heading-color');

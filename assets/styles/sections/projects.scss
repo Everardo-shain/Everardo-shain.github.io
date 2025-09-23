@@ -11,6 +11,9 @@
       padding: 0.7rem;
       padding-bottom: 0rem;
       text-decoration: none !important;
+      svg{
+        color: get-light-color('accent-color');
+      }
       .card-img-xs {
         margin-right: 0.5rem;
       }
@@ -35,6 +38,9 @@
     &:hover .card-header,
     &:focus .card-header{
       border-bottom: 2px solid get-light-color('hover-over-accent-color-sec');
+      svg{
+      color: get-light-color('hover-over-accent-color');
+      }
     }
   }
   .card a {
@@ -114,6 +120,9 @@ html[data-theme='dark'] {
       .card-header {
         border-bottom: 2px solid get-dark-color('accent-color-sec');
         background-color: get-dark-color('bg-card');
+        svg{
+          color: get-dark-color('accent-color');
+        }
         .sub-title {
           color: get-dark-color('muted-text-color');
         }
@@ -121,6 +130,9 @@ html[data-theme='dark'] {
     &:hover .card-header,
     &:focus .card-header{
       border-bottom: 2px solid get-dark-color('hover-over-accent-color-sec');
+      svg{
+      color: get-dark-color('hover-over-accent-color');
+      }
     }
     }
   }
