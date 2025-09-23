@@ -57,6 +57,7 @@ projects:
   tags: ["optimization", "c"]
   categories: ["data and optimization", "featured"]
   post: "posts/projects/NBV/index.md"
+  logo: "fas fa-eye"
 
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
@@ -65,13 +66,15 @@ projects:
   tags: ["software", "c"]
   categories: ["featured", "software"]
   post: "posts/projects/Poker Simulation/index.md"
-
+  logo: "fas fa-heart"
+  
 - name: Northeastern Home Goods Vehicle Routing
   image: /images/sections/projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
   role: Analyst and Developer
   summary: Optimized by 15.5% a vehicle routing problem of 45 deliveries on GAMS, and the total 261 deliveries by 12.1% with the Clarke and Wright Savings Algorithm coded on R.
   tags: ["optimization","gams", "r"]
   categories: ["data and optimization"]
+  logo: "fas fa-route"
 
 - name: US Children Adoption Statistical Inference
   image: /images/sections/projects/US Children Adoption Statistical Inference/multimedia/imagenes.png
@@ -80,6 +83,7 @@ projects:
   tags: ["data science", "statistical inference", "r"]
   categories: ["featured", "data and optimization"]
   post: "posts/projects/US Children Adoption Statistical Inference/index.md"
+  logo: "fas fa-chart-simple"
 
 - name: IC Genetic Algorithm
   image: /images/sections/projects/IC Genetic Algorithm/multimedia/imagenes.png
@@ -87,6 +91,7 @@ projects:
   summary: Implemented a genetic algorithm on Python that optimized 4 parameters of an integrated circuit, minimizing the MSE down to 2.78% using 100 generations of 32 chromosomes with 20 genes.
   tags: ["optimization", "python"]
   categories: ["data and optimization"]
+  logo: "fas fa-dna"
 
 - name: Industrial AGV
   image: /images/sections/projects/Industrial AGV/multimedia/imagenes.png
@@ -96,6 +101,7 @@ projects:
   categories: ["featured", "control and navigation"]
   video: https://youtu.be/e6znDIl7ap0
   post: "posts/projects/Industrial AGV/index.md"
+  logo: "fas fa-compass"
 
 - name: Industrial Robotics Tower of Hanoi
   image: /images/sections/projects/Industrial Robotics Tower of Hanoi/multimedia/imagenes.png
@@ -104,6 +110,7 @@ projects:
   tags: ["automation","python","ur10e"]
   categories: ["automation"]
   video: https://youtu.be/PPkQLMn-2hs
+  logo: "fas fa-robot"
 
 - name: Car Design
   image: /images/sections/projects/Car Design/multimedia/imagenes.png
@@ -111,6 +118,7 @@ projects:
   summary: Designed the exterior of a car using Siemens NX, applying surface modeling techniques and creating brackets for a complete assembly with an existing chassis model.
   tags: ["cad", "siemens nx"]
   categories: ["design"]
+  logo: "fas fa-car"
 
 - name: Battery Bank Cooling System
   image: /images/sections/projects/Battery Bank Cooling System/multimedia/imagenes.png
@@ -118,6 +126,7 @@ projects:
   summary: Programmed a battery cooling system with an Arduino Nano and a LabVIEW HMI to define the desired temperature limits plus visualize the current, voltage and temperature.
   tags: ["embedded","arduino", "labview"]
   categories: ["embedded"]
+  logo: "fas fa-car-battery"
 
 - name: Laser Harp
   image: /images/sections/projects/Laser Harp/multimedia/imagenes.png
@@ -126,6 +135,7 @@ projects:
   tags:  ["embedded", "arduino"]
   categories: ["embedded"]
   video: https://youtu.be/3o-LQzRDszI
+  logo: "fas fa-music"
 
 - name: Step Ladder Assembly
   image: /images/sections/projects/Step Ladder Assembly/multimedia/imagenes.png
@@ -133,6 +143,7 @@ projects:
   summary: Designed on Siemens NX a step ladder assembly including screws, rubber feet, rails and steps. Parametric design was used for its dimensions and shape (vertical, W shaped, V shaped, closed).
   tags: ["cad", "siemens nx"]
   categories: ["design"]
+  logo: "fas fa-stairs"
 
 - name: Robomatrix 2022 | Robociety
   image: /images/sections/projects/Robomatrix 2022/multimedia/imagenes.png
@@ -141,6 +152,7 @@ projects:
   tags: ["embedded", "arduino"]
   categories: ["embedded"]
   video: https://youtu.be/fhyYnLaLY4I
+  logo: "fas fa-shield"
 
 - name: Bicycle Assembly
   image: /images/sections/projects/Bicycle Assembly/multimedia/imagenes.png
@@ -148,6 +160,7 @@ projects:
   summary: Designed on Siemens NX a bicycle assembly including wheels, pedals, seat, sprockets, handle and frame. Parametric design was used for its dimensions and by giving the user the option to include a basket.
   tags: ["cad", "siemens nx"]
   categories: ["design"]
+  logo: "fas fa-bicycle"
 
 - name: Turret Tracking
   image: /images/sections/projects/Turret Tracking/multimedia/imagenes.png
@@ -156,6 +169,7 @@ projects:
   tags: ["control systems", "matlab", "arduino"]
   categories: ["control and navigation"]
   video: https://youtu.be/KQ9zRreEm9I
+  logo: "fas fa-crosshairs"
 
 - name: Conveyor Belt
   image: /images/sections/projects/Conveyor Belt/multimedia/imagenes.png
@@ -164,6 +178,7 @@ projects:
   tags: ["automation", "plc"]
   categories: ["automation"]
   video: https://youtu.be/xhTHO3_LCNc
+  logo: "fas fa-industry"
 
 - name: Scooter Design
   image: /images/sections/projects/Scooter Design/multimedia/imagenes.png
@@ -171,6 +186,7 @@ projects:
   summary: Contributed on the project design of an electric scooter where we made a QFD, flow diagram, morphologic analysis, Pugh chart, CAD design, FEA, circuit design, programming and blueprints.
   tags: ["project design"]
   categories: ["design"]
+  logo: "fas fa-diagram-project"
 
 - name: IMDB Sentiment Analysis
   image: /images/sections/projects/IMDB Sentiment Analysis/multimedia/imagenes.png
@@ -178,6 +194,7 @@ projects:
   summary: Contributed to the sentiment analysis of IMDB comments by coding on Python a tokenizer of 300 elements using spaCy and a CNN model with a test loss of 0.302 and a test accuracy of 88.38%.
   tags: ["data science", "machine learning", "python"]
   categories: ["data and optimization"]
+  logo: "fas fa-brain"
 
 - name: Upright CNC Router
   image: /images/sections/projects/Upright CNC Router/multimedia/imagenes.png
@@ -187,6 +204,7 @@ projects:
   categories: ["featured", "control and navigation"]
   video: https://youtu.be/5scmf3VBpIU
   post: "posts/projects/Upright CNC Router/index.md"
+  logo: "fas fa-shapes"
 
 - name: Smart Bulb
   image: /images/sections/projects/Smart Bulb/multimedia/imagenes.png
@@ -195,6 +213,7 @@ projects:
   tags: ["embedded", "microcontroller"]
   categories: ["embedded"]
   video: https://youtu.be/FWT_69kZMYQ
+  logo: "fas fa-lightbulb"
 
 - name: Robofest 2022 | Robociety
   image: /images/sections/projects/Robofest 2022/multimedia/imagenes.png
@@ -204,6 +223,7 @@ projects:
   categories: ["featured", "embedded"]
   video: https://youtu.be/e-Wuxif8ChU
   post: "posts/projects/Robofest 2022/index.md"
+  logo: "fas fa-bottle-water"
 
 - name: Airline Passengers Prediction
   image: /images/sections/projects/Airline Passengers Prediction/multimedia/imagenes.png
@@ -211,6 +231,7 @@ projects:
   summary: Coded on Python a LSTM model to predict the number of passengers per date of an airline company, having a loss of 0.00162 with a learning rate of 0.01 in 2000 epochs.
   tags: ["data science", "machine learning", "python"]
   categories: ["data and optimization"]
+  logo: "fas fa-plane"
 
 - name: Tomato Harvesting Robot
   image: /images/sections/projects/Tomato Harvesting Robot/multimedia/imagenes.png
@@ -220,6 +241,7 @@ projects:
   categories: ["featured", "automation"]
   video: https://youtu.be/NaoElE4skmY
   post: "posts/projects/Tomato Harvesting Robot/index.md"
+  logo: "fas fa-gear"
 
 - name: Car Motor System
   image: /images/sections/projects/Car Motor System/multimedia/imagenes.png
@@ -227,6 +249,7 @@ projects:
   summary: Programmed on C the Proteus circuit of a car motor system with MPLAB X IDE on a PIC16f877a microcontroller, controlling the motor behavior on 3 weather condition scenarios.
   tags: ["embedded", "proteus", "c","microcontroller"]
   categories: ["embedded"]
+  logo: "fas fa-microchip"
 
 - name: Elevator
   image: /images/sections/projects/Elevator/multimedia/imagenes.png
@@ -236,6 +259,7 @@ projects:
   categories: ["featured", "automation"]
   video: https://youtu.be/OM1dn-VYwz8
   post: "posts/projects/Elevator/index.md"
+  logo: "fas fa-elevator"
 
 - name: Power Source
   image: /images/sections/projects/Power Source/multimedia/imagenes.png
@@ -243,6 +267,7 @@ projects:
   summary: Contributed to the development of a power source with short circuit and overcurrent protection, giving outputs from 1.2 to 30.6 Volts. The simulation was made with Proteus, and a real prototype was built.
   tags: ["electronic design", "proteus"]
   categories: ["design"]
+  logo: "fas fa-plug"
 
 - name: IoT Sensor Data Classification
   image: /images/sections/projects/IoT Sensor Data Classification/multimedia/imagenes.png
@@ -251,6 +276,7 @@ projects:
   tags: ["data science", "machine learning", "IoT", "python", "arduino"]
   categories: ["featured", "data and optimization"]
   post: "posts/projects/IoT Sensor Data Classification/index.md"
+  logo: "fas fa-temperature-half"
 
 - name: Car Alarm System
   image: /images/sections/projects/Car Alarm System/multimedia/imagenes.png
@@ -258,6 +284,7 @@ projects:
   summary: Programmed on assembly language the Proteus circuit of a car alarm system with MPLAB X IDE on a PIC16F84A microcontroller by simulating doors and key buttons, plus light and sound indicators.
   tags: ["embedded", "proteus","assembly","microcontroller"]
   categories: ["embedded"]
+  logo: "fas fa-car-on"
 
 - name: Sorting Line
   image: /images/sections/projects/Sorting Line/multimedia/imagenes.png
@@ -265,6 +292,7 @@ projects:
   summary: Programmed a simulated sorting line using ladder language on a PLC with TIA Portal, successfully sorting parcels from 4 different types using sensors and pistons without overfilling the containers.
   tags: ["automation", "plc"]
   categories: ["automation"]
+  logo: "fas fa-box-open"
 
 - name: Traffic Light Simulation
   image: /images/sections/projects/Traffic Light Simulation/multimedia/imagenes.png
@@ -273,6 +301,7 @@ projects:
   tags: ["automation", "plc"]
   categories: ["automation"]
   video: https://youtu.be/Rve9ntNXj7c
+  logo: "fas fa-traffic-light"
 
 - name: Audio Filtering
   image: /images/sections/projects/Audio Filtering/multimedia/imagenes.png
@@ -280,6 +309,7 @@ projects:
   summary: Programmed on MATLAB an audio filtering system that took a piece of a song and added high frequency noise to then filter it using a low-pass filter to return to the original song.
   tags: ["software", "signal processing", "matlab"]
   categories: ["software"]
+  logo: "fas fa-wave-square"
 
 - name: Cleaner Robot
   image: /images/sections/projects/Cleaner Robot/multimedia/imagenes.png
@@ -288,6 +318,7 @@ projects:
   tags: ["navigation", "labview"]
   categories: ["control and navigation"]
   video: https://youtu.be/SyzPRuBWdbQ
+  logo: "fas fa-broom"
 
 - name: Millipede Video Game
   image: /images/sections/projects/Millipede Video Game/multimedia/imagenes.png
@@ -296,6 +327,7 @@ projects:
   tags:  ["software", "labview"]
   categories: ["software"]
   video: https://youtu.be/ofYekjYC_y0
+  logo: "fas fa-gamepad"
 
 - name: Vending Machine
   image: /images/sections/projects/Vending Machine/multimedia/imagenes.png
@@ -304,6 +336,7 @@ projects:
   tags: ["software", "labview"]
   categories: ["software"]
   video: https://youtu.be/WnUSUwC09L8
+  logo: "fas fa-coins"
 
 - name: Basketball Game
   image: /images/sections/projects/Basketball Game/multimedia/imagenes.png
@@ -311,6 +344,7 @@ projects:
   summary: Contributed to the design of an electronic circuit for a multiplayer basketball game with GAL16V8 PALs programmed with CUPL, 74161 binary counters and 7448 decoders for seven-segment displays.
   tags: ["electronic design"]
   categories: ["design"]
+  logo: "fas fa-basketball"
 
 - name: Router Access
   image: /images/sections/projects/Router Access/multimedia/imagenes.png
@@ -318,6 +352,7 @@ projects:
   summary: Coded with C++ a router access validation program, where users get an assigned access level if their account and password match the database, plus also adding their connection date into an access list file.
   tags: ["software", "c++"]
   categories: ["software"]
+  logo: "fas fa-lock"
 
 - name: Payroll Software
   image: /images/sections/projects/Payroll Software/multimedia/imagenes.png
@@ -325,6 +360,7 @@ projects:
   summary: Coded with C++ a program that makes payroll registrations on a text file database and makes salary queries by payroll, country, division and department plus a complete report with all entries.
   tags: ["software", "c++"]
   categories: ["software"]
+  logo: "fas fa-file-lines"
 
 - name: Battleship
   image: /images/sections/projects/Battleship/multimedia/imagenes.png
@@ -332,3 +368,4 @@ projects:
   summary: Programmed with C++ a two-player battleship game that requested both boards as text files and displayed them on an executable file, asking for both players’ moves and showing the final result.
   tags: ["software", "c++"]
   categories: ["software"]
+  logo: "fas fa-ship"
