@@ -1,3 +1,61 @@
 resources/*
 node_modules/*
 public/*
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+
+# Visual Studio Code settings
+.vscode/
+
+# Rider IDE
+.idea/
+
+# Build artifacts
+*.dll
+*.exe
+*.app
+*.out
+*.iobj
+*.ipdb
+*.pdb
+
+# Packages
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Others
+*.dbmdl
+*.bak
+*.tmp
+*.swp
+*.lock
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
