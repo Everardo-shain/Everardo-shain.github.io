@@ -54,7 +54,7 @@ skills:
     - <strong>Programming languages:</strong> Python, R, SQL. 
   categories: ["computational"]
 
-- name: Automation
+- name: Automation and Robotics
   icon: "fas fa-robot"
   summary: |
     Automation of industrial processes using PLCs. Programming of robotic arms including direct and inverse kinematics.
