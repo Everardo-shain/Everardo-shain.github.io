@@ -33,16 +33,16 @@
 
 {{/* apply image processing. don't use "Fit" in svg or gif because its not supported */}}
 {{ if and $authorImage (and (ne $authorImage.MediaType.SubType "svg") ( ne $authorImage.MediaType.SubType "gif")) }}
-  {{ $authorImage = $authorImage.Fit "148x148" }}
+  {{ $authorImage = $authorImage.Fit "1000x1000" }}
 {{ end }}
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
 {{ $src := resources.Get $backgroundImage }}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
-{{ $tinyw := default "500x" }}
-{{ $smallw := default "800x" }}
-{{ $mediumw := default "1200x" }}
+{{ $tinyw := default "1500x" }}
+{{ $smallw := default "1500x" }}
+{{ $mediumw := default "1500x" }}
 {{ $largew := default "1500x" }}
 
 {{/* resize the src image to the given sizes */}}
@@ -174,10 +174,14 @@
     class="background container-fluid"
   ></div>
   <div class="container content text-center">
-    <img src="{{ $authorImage.RelPermalink }}"
-      class="rounded-circle mx-auto d-block img-fluid"
-      alt="Author Image"
-    />
+    <div class="profile-frame">
+      <img src="{{ $authorImage.RelPermalink }}"
+        class="rounded-circle mx-auto d-block img-fluid"
+        alt="Author Image"
+      />
+      <span></span>
+      <span></span>
+    </div>
     <h1 class="greeting"> 
       <!-- <i class="fa fa-chevron-right"></i> {{ $author.greeting }} {{ $name }} 
       <span class="cursor blink">|</span> -->
