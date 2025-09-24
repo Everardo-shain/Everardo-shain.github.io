@@ -124,9 +124,9 @@ body.kind-page {
         margin-right: 0.5rem;
         @include transition();
         hr {
-          color: get-light-color('accent-color-sec');
+          color: get-light-color('accent-color-border');
           border: 0;
-          border-top: 2px solid get-light-color('accent-color-sec');
+          border-top: 2px solid get-light-color('accent-color-border');
           opacity: 1;
         }
         .toc {
@@ -359,9 +359,9 @@ html[data-theme='dark'] {
         .toc-holder {
           background-color: get-dark-color('bg-primary');
           hr {
-            color: get-dark-color('accent-color-sec');
+            color: get-dark-color('accent-color-border');
             border: 0;
-            border-top: 2px solid get-dark-color('accent-color-sec');
+            border-top: 2px solid get-dark-color('accent-color-border');
             opacity: 1;
           }
 

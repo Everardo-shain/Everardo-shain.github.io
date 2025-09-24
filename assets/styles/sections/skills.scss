@@ -14,7 +14,7 @@
       aspect-ratio: unset;
       padding: 0.7rem;
       padding-bottom: 0rem;
-      border-bottom: 2px solid get-light-color('accent-color-sec');
+      border-bottom: 2px solid get-light-color('accent-color-border');
 
       .card-img-xs {
         margin-right: 0.5rem;
@@ -35,14 +35,14 @@
       margin-bottom: 0;
     }
 
-    &:hover .card-head,
-    &:focus .card-head{
-      border-bottom: 2px solid get-light-color('hover-over-accent-color-sec');
-    }
-    &:hover .card-title svg,
-    &:focus .card-title svg{
-      color: get-light-color('hover-over-accent-color') !important;
-    }
+    // &:hover .card-head,
+    // &:focus .card-head{
+    //   border-bottom: 2px solid get-light-color('hover-over-accent-color-border');
+    // }
+    // &:hover .card-title svg,
+    // &:focus .card-title svg{
+    //   color: get-light-color('hover-over-accent-color') !important;
+    // }
   }
   .filtr-skills {
     padding: 1rem !important;
@@ -70,16 +70,16 @@ html[data-theme='dark'] {
       background-color: get-dark-color('bg-card') !important;
       .card-head {
         background-color: get-dark-color('bg-card') !important;
-        border-bottom: 2px solid get-dark-color('accent-color-sec');
+        border-bottom: 2px solid get-dark-color('accent-color-border');
       }
-      &:hover .card-head,
-      &:focus .card-head{
-        border-bottom: 2px solid get-dark-color('hover-over-accent-color-sec');
-      }
-      &:hover .card-title svg,
-      &:focus .card-title svg{
-        color: get-dark-color('hover-over-accent-color') !important;
-      }
+      // &:hover .card-head,
+      // &:focus .card-head{
+      //   border-bottom: 2px solid get-dark-color('hover-over-accent-color-border');
+      // }
+      // &:hover .card-title svg,
+      // &:focus .card-title svg{
+      //   color: get-dark-color('hover-over-accent-color') !important;
+      // }
     }
   }
 }

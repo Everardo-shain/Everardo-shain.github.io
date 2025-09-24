@@ -25,8 +25,8 @@ input {
 }
 
 blockquote {
-  border-left: 4px solid get-light-color('accent-color-sec');
-  background-color: rgba(get-light-color('accent-color-sec'), 0.05);
+  border-left: 4px solid get-light-color('accent-color-border');
+  background-color: rgba(get-light-color('accent-color-border'), 0.05);
   padding: 0.3rem;
   padding-left: 1rem;
 
@@ -100,8 +100,8 @@ html[data-theme='dark'] {
   }
 
   blockquote {
-    border-left: 4px solid get-dark-color('accent-color-sec');
-    background-color: rgba(get-dark-color('accent-color-sec'), 0.05);
+    border-left: 4px solid get-dark-color('accent-color-border');
+    background-color: rgba(get-dark-color('accent-color-border'), 0.05);
     color: get-dark-color('text-color');
   }
 

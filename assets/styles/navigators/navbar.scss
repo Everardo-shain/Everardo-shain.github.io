@@ -37,14 +37,14 @@
   // border: 10px solid;
   // border-image-slice: 1;
   // border-width: 1px;
-  // border-image-source: linear-gradient(45deg, get-light-color('accent-color-grad') 0%,
+  // border-image-source: linear-gradient(45deg, get-light-color('accent-color') 0%,
   //                                     get-light-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
   //                                     darken(get-light-color('navbar'), 10%) calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
   //                                     darken(get-light-color('navbar'), 10%) 100%,);
   // border-left: 0;
   // border-right: 0;
   // border-top: 0;
-  background: linear-gradient(45deg, get-light-color('accent-color-grad') 0%,
+  background: linear-gradient(45deg, get-light-color('accent-color') 0%,
                                       get-light-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
                                       get-light-color('navbar') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
                                       get-light-color('navbar') 100%,);  text-align: center;
@@ -96,7 +96,7 @@
   #top-navbar-divider {
     $divider-height: 25px;
     margin-top: (42px-$divider-height)/2;
-    background-color: get-light-color('accent-color-sec');
+    background-color: get-light-color('accent-color-border');
     height: $divider-height;
     width: 2px;
   }
@@ -242,7 +242,7 @@
       width: auto;
       margin-right: 15px;
       margin-left: 15px;
-      border-top: 2px solid get-light-color('accent-color-sec');
+      border-top: 2px solid get-light-color('accent-color-border');
     }
 
     .dropdown-menu {
@@ -279,14 +279,14 @@ html[data-theme='dark'] {
     // border: 10px solid;
     // border-image-slice: 1;
     // border-width: 1px;
-    // border-image-source: linear-gradient(45deg, get-dark-color('accent-color-grad') 0%,
+    // border-image-source: linear-gradient(45deg, get-dark-color('accent-color') 0%,
     //                                     get-dark-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
     //                                     lighten(get-dark-color('navbar'), 10%) calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
     //                                     lighten(get-dark-color('navbar'), 10%) 100%,);
     // border-left: 0;
     // border-right: 0;
     // border-top: 0;
-    background: linear-gradient(45deg, get-dark-color('accent-color-grad') 0%,
+    background: linear-gradient(45deg, get-dark-color('accent-color') 0%,
                                         get-dark-color('accent-color') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
                                         get-dark-color('navbar') calc(var(--brand-width-percent) + (var(--navbar-height)/2)),
                                         get-dark-color('navbar') 100%,);
@@ -313,7 +313,7 @@ html[data-theme='dark'] {
       @include nav-item-hover-effect('dark');
     }
     #top-navbar-divider {
-      background-color: get-dark-color('accent-color-sec');
+      background-color: get-dark-color('accent-color-border');
     }
     .nav-link {
       &.active,
@@ -407,7 +407,7 @@ html[data-theme='dark'] {
       }
     }
     #top-navbar-divider {
-      border-top: 2px solid get-dark-color('accent-color-sec');
+      border-top: 2px solid get-dark-color('accent-color-border');
     }
 
   }
