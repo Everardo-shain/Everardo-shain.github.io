@@ -122,11 +122,11 @@
           font-size: 1rem;
         }
 
-        .card {
-          .card-head {
-            border-bottom: 2px solid get-light-color('hover-over-accent-color-sec');
-          }
-        }
+        // .card {
+        //   .card-head {
+        //     border-bottom: 2px solid get-light-color('hover-over-accent-color-border');
+        //   }
+        // }
       }
     }
 
@@ -151,7 +151,7 @@
         aspect-ratio: unset;
         padding: 0.7rem;
         padding-bottom: 0rem;
-        border-bottom: 2px solid get-light-color('accent-color-sec');
+        border-bottom: 2px solid get-light-color('accent-color-border');
       }
 
       .card-body {
@@ -194,13 +194,13 @@ html[data-theme='dark'] {
             background-color: rgba(get-dark-color('box-over-image'), 0.9);
           }
         }
-        &.achievement-details-hover{
-          .card {
-            .card-head {
-              border-bottom: 2px solid get-dark-color('hover-over-accent-color-sec');
-            }
-          }
-        }
+        // &.achievement-details-hover{
+        //   .card {
+        //     .card-head {
+        //       border-bottom: 2px solid get-dark-color('hover-over-accent-color-border');
+        //     }
+        //   }
+        // }
       }
       .card {
         border-left: 1px solid get-dark-color('bg-card');
@@ -210,7 +210,7 @@ html[data-theme='dark'] {
         background-color: get-dark-color('bg-card') !important;
         .card-head {
           background-color: get-dark-color('bg-card') !important;
-          border-bottom: 2px solid get-dark-color('accent-color-sec');
+          border-bottom: 2px solid get-dark-color('accent-color-border');
         }
       }
     }

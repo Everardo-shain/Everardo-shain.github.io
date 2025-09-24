@@ -28,10 +28,10 @@
         border-radius: 5px;
         background-color: get-light-color('bg-secondary');
         @include transition();
-        border: 1px solid rgba(get-light-color('accent-color-sec'), 0.1);
+        border: 1px solid rgba(get-light-color('accent-color-border'), 0.1);
 
         &:focus {
-          border: 1pt solid get-light-color('accent-color-sec');
+          border: 1pt solid get-light-color('accent-color-border');
           outline: none;
         }
       }
@@ -263,10 +263,10 @@ html[data-theme='dark'] {
 
         #search-box {
           background-color: get-dark-color('bg-secondary');
-          border: 1px solid rgba(get-dark-color('accent-color-sec'), 0.1);
+          border: 1px solid rgba(get-dark-color('accent-color-border'), 0.1);
 
           &:focus {
-            border: 1pt solid get-dark-color('accent-color-sec');
+            border: 1pt solid get-dark-color('accent-color-border');
           }
         }
 

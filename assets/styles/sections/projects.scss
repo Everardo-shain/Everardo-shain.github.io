@@ -6,7 +6,7 @@
     border-right: 1px solid get-light-color('bg-card');
     background-color: get-light-color('bg-card');
     .card-header {
-      border-bottom: 2px solid get-light-color('accent-color-sec');
+      border-bottom: 2px solid get-light-color('accent-color-border');
       background-color: get-light-color('bg-card');
       padding: 0.7rem;
       padding-bottom: 0rem;
@@ -35,13 +35,13 @@
     .card-body {
       padding: 0.7rem;
     }
-    &:hover .card-header,
-    &:focus .card-header{
-      border-bottom: 2px solid get-light-color('hover-over-accent-color-sec');
-      svg{
-      color: get-light-color('hover-over-accent-color');
-      }
-    }
+    // &:hover .card-header,
+    // &:focus .card-header{
+    //   border-bottom: 2px solid get-light-color('hover-over-accent-color-border');
+    //   svg{
+    //   color: get-light-color('hover-over-accent-color');
+    //   }
+    // }
   }
   .card a {
     text-decoration: none;
@@ -118,7 +118,7 @@ html[data-theme='dark'] {
       border-right: 1px solid get-dark-color('bg-card');
       background-color: get-dark-color('bg-card');
       .card-header {
-        border-bottom: 2px solid get-dark-color('accent-color-sec');
+        border-bottom: 2px solid get-dark-color('accent-color-border');
         background-color: get-dark-color('bg-card');
         svg{
           color: get-dark-color('accent-color');
@@ -127,13 +127,13 @@ html[data-theme='dark'] {
           color: get-dark-color('muted-text-color');
         }
       }
-    &:hover .card-header,
-    &:focus .card-header{
-      border-bottom: 2px solid get-dark-color('hover-over-accent-color-sec');
-      svg{
-      color: get-dark-color('hover-over-accent-color');
-      }
-    }
+    // &:hover .card-header,
+    // &:focus .card-header{
+    //   border-bottom: 2px solid get-dark-color('hover-over-accent-color-border');
+    //   svg{
+    //   color: get-dark-color('hover-over-accent-color');
+    //   }
+    // }
     }
   }
 }
