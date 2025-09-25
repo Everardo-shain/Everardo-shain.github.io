@@ -1,7 +1,7 @@
 baseURL: https://Everardo-shain.github.io
 
 languageCode: en
-title: "Everardo Shain Portfolio"
+title: "Everardo Shain´s Portfolio"
 
 # Use Hugo modules to add theme
 module:
@@ -23,7 +23,7 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "Everardo Shain's Portfolio"
+    title: "Everardo Shain´s Portfolio"
     weight: 1
   # es:
   #   languageCode: es

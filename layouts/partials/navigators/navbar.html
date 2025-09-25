@@ -53,11 +53,6 @@
 
 <nav class="navbar navbar-expand-xl top-navbar shadow {{ if .IsHome}}transparent-navbar homepage{{end}}" id="top-navbar">
   <div class="container">
-    {{ if not .IsHome }}
-    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
-      <i data-feather="sidebar"></i>
-    </button>
-    {{ end }}
     <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
       <span id="logo-slot">
         {{ if $logo }}
@@ -71,16 +66,24 @@
       </span>
       {{- $navBarTitle -}}
     </a>
-    <button
-      class="navbar-toggler {{if .IsHome}}navbar-dark{{else}}navbar-light{{end}}"
-      id="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#top-nav-items"
-      aria-label="menu"
-    >
-      <i data-feather="menu"></i>
-    </button>
+    <div class="d-flex">
+      {{ if not .IsHome }}
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+        <i data-feather="sidebar"></i>
+      </button>
+      {{ end }}
+
+      <button
+        class="navbar-toggler {{if .IsHome}}navbar-dark{{else}}navbar-light{{end}}"
+        id="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#top-nav-items"
+        aria-label="menu"
+      >
+        <i data-feather="menu"></i>
+      </button>
+    </div>
 
     <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
       <ul class="nav navbar-nav ms-auto">
