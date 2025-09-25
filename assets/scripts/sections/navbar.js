@@ -88,7 +88,9 @@ function updateGradient() {
   const brandEndPercent = (brandEnd / navbar.offsetWidth) * 100;
 
   navbar.style.setProperty('--brand-width-percent', `${brandEndPercent}%`);
+  navbar.style.setProperty('--brand-width', `${brandEnd}px`);
   navbar.style.setProperty('--navbar-height', `${navbar.offsetHeight}px`);
+  navbar.style.setProperty('--navbar-width', `${navbar.offsetWidth}px`);
 }
 
 updateGradient();
