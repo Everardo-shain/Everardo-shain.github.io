@@ -455,3 +455,8 @@ html[data-theme='dark'] {
     }
   }
 }
+@include media('<very-large') {
+.container.about-section{
+  max-width: 100%;
+}
+}
