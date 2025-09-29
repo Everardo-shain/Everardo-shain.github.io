@@ -134,3 +134,6 @@ other = "Calificación"
 
 [project_video]
 other = "Video"
+
+[pdf]
+other="PDF"

@@ -69,15 +69,22 @@
     width: 70%;
   }
 
-  .details-btn {
+  .buttons {
+    width: 30%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
-    flex-direction: column;
-
     span {
       display: flex;
       justify-content: flex-end;
     }
+    .btn-outline-info {
+      margin-left: 0.1em;
+      margin-right: 0.1em;
+    }
+  }
+  .details-btn a {
+    flex-shrink: 0;
   }
   .btn-group {
     justify-content: center;

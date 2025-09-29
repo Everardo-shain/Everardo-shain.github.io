@@ -41,14 +41,33 @@
             </span>
         {{ end }}
       </div>
-      {{ if .paper.url }}
-      <div class="details-btn">
-        <a 
-          class="btn btn-outline-info ms-1 ps-2 mb-2" href="{{ .paper.url }}" target="_blank" rel="noopener" role="button"
-          ><i class="fas fa-circle-info me-1"></i>{{ i18n "project_details" }}
-        </a>
-      </div>
-      {{ end }}
+      {{ if or .paper.url .paper.file }}
+        <div class="buttons">
+          {{ if .paper.url }}
+            <a 
+              class="btn btn-outline-info ms-1 ps-2 mb-2" 
+              href="{{ .paper.url }}" 
+              target="_blank" 
+              rel="noopener" 
+              role="button"
+            >
+              <i class="fas fa-circle-info me-1"></i>{{ i18n "project_details" }}
+            </a>
+          {{ end }}
+
+          {{ if .paper.file }}
+            <a 
+              class="btn btn-outline-info ms-1 ps-2 mb-2" 
+              href="{{ .paper.file }}" 
+              target="_blank" 
+              rel="noopener" 
+              role="button"
+            >
+              <i class="fas fa-file-pdf me-1"></i>{{ i18n "pdf" }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}   
     </div>
   </div>
 </div>
