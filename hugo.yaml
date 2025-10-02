@@ -1,7 +1,7 @@
 baseURL: https://Everardo-shain.github.io
 
 languageCode: en
-title: "Everardo´s Portfolio"
+title: "Everardo Shain | Portfolio"
 
 # Use Hugo modules to add theme
 module:
@@ -23,12 +23,12 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "Everardo´s Portfolio"
+    title: "Everardo Shain"
     weight: 1
   # es:
   #   languageCode: es
   #   languageName: Español
-  #   title: "Portafolio de Everardo"
+  #   title: "Everardo Shain"
   #   weight: 2
 # default language for the content
 defaultContentLanguage: en
@@ -58,15 +58,15 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/site/background-light.png
+  background: /images/site/circuit-light.png
   # Background image of the landing page for dark theme
-  darkBackground: /images/site/background-dark.png
+  darkBackground: /images/site/circuit-dark.png
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   logo:
-    main: /images/site/logo.svg
-    inverted: /images/site/logo.svg
+    main: /images/site/logo-outline.svg
+    inverted: /images/site/logo-outline.svg
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
