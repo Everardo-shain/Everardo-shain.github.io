@@ -19,72 +19,65 @@ $transition-type: ease-out;
 
 
 // themes
-$light-accent-color: #313131;
-$dark-accent-color: #eaeaea;
+// $light-accent-color: #075cad;
+// $dark-accent-color: #04d9ff;
+$light-accent-color: #075cad;
+$dark-accent-color: #04d9ff;
 $light-accent-color-border: $light-accent-color;
 $dark-accent-color-border: $dark-accent-color;
-$light-card: #eaeaea;
+$light-card: #f0f0f0;
 $dark-card: #313131;
+$light-text: #363636;
+$dark-text: #e0e0e0;
 
 // borders and shadows
 $light-box-shadow: 0px 0px 25px darken($light-card, 30%);
 $dark-box-shadow: 0px 0px 25px lighten($dark-card, 30%);
-$light-accent-shadow: 0px 0px 25px lighten($light-accent-color-border, 10%);
-$dark-accent-shadow: 0px 0px 25px darken($dark-accent-color-border, 10%);
+
 $themes: (
 
   'light': (
     'accent-color': $light-accent-color,
-    'hover-over-accent-color': lighten($light-accent-color, 20%),
+    'hover-over-accent-color': lighten($light-accent-color, 10%),
     'accent-color-border': $light-accent-color-border,
     // 'hover-over-accent-color-border': lighten($light-accent-color-border, 20%),
     'hover-over-button-color': darken($light-card, 10%),
-    'text-over-accent-color': $light-card,
     'body': #ffffff,
     'bg-primary': #ffffff,
     'bg-secondary': #f9f9f9,
     'bg-card': $light-card,
-    'inverse-bg-card': $light-card,
-    'heading-color': #000000,
-    'text-color': #2b2b2b,
-    'inverse-text-color': #2b2b2b,
-    'muted-text-color': #777777,
-    'transparent-navbar-text-color': #000000,
-    'inline-code-color': #444444,
-    'highlight-color': #bdbdbd,
-    'progress-color': $light-accent-color,    
-    'progress-color-sec': $light-accent-color-border,
-    'box-over-image': $light-card,
-    'text-over-box': #2b2b2b,
-    'navbar': #ffffff,
     'footer-color': $light-card,
+    'navbar': #ffffff,
+    'heading-color': #000000,
+    'text-color': $light-text,
+    'inverse-text-color': $dark-text,
+    'muted-text-color': lighten($light-text, 30%),
+    'transparent-navbar-text-color': #000000,
+    'text-over-accent-color': $light-card,
+    'inline-code-color': $light-text,
+    'highlight-color': $light-accent-color,
   ),
 
   'dark': (
     'accent-color': $dark-accent-color,
-    'hover-over-accent-color': darken($dark-accent-color, 20%),
+    'hover-over-accent-color': darken($dark-accent-color, 10%),
     'accent-color-border': $dark-accent-color-border,
     // 'hover-over-accent-color-border': darken($dark-accent-color-border, 20%),
     'hover-over-button-color': lighten($dark-card, 10%),
-    'text-over-accent-color': $dark-card,
     'body': #181818,
     'bg-primary': #181818,
     'bg-secondary': #1f1f1f,
     'bg-card': $dark-card,
-    'inverse-bg-card': $light-card,
-    'heading-color': #ffffff,
-    'text-color': #e0e0e0,
-    'inverse-text-color': #2b2b2b,
-    'muted-text-color': #9c9c9c,
-    'transparent-navbar-text-color': #ffffff,
-    'inline-code-color': #bbbbbb,
-    'highlight-color': #444444,
-    'progress-color': $dark-accent-color,    
-    'progress-color-sec': $dark-accent-color-border,
-    'box-over-image': $dark-card,
-    'text-over-box': #e0e0e0,
-    'navbar': #1f1f1f,
     'footer-color': $dark-card,
+    'navbar': #1f1f1f,
+    'heading-color': #ffffff,
+    'text-color': $dark-text,
+    'inverse-text-color': $light-text,
+    'muted-text-color': darken($dark-text, 30%),
+    'transparent-navbar-text-color': #ffffff,
+    'text-over-accent-color': $dark-card,
+    'inline-code-color': $dark-text,
+    'highlight-color': $dark-accent-color,
   ),
 
 );

@@ -188,7 +188,7 @@ $progress-bar-colors: (
       transparent 50%,
       get-light-color('accent-color') 50%
     );
-    border: var(--border) solid get-light-color('inverse-bg-card');
+    border: var(--border) solid get-light-color('bg-card');
     outline: var(--outline-size) solid get-light-color('accent-color-border');
 
     width: calc(var(--size)/ sqrt(2) - 2 * var(--outline));
@@ -202,8 +202,8 @@ $progress-bar-colors: (
     margin: auto;
   }
   .hard-skill .name {
-    background: get-light-color('inverse-bg-card');
-    color: get-light-color('inverse-text-color');
+    background: get-light-color('bg-card');
+    color: get-light-color('text-color');
     // border: 2px solid get-light-color('accent-color-border');
 
     width: var(--width);
@@ -266,7 +266,7 @@ $progress-bar-colors: (
       get-light-color('accent-color') 50%,
       transparent 50%
     );
-    border: var(--border) solid get-light-color('inverse-bg-card');
+    border: var(--border) solid get-light-color('bg-card');
     outline: var(--outline-size) solid get-light-color('accent-color-border');
 
     width: calc(var(--size) - 2 * var(--outline) - var(--extra-space));
@@ -281,8 +281,8 @@ $progress-bar-colors: (
     justify-content: center;
   }
   .soft-skill .name {
-    background: get-light-color('inverse-bg-card');
-    color: get-light-color('inverse-text-color');
+    background: get-light-color('bg-card');
+    color: get-light-color('text-color');
     // border: 2px solid get-light-color('accent-color-border');
 
     width: var(--size);

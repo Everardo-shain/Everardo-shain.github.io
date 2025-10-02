@@ -3,7 +3,6 @@
   @include transition();
   overflow: hidden;
   background: get-light-color('bg-card');
-
   &:hover,
   &:focus {
     box-shadow: $light-box-shadow;
