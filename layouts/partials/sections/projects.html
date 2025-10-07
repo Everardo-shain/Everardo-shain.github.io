@@ -11,7 +11,7 @@
     <h1 class="text-center" style="display: none">
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
   {{ end }}
-  <div class="container ms-auto text-center">
+  <div class="container ms-auto text-center p-2">
     <div class="btn-group flex-wrap" role="group" id="project-filter-buttons">
       {{ range .buttons }}
       <button 
@@ -23,7 +23,7 @@
     </div>
   </div>
   <div class="container filtr-projects">
-    <div class="row" id="project-card-holder">
+    <div class="row" id="project-card-holder" style="margin-left:unset">
       {{ range .projects }}
         {{ partial "cards/project" . }}
       {{ end }}

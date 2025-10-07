@@ -30,7 +30,8 @@
   height: 50px;
   z-index: 99999;
   margin: 0px;
-  padding-top: 0.4rem;
+  padding-left: calc(1.5rem * .5);
+  padding-right: calc(1.5rem * .5);
   color: transparent;
   text-align: center;
   background: conic-gradient(from 45deg at var(--brand-width-percent) 0%, get-light-color('navbar') 0deg 90deg, get-light-color('accent-color') 90deg 360deg);
@@ -38,17 +39,23 @@
     color: get-light-color('navbar');
     text-decoration: none !important;
     font-weight: 600;
-    margin-right: calc(var(--navbar-height)/2);
+    margin-right: var(--navbar-height);
     img {
-      width: 42px;
-      padding: 5px;
-      margin-left: -10px;
+      width: 50px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+      padding-left: 0.5rem;
+      // margin-left: -5px;
     }
     svg{
       width: auto;
       height: 50px;
-      padding: 5px;
-      margin-left: -10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+      padding-left: 0.5rem;
+      // margin-left: -5px;
       color: get-light-color('navbar');
     }
   }
@@ -211,10 +218,6 @@
     height: fit-content;
     padding-bottom: 0px;
     padding-top: 0px;
-
-    .container {
-      max-width: 100%;
-    }
 
     &.transparent-navbar {
       .navbar-nav .active,

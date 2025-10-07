@@ -130,7 +130,10 @@ one = "minute"
 other = "minutes"
 
 [grade]
-other = "Grade"
+other = "Grade (%)"
+
+[credits]
+other = "Credits"
 
 [project_video]
 other = "Video"

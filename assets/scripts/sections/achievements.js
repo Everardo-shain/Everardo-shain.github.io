@@ -110,12 +110,13 @@ function showAchievements() {
     });
   });
 
-  // Initialize Masonry
+  const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
   window.msnry = new Masonry(gallery, {
     itemSelector: '.achievement-entry',
     columnWidth: '.achievement-entry',
     percentPosition: true,
-    gutter: 15
+    gutter: rem,
   });
 
   // Preload large images for better expand performance

@@ -59,9 +59,9 @@
     }
   }
 
-  .filtr-publications {
-    padding: 1rem !important;
-  }
+  // .filtr-publications {
+  //   padding: 1rem !important;
+  // }
   .filtr-item[style*="opacity: 0"] {
     pointer-events: none;
   }
@@ -89,15 +89,7 @@
   .btn-group {
     justify-content: center;
   }
-
   @include media('<=large') {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-
-    .container {
-      max-width: 100%;
-    }
 
     .filtr-publications {
       padding: 0;

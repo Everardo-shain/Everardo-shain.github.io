@@ -2,111 +2,109 @@
   class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
   data-category='all, {{ delimit  .categories ","}}'
 >
-  <div class="card mt-1">
-    <div class="card">
-      {{ if .image }}
-      {{ $imageImage:= resources.Get .image}}
-      {{ if $imageImage }}
-        {{ $imageResized := $imageImage.Resize "1000x" }}
-        {{ $imageWebp := $imageImage.Resize "1000x webp" }}
-        <a href="{{ $imageImage.RelPermalink }}" target="_blank" rel="noopener">
-        <div class="card-head">
-            <picture>
-            <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp">
-            <img class="card-img-top" src="{{ $imageResized.RelPermalink }}" alt="{{ .name }}">
-            </picture>
-        </div>
-        </a>
-      {{ end }}
-      {{ end }}
-      <div class="card-header">
-        <div>
-          <div class="d-flex">
-            {{ if .logo }}
+  <div class="card">
+    {{ if .image }}
+    {{ $imageImage:= resources.Get .image}}
+    {{ if $imageImage }}
+      {{ $imageResized := $imageImage.Resize "1000x" }}
+      {{ $imageWebp := $imageImage.Resize "1000x webp" }}
+      <a href="{{ $imageImage.RelPermalink }}" target="_blank" rel="noopener">
+      <div class="card-head">
+          <picture>
+          <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp">
+          <img class="card-img-top" src="{{ $imageResized.RelPermalink }}" alt="{{ .name }}">
+          </picture>
+      </div>
+      </a>
+    {{ end }}
+    {{ end }}
+    <div class="card-header">
+      <div>
+        <div class="d-flex">
+          {{ if .logo }}
 
-              {{ if eq (len (findRE ".*/.*" .logo) ) 0 }}
-                <i style="padding-right: 0.25em" class="{{.logo}} h5"></i>
+            {{ if eq (len (findRE ".*/.*" .logo) ) 0 }}
+              <i style="padding-right: 0.25em" class="{{.logo}} h5"></i>
 
-              {{ else }}
+            {{ else }}
 
-                {{ $logoImage:= resources.Get .logo}}
-                  {{ if $logoImage }}
-                    {{/*  svg don't support "Fit" operation   */}}
-                    {{ if ne $logoImage.MediaType.SubType "svg" }}
-                      {{ $logoImage = $logoImage.Fit "24x24" }}
-                    {{ end }}
-                    <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+              {{ $logoImage:= resources.Get .logo}}
+                {{ if $logoImage }}
+                  {{/*  svg don't support "Fit" operation   */}}
+                  {{ if ne $logoImage.MediaType.SubType "svg" }}
+                    {{ $logoImage = $logoImage.Fit "24x24" }}
                   {{ end }}
+                  <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
                 {{ end }}
+              {{ end }}
 
-            {{ end }}
-            
-            <h5 class="card-title mb-0">{{ .name }}</h5>
-  
-          </div>
-          <div class="sub-title">
-            <span>{{ .role }}</span>
-            <span>{{ .timeline }}</span>
-          </div>
+          {{ end }}
+          
+          <h5 class="card-title mb-0">{{ .name }}</h5>
+
+        </div>
+        <div class="sub-title">
+          <span>{{ .role }}</span>
+          <span>{{ .timeline }}</span>
         </div>
       </div>
-      <div class="card-body text-justify pt-1 pb-1">
-        <p>{{ .summary | markdownify }}</p>
-        <!-- Display project card technology tags -->
-        <div class="project-card-footer">
-          {{ if .tags }}
-            <div class="project-tags-holder">
-              {{ range $index,$tag:= .tags }}
-                  <span class="badge btn-tag">
-                    {{ $tag }}
-                  </span>
-              {{ end }}
-            </div>
-          {{ end }}
-          <div class="project-btn-holder">
-            {{ if .post }}
-            <span>
-              {{ $p := site.GetPage .post }}
-              {{ if $p }}
-                <a
-                  class="btn btn-outline-info btn-sm"
-                  href="{{ $p.RelPermalink }}"
-                  target="_blank"
-                >
-                  <i class="fas fa-book-open me-1"></i>{{ i18n "read" }}
-                </a>
-              {{ end }}
-            </span>
-            {{ else if .repo }}
-            <!-- Place this tag where you want the button to render. -->
-            <a
-              class="github-button project-btn d-none"
-              href="{{ .repo }}"
-              data-icon="octicon-standard"
-              data-show-count="true"
-              aria-label="Star {{ .name }}"
-              >{{ i18n "project_star" }}</a
-            >
-            {{ else if .url }}
-            <span>
-              <a
-                class="btn btn-outline-info btn-sm"
-                href="{{ .url }}"
-                target="#"
-                ><i class="fas fa-circle-info me-1"></i>{{ i18n "project_details" }}
-              </a>
-            </span>
-            {{ else if .video }}
-            <span>
-              <a
-                class="btn btn-outline-info btn-sm"
-                href="{{ .video }}"
-                target="#"
-                ><i class="fas fa-play me-1"></i>{{ i18n "project_video" }}</a
-              >
-            </span>
+    </div>
+    <div class="card-body text-justify pt-1 pb-1">
+      <p>{{ .summary | markdownify }}</p>
+      <!-- Display project card technology tags -->
+      <div class="project-card-footer">
+        {{ if .tags }}
+          <div class="project-tags-holder">
+            {{ range $index,$tag:= .tags }}
+                <span class="badge btn-tag">
+                  {{ $tag }}
+                </span>
             {{ end }}
           </div>
+        {{ end }}
+        <div class="project-btn-holder">
+          {{ if .post }}
+          <span>
+            {{ $p := site.GetPage .post }}
+            {{ if $p }}
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="{{ $p.RelPermalink }}"
+                target="_blank"
+              >
+                <i class="fas fa-book-open me-1"></i>{{ i18n "read" }}
+              </a>
+            {{ end }}
+          </span>
+          {{ else if .repo }}
+          <!-- Place this tag where you want the button to render. -->
+          <a
+            class="github-button project-btn d-none"
+            href="{{ .repo }}"
+            data-icon="octicon-standard"
+            data-show-count="true"
+            aria-label="Star {{ .name }}"
+            >{{ i18n "project_star" }}</a
+          >
+          {{ else if .url }}
+          <span>
+            <a
+              class="btn btn-outline-info btn-sm"
+              href="{{ .url }}"
+              target="#"
+              ><i class="fas fa-circle-info me-1"></i>{{ i18n "project_details" }}
+            </a>
+          </span>
+          {{ else if .video }}
+          <span>
+            <a
+              class="btn btn-outline-info btn-sm"
+              href="{{ .video }}"
+              target="#"
+              ><i class="fas fa-play me-1"></i>{{ i18n "project_video" }}</a
+            >
+          </span>
+          {{ end }}
         </div>
       </div>
     </div>

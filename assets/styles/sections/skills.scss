@@ -34,7 +34,6 @@
       margin-top: 0.25rem;
       margin-bottom: 0;
     }
-
     // &:hover .card-head,
     // &:focus .card-head{
     //   border-bottom: 2px solid get-light-color('hover-over-accent-color-border');
@@ -44,19 +43,8 @@
     //   color: get-light-color('hover-over-accent-color') !important;
     // }
   }
-  .filtr-skills {
-    padding: 1rem !important;
-  }
   .filtr-item[style*="opacity: 0"] {
     pointer-events: none;
-  }
-  @include media('<=medium') {
-    padding-left: 0;
-    padding-right: 0;
-
-    .container {
-      max-width: 100%;
-    }
   }
 }
 

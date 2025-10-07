@@ -38,17 +38,8 @@
       padding-bottom: 0.3rem;
     }
   }
-
   @include media('<=large') {
     width: 100%;
-    padding: 0;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-    margin-top: 2rem;
-
-    .container {
-      max-width: 100%;
-    }
   }
 
   @include media('<=small') {

@@ -12,6 +12,7 @@ section:
 # Your accomplishments
 accomplishments:
 - name: "Machine Learning Engineer Learning Path (8 Badges)"
+  icon: "fas fa-brain"
   timeline: "September 2024 - October 2024"
   organization:
     name: Google Cloud
@@ -19,6 +20,7 @@ accomplishments:
   courseOverview: "A Machine Learning Engineer designs, builds, productionizes, optimizes, operates, and maintains ML systems. This learning path guides you through a curated collection of on-demand courses, labs, and skill badges that provide you with real-world, hands-on experience using Google Cloud technologies essential to the ML Engineer role. <br /> Completed multiple courses in the Machine Learning Engineer learning path, earning 8 digital skill badges to date."
   certificateURL: "https://www.cloudskillsboost.google/public_profiles/dbfa0f2c-4edc-4382-b6b3-4373369e0f21"
 - name: Introductory C Programming
+  icon: "fas fa-code"
   timeline: "August 2024"
   organization:
     name: Coursera
@@ -26,6 +28,7 @@ accomplishments:
   courseOverview: "This specialization develops strong programming fundamentals for learners who want to solve complex problems by writing computer programs. Through four courses, you will learn to develop algorithms in a systematic way and read and write the C code to implement them. This will prepare you to pursue a career in software development or other computational fields. <br /> Completed all 4 individual courses of this specialization."
   certificateURL: "https://coursera.org/share/167da6620bbe398ac8a864442d864537"
 - name: "Certified SOLIDWORKS Associate"
+  icon: "fas fa-cube"
   timeline: "November 2019"
   organization:
     name: Dassault Systèmes
@@ -33,6 +36,7 @@ accomplishments:
   courseOverview: "The CSWA (Certified SOLIDWORKS Associate) is designed for users new to the software and has completed a beginner course. This associate level certification proves your fundamental knowledge and basic skills in the software and is suitable for those starting their career or transitioning into a new domain."
   certificateURL: "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-W3E5FNQUBH"
 - name: "C1 Advanced - Score 182"
+  icon: "fas fa-language"
   timeline: "June 2018"
   organization:
     name: Cambridge English
