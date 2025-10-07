@@ -20,9 +20,9 @@ degrees:
     # Can optionally show a different logo for dark theme
     darkLogo: /images/sections/education/tec_dark.png
   grade: #(optional)
-    scale: GPA
-    achieved: 3.97
-    outOf: "4.0 (99.2%)"
+    scale: Mexican GPA
+    achieved: 99.2% (approx. 3.97
+    outOf: "4.0)"
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
     showGrades: true
@@ -30,30 +30,43 @@ degrees:
     courses:
     - name: Leadership for Sustainable Development
       grade: 96
+      credits: "1.5"
     - name: Mathematical Physical Modeling
       grade: 100
+      credits: "3.0"
     - name: Applied Computing
       grade: 100
+      credits: "3.0"
     - name: Research and Innovation Methods
       grade: 100
+      credits: "1.5"
     - name: Data Science and Statistical Inference
       grade: 100
+      credits: "3.0"
     - name: Thesis I
       grade: 95
+      credits: "3.0"
     - name: Design and Analysis of Experiments
       grade: 99
+      credits: "3.0"
     - name: Thesis II
       grade: 100
+      credits: "3.0"
     - name: Linear Programming
       grade: 100
+      credits: "3.0"
     - name: Advanced Optimization Techniques
       grade: 100
+      credits: "3.0"
     - name: Thesis III
       grade: 100
+      credits: "3.0"
     - name: Directed Study I
       grade: 100
+      credits: "3.0"
     - name: Directed Study II
       grade: 100
+      credits: "3.0"
   publications: #(optional)
   - title: Tuning and Comparison of Optimization Algorithms for the Next Best View Problematic
     url: "https://ieeexplore.ieee.org/document/10781375"
@@ -71,135 +84,196 @@ degrees:
     # Can optionally show a different logo for dark theme
     darkLogo: /images/sections/education/tec_dark.png
   grade: #(optional)
-    scale: GPA
-    achieved: 3.95
-    outOf: "4.0 (98.7%)"
+    scale: Mexican GPA
+    achieved: 98.7% (approx. 3.95
+    outOf: "4.0)"
   takenCourses:
     showGrades: true
     collapseAfter: 5
     courses:
     - name: Physics I
       grade: 95
+      credits: "3.0"
     - name: Foreign Language
       grade: 92
+      credits: "3.0"
     - name: Verbal Expression and Analysis
       grade: 92
+      credits: "3.0"
     - name: Mathematics I
       grade: 95
+      credits: "3.0"
     - name: Introduction to Mechatronics Engineering
       grade: 95
+      credits: "1.5"
     - name: Chemistry
       grade: 100
+      credits: "3.0"
     - name: Problem Solving with Programming
       grade: 97
+      credits: "3.0"
     - name: Natural Sciences and Sustainable Development
       grade: 96
+      credits: "3.0"
     - name: Physics II
       grade: 96
+      credits: "3.0"
     - name: Humanities and Fine Arts
       grade: 94
+      credits: "3.0"
     - name: Statics
       grade: 100
+      credits: "3.0"
     - name: Mathematics II
       grade: 100
+      credits: "3.0"
     - name: Industrial Informatics
       grade: 97
+      credits: "3.0"
     - name: Chemistry Laboratory
       grade: 96
+      credits: "1.5"
     - name: Electricity and Magnetism
       grade: 100
+      credits: "3.0"
     - name: Dynamics
       grade: 100
+      credits: "3.0"
     - name: Mathematics III
       grade: 100
+      credits: "3.0"
     - name: Differential Equations
       grade: 97
+      credits: "3.0"
     - name: Electrical Circuits I
       grade: 100
+      credits: "3.0"
     - name: Ethics, Self and Society
       grade: 100
+      credits: "3.0"
     - name: Verbal Expression in the Workplace
       grade: 98
+      credits: "3.0"
     - name: Computer Drawing
       grade: 100
+      credits: "3.0"
     - name: Numerical Methods in Engineering
       grade: 100
+      credits: "3.0"
     - name: Advanced Mathematics
       grade: 91
+      credits: "3.0"
     - name: Logic Automatisms
       grade: 100
+      credits: "3.0"
     - name: Logic Automatism Laboratory
       grade: 100
+      credits: "1.5"
     - name: Electrical Circuits II
       grade: 100
+      credits: "3.0"
     - name: Economy to Business Creation
       grade: 100
+      credits: "3.0"
     - name: Thermodynamics
       grade: 100
+      credits: "3.0"
     - name: Mechanics of Materials
       grade: 100
+      credits: "3.0"
     - name: Probability and Statistics
       grade: 100
+      credits: "3.0"
     - name: Electronics
       grade: 100
+      credits: "3.0"
     - name: Analysis of Signals and Systems
       grade: 100
+      credits: "3.0"
     - name: Entrepreneurship
       grade: 100
+      credits: "3.0"
     - name: Mechanism Analysis and Simulation
       grade: 99
+      credits: "3.0"
     - name: Actuators
       grade: 99
+      credits: "3.0"
     - name: Control Engineering
       grade: 100
+      credits: "3.0"
     - name: Applied Electronics
       grade: 100
+      credits: "3.0"
     - name: Industrial Networks
       grade: 100
+      credits: "3.0"
     - name: Mechatronic Instrumentation Laboratory
       grade: 100
+      credits: "1.5"
     - name: Materials Technology
       grade: 100
+      credits: "3.0"
     - name: Machine Design and Development
       grade: 98
+      credits: "3.0"
     - name: Computerized Control
       grade: 100
+      credits: "3.0"
     - name: Industrial Networks Project
       grade: 100
+      credits: "1.5"
     - name: Microcontrollers
       grade: 99
+      credits: "3.0"
     - name: Integral Electronics Laboratory
       grade: 100
+      credits: "3.0"
     - name: Citizenship
       grade: 100
+      credits: "3.0"
     - name: Applied Ethics
       grade: 100
+      credits: "3.0"
     - name: Project of Mechatronics Engineering
       grade: 100
+      credits: "3.0"
     - name: Manufacturing Technologies
       grade: 100
+      credits: "3.0"
     - name: Mechatronic Design
       grade: 100
+      credits: "3.0"
     - name: Mechatronics Laboratory
       grade: 100
+      credits: "1.5"
     - name: Automation of Manufacturing Systems
       grade: 100
+      credits: "3.0"
     - name: Integral Automatic Control Laboratory
       grade: 99
+      credits: "1.5"
     - name: Topics I (Intelligent Systems)
       grade: 100
+      credits: "3.0"
     - name: Project Evaluation and Management
       grade: 100
+      credits: "3.0"
     - name: Industrial Robotics
       grade: 100
+      credits: "3.0"
     - name: Introduction to Professional Development
       grade: 100
+      credits: "0.8"
     - name: Topics II (Advanced CAD and Metrology)
       grade: 98
+      credits: "3.0"
     - name: Topics III (Electric and Hybrid Vehicles)
       grade: 100
+      credits: "3.0"
     - name: Topics IV (Electronic Technology Project)
       grade: 100
+      credits: "3.0"
   extracurricularActivities: #(optional)
   - Member of the student group Robociety
   - Participated on national robotics competitions Robofest 2022 and Robomatrix 2022.

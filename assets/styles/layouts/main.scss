@@ -66,29 +66,44 @@ mark {
   background-color: get-light-color('highlight-color');
   border-radius: 0.25rem;
 }
-
-@include media('<=small') {
+@include media('>=very-large') {
   .skills-section,
+  .about-section,
+  .accomplishments-section,
+  .achievements-section,
+  .education-section,
+  .experiences-section,
+  .footer-section,
   .projects-section,
-  .publications-section {
+  .publications-section,
+  .top-navbar {
     .container {
-      padding-left: 0.3rem;
-      padding-right: 0.3rem;
+      max-width: unquote("min(95%, 1600px)");
+      // margin: 0 auto;
     }
   }
-
-  .section-holder {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
+}
+@include media('<very-large') {
   .skills-section,
-  .projects-section,
-  .recent-posts-section,
+  .about-section,
+  .accomplishments-section,
   .achievements-section,
-  .publications-section {
-    padding-left: 0;
-    padding-right: 0;
+  .education-section,
+  .experiences-section,
+  .footer-section,
+  .projects-section,
+  .publications-section,
+  .top-navbar {
+    .container {
+      max-width: 100%;
+    }
+  }
+}
+
+@include media('<=small') {
+  .section-holder, .navbar, .footer {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 }
 

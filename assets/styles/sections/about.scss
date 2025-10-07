@@ -53,7 +53,6 @@ $progress-bar-colors: (
     $degree: $degree + 18;
   }
 }
-
 .about-section {
   .social-link {
     list-style: none;
@@ -329,12 +328,7 @@ $progress-bar-colors: (
       margin-bottom: 20px;
     }
   }
-
   @include media('<=medium') {
-    .about-section.container {
-      max-width: 100%;
-    }
-
     .circular-progress {
       width: 135px;
       height: 135px;
@@ -377,6 +371,7 @@ $progress-bar-colors: (
       }
     }
   }
+  
 }
 
 html[data-theme='dark'] {
@@ -454,9 +449,4 @@ html[data-theme='dark'] {
       color: get-dark-color('accent-color');
     }
   }
-}
-@include media('<very-large') {
-.container.about-section{
-  max-width: 100%;
-}
 }

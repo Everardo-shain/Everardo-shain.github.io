@@ -13,7 +13,10 @@
     width: 100%;
     border: none;
     background: none;
-
+    .course {
+      border-bottom: 1px solid #ff0000;
+      padding-bottom: 0.5rem;       /* optional spacing */
+    }
     .icon {
       width: 2rem;
       padding-left: 0;
@@ -99,8 +102,9 @@
 
           .taken-courses {
             table {
-              margin-left: 1rem;
-              width: 100%;
+              width: calc(100% - 0.75rem);
+              box-sizing: border-box;
+              margin-left: 0.75rem;
               @include transition();
               background: none;
               border: none;
@@ -111,15 +115,16 @@
                 background: none;
                 border: none;
                 color: get-light-color('text-color');
+                padding: 0.25rem;
+                text-align: center;
               }
 
               tr {
                 height: auto !important;
               }
-              th {
-                .course-name-header {
-                  width: 50%;
-                }
+              th.course-name-header, td:first-child {
+                width: 60%;
+                text-align: start;
               }
             }
             .hidden-course {
@@ -144,23 +149,8 @@
   .hidden {
     display: none;
   }
-
-  @include media('<=large') {
-    .container {
-      padding-left: 0;
-      max-width: 100%;
-    }
-  }
-
+  
   @include media('<=small') {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-
-    .container {
-      padding-right: 0;
-      max-width: 100%;
-    }
-
     .icon {
       display: none;
     }

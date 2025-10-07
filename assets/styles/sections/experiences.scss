@@ -103,17 +103,8 @@
     }
   }
 
-  @include media('<=medium') {
-    .container {
-      max-width: 100%;
-    }
-  }
 
   @include media('<=small') {
-    .container {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
     .timeline {
       .vertical-line {
         visibility: hidden;
