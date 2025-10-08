@@ -97,6 +97,6 @@ The main task was to develop a functional poker simulator, starting with a corre
 
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
-    {{< lightbox-img src="gallery/sample-round.png" alt="Robot concept">}}
-    {{< lightbox-img src="gallery/monte-carlo.png" alt="Monte Carlo simulation">}}
+    {{< lightbox-img src="gallery/sample-round.png">}}
+    {{< lightbox-img src="gallery/monte-carlo.png">}}
 </div>

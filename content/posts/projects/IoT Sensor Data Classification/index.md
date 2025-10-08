@@ -165,8 +165,8 @@ This was an IoT project in which I implemented two Machine Learning algorithms, 
 
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
-    {{< lightbox-img src="gallery/circuit.png" alt="Electronic circuit">}}
-    {{< lightbox-img src="gallery/blynk.png" alt="Blynk accelerometer plot">}}
-    {{< lightbox-img src="gallery/dht11.png" alt="DHT11 data">}}
-    {{< lightbox-img src="gallery/accelerometer.png" alt="Accelerometer data">}}
+    {{< lightbox-img src="gallery/circuit.png">}}
+    {{< lightbox-img src="gallery/blynk.png">}}
+    {{< lightbox-img src="gallery/dht11.png">}}
+    {{< lightbox-img src="gallery/accelerometer.png">}}
 </div>

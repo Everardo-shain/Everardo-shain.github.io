@@ -55,5 +55,5 @@ Peer-review meetings with the project supervisor and exhaustive research were co
 
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
-    {{< lightbox-img src="gallery/elevator.png" alt="Elevator simulation and HMI">}}
+    {{< lightbox-img src="gallery/elevator.png">}}
 </div>

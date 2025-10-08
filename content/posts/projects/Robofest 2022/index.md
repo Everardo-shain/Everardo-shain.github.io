@@ -90,8 +90,8 @@ Notes:
 
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
-    {{< lightbox-img src="gallery/team.png" alt="Team with Sumo robots">}}
-    {{< lightbox-img src="gallery/poster.png" alt="Team with competition poster">}}
-    {{< lightbox-img src="gallery/medal.png" alt="Participation medal">}}
-    {{< lightbox-img src="gallery/certificate.png" alt="Participation certificate">}}
+    {{< lightbox-img src="gallery/team.png">}}
+    {{< lightbox-img src="gallery/poster.png">}}
+    {{< lightbox-img src="gallery/medal.png">}}
+    {{< lightbox-img src="gallery/certificate.png">}}
 </div>

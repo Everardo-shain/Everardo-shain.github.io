@@ -81,11 +81,11 @@ This team project included the CAD modeling of a motor driven Upright CNC Router
 
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
-    {{< lightbox-img src="gallery/simulation.png" alt="Simulation">}}
-    {{< lightbox-img src="gallery/hmi.png" alt="HMI">}}
-    {{< lightbox-img src="gallery/1-coordinate.png" alt="1 coordinate plots">}}
-    {{< lightbox-img src="gallery/circle.png" alt="Circle plots">}}
-    {{< lightbox-img src="gallery/rectangle.png" alt="Rectangle plots">}}
-    {{< lightbox-img src="gallery/triangle.png" alt="Triangle plots">}}
-    {{< lightbox-img src="gallery/3-coordinate.png" alt="3 coordinate plots">}}
+    {{< lightbox-img src="gallery/simulation.png">}}
+    {{< lightbox-img src="gallery/hmi.png">}}
+    {{< lightbox-img src="gallery/1-coordinate.png">}}
+    {{< lightbox-img src="gallery/circle.png">}}
+    {{< lightbox-img src="gallery/rectangle.png">}}
+    {{< lightbox-img src="gallery/triangle.png">}}
+    {{< lightbox-img src="gallery/3-coordinate.png">}}
 </div>
