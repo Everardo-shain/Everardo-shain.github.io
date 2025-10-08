@@ -112,6 +112,7 @@ body.kind-page {
       flex: 20%;
       order: 3;
       max-width: 20%;
+      padding-right: 15px;
       @include transition();
 
       .toc-holder {
@@ -216,16 +217,18 @@ body.kind-page {
       flex: 65%;
       max-width: 65%;
     }
-    .content-section .container {
-      max-width: 100%;
+  }
+  @include media('>=large') {
+    .container {
+      max-width: unquote("min(95%, 1600px)");
     }
   }
-
-  @include media('<very-large') {
+  @include media('<large') {
     .container {
       max-width: 100%;
     }
-
+  }
+  @include media('<very-large') {
     .wrapper {
       padding-left: 0px;
       padding-right: 0px;
@@ -244,10 +247,6 @@ body.kind-page {
             .hero-area {
               height: 300px;
               margin-top: 1rem;
-            }
-
-            .page-content {
-              padding: 0px;
             }
           }
         }
@@ -292,7 +291,6 @@ body.kind-page {
             }
 
             .page-content {
-              padding: 0px;
               .next-prev-navigator {
                 .previous-article {
                   text-align: center;

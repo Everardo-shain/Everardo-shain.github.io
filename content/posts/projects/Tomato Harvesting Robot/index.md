@@ -57,10 +57,10 @@ I improved my collaborative skills by working in person with my 4 teammates and 
 
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
-    {{< lightbox-img src="gallery/ur10e.png" alt="Grpper and UR10e assembly concept">}}
-    {{< lightbox-img src="gallery/parts.png" alt="Gripper parts concept">}}
-    {{< lightbox-img src="gallery/front.png" alt="Gripper front view">}}
-    {{< lightbox-img src="gallery/side.png" alt="Gripper side view">}}
-    {{< lightbox-img src="gallery/team.png" alt="Project team">}}
-    {{< lightbox-img src="gallery/certificate.png" alt="Participation certificate">}}
+    {{< lightbox-img src="gallery/ur10e.png">}}
+    {{< lightbox-img src="gallery/parts.png">}}
+    {{< lightbox-img src="gallery/front.png">}}
+    {{< lightbox-img src="gallery/side.png">}}
+    {{< lightbox-img src="gallery/team.png">}}
+    {{< lightbox-img src="gallery/certificate.png">}}
 </div>

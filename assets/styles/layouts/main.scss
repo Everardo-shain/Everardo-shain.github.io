@@ -66,7 +66,7 @@ mark {
   background-color: get-light-color('highlight-color');
   border-radius: 0.25rem;
 }
-@include media('>=very-large') {
+@include media('>=large') {
   .skills-section,
   .about-section,
   .accomplishments-section,
@@ -79,11 +79,10 @@ mark {
   .top-navbar {
     .container {
       max-width: unquote("min(95%, 1600px)");
-      // margin: 0 auto;
     }
   }
 }
-@include media('<very-large') {
+@include media('<large') {
   .skills-section,
   .about-section,
   .accomplishments-section,

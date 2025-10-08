@@ -135,8 +135,8 @@ The p-value is greater than the significance level 0.05 and the confidence inter
 
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
-    {{< lightbox-img src="gallery/hypothesis-1.png" alt="Hypothesis 1 data representation">}}
-    {{< lightbox-img src="gallery/hypothesis-2.png" alt="Hypothesis 2 data representation">}}
-    {{< lightbox-img src="gallery/hypothesis-3.png" alt="Hypothesis 2 data representation">}}
-    {{< lightbox-img src="gallery/results.png" alt="Results">}}
+    {{< lightbox-img src="gallery/hypothesis-1.png">}}
+    {{< lightbox-img src="gallery/hypothesis-2.png">}}
+    {{< lightbox-img src="gallery/hypothesis-3.png">}}
+    {{< lightbox-img src="gallery/results.png">}}
 </div>

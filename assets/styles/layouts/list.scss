@@ -153,9 +153,6 @@ body.kind-page {
             @include transition();
           }
         }
-        .container {
-          max-width: 100%;
-        }
         &.hide {
           .post-card {
             width: calc(100% / 2);

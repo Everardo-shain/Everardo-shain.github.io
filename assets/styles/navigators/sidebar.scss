@@ -5,6 +5,7 @@
   @include transition();
   .sidebar-holder {
     top: 3rem;
+    padding-left: 15px;
     position: sticky;
     background-color: get-light-color('bg-primary');
     height: 100vh;

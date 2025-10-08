@@ -114,9 +114,9 @@ The following steps are repeated until a stopping condition is met.
 
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
-    {{< lightbox-img src="gallery/robot.png" alt="Robot concept">}}
-    {{< lightbox-img src="gallery/sensor.png" alt="Sensor characteristics">}}
-    {{< lightbox-img src="gallery/room.png" alt="Room with objects">}}
-    {{< lightbox-img src="gallery/study.png" alt="Study room">}}
-    {{< lightbox-img src="gallery/laboratory.png" alt="Laboratory">}}
+    {{< lightbox-img src="gallery/robot.png">}}
+    {{< lightbox-img src="gallery/sensor.png">}}
+    {{< lightbox-img src="gallery/room.png">}}
+    {{< lightbox-img src="gallery/study.png">}}
+    {{< lightbox-img src="gallery/laboratory.png">}}
 </div>

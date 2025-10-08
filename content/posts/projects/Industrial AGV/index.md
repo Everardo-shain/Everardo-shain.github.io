@@ -69,9 +69,9 @@ My main role was as software developer, although I also contributed to hardware 
 
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
-    {{< lightbox-img src="gallery/agv.png" alt="Front and back of the AGV">}}
-    {{< lightbox-img src="gallery/circuit.png" alt="Electronic circuit">}}
-    {{< lightbox-img src="gallery/frame-tree.png" alt="ROS frame tree">}}
-    {{< lightbox-img src="gallery/map.png" alt="CIMA map">}}
-    {{< lightbox-img src="gallery/path.png" alt="Sample path">}}
+    {{< lightbox-img src="gallery/agv.png">}}
+    {{< lightbox-img src="gallery/circuit.png">}}
+    {{< lightbox-img src="gallery/frame-tree.png">}}
+    {{< lightbox-img src="gallery/map.png">}}
+    {{< lightbox-img src="gallery/path.png">}}
 </div>
