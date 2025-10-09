@@ -41,12 +41,11 @@
     font-weight: 600;
     margin-right: var(--navbar-height);
     img {
-      width: 50px;
+      height: 50px;
       padding-top: 5px;
       padding-bottom: 5px;
       padding-right: 5px;
       padding-left: 0.5rem;
-      // margin-left: -5px;
     }
     svg{
       width: auto;
@@ -55,7 +54,6 @@
       padding-bottom: 5px;
       padding-right: 5px;
       padding-left: 0.5rem;
-      // margin-left: -5px;
       color: get-light-color('navbar');
     }
   }
