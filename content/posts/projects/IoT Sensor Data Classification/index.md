@@ -92,33 +92,21 @@ This was an IoT project in which I implemented two Machine Learning algorithms, 
 ---
 
 ## Results
-**DHT11**
-| Method | Accuracy |
-|---------|--------------------|
-| KNN | 0.9793 |
-| Decision Tree | 0.9845 |
-
-
-**Accelerometer**
-| Method | Accuracy |
-|---------|--------------------|
-| KNN | 0.9892 |
-| Decision Tree | 1 |
-
-
-
-## Results
 
 ### DHT11
+<div style="overflow-x:auto;">
 
 | Method        | Accuracy | Confusion Matrix |
 |---------------|----------|------------------|
 | **KNN**       | 0.9793     | (show matrix below) |
 | **Decision Tree** | 0.9845 | (show matrix below) |
 
+</div>
+
 <br>
 
 **KNN Confusion Matrix**
+<div style="overflow-x:auto;">
 
 |               | Predicted: Dark | Predicted: Sunny | Predicted: Bathroom |
 |---------------|--------------------|--------------------|--------------------|
@@ -126,9 +114,12 @@ This was an IoT project in which I implemented two Machine Learning algorithms, 
 |  **Actual: Sunny**  | 0                  | 64                | 0                 |
 |  **Actual: Bathroom**  | 0                  | 4                | 56                 |
 
+</div>
+
 <br>
 
 **Decision Tree Confusion Matrix**
+<div style="overflow-x:auto;">
 
 |               | Predicted: Dark | Predicted: Sunny | Predicted: Bathroom |
 |---------------|--------------------|--------------------|--------------------|
@@ -136,30 +127,41 @@ This was an IoT project in which I implemented two Machine Learning algorithms, 
 |  **Actual: Sunny**  | 0                  | 62                | 2                 |
 |  **Actual: Bathroom**  | 0                  | 1                | 59                 |
 
+</div>
+
 ### Accelerometer
+<div style="overflow-x:auto;">
 
 | Method        | Accuracy | Confusion Matrix |
 |---------------|----------|------------------|
 | **KNN**       | 0.9892     | (show matrix below) |
 | **Decision Tree** | 1 | (show matrix below) |
 
+</div>
+
 <br>
 
 **KNN Confusion Matrix**
+<div style="overflow-x:auto;">
 
 |               | Predicted: Shake | Predicted: Hit | 
 |---------------|--------------------|--------------------|
 |  **Actual: Shake**  | 38                 | 0                 |
 |  **Actual: Hit**  | 1                  | 54                |
 
+</div>
+
 <br>
 
 **Decision Tree Confusion Matrix**
+<div style="overflow-x:auto;">
 
 |               | Predicted: Shake | Predicted: Hit | 
 |---------------|--------------------|--------------------|
 |  **Actual: Shake**  | 38                 | 0                 |
 |  **Actual: Hit**  | 0                  | 55                |
+
+</div>
 
 ---
 

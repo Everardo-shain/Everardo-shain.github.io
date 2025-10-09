@@ -90,25 +90,37 @@ The following steps are repeated until a stopping condition is met.
 ## Results
 
 ### Room with objects
+<div style="overflow-x:auto;">
+
 | Method              | Accumulated distance (m) | Accumulated energy | Retrievement (%) | Time (s) |
 |--------------------|--------------------|----------------|----------|-----------|
 | **Nelder-Mead**        | 98.435             | 5.230          | 83.47    | 131.053   |
 | **(1+1)-ES**           | 119.858            | 6.013          | 84.03    | 34.733    |
 | **Simulated annealing** | 146.451            | 6.218          | 83.54    | 35.720    |
 
+</div>
+
 ### Study room
+<div style="overflow-x:auto;">
+
 | Method              | Accumulated distance (m) | Accumulated energy | Retrievement (%) | Time (s) |
 |--------------------|--------------------|----------------|----------|-----------|
 | **Nelder-Mead**        | 316.973            | 21.902         | 92.41    | 183.333   |
 | **(1+1)-ES**           | 283.049            | 23.260         | 89.17    | 25.027    |
 | **Simulated annealing** | 287.862           | 28.270         | 90.26    | 22.813    |
 
+</div>
+
 ### Laboratory
+<div style="overflow-x:auto;">
+
 | Method              | Accumulated distance (m) | Accumulated energy | Retrievement (%) | Time (s)  |
 |--------------------|--------------------|----------------|----------|-----------|
 | **Nelder-Mead**        | 327.351            | 19.118         | 89.51    | 297.067   |
 | **(1+1)-ES**           | 272.077            | 16.544         | 87.78    | 120.493   |
 | **Simulated annealing** | 317.389            | 22.772         | 87.69    | 176.307   |
+
+</div>
 
 ---
 

@@ -1,9 +1,11 @@
 .home {
   height: 100vh;
+  height: 100dvh;
   padding: 0;
   margin: 0;
   color: get-light-color('heading-color');
   overflow: hidden;
+  position: relative;
 
   .background {
     height: 100%;
@@ -15,11 +17,6 @@
     transform: scale(1);
     //filter: blur(3px);
     background-size: cover;
-  }
-
-  .arrow-center {
-    display: flex;
-    justify-content: center;
   }
 
   /*
@@ -37,23 +34,23 @@
 
   .content {
     position: relative;
-    top: -65%;
-    height: 60%;
+    bottom: 50%;
+    transform: translateY(-50%);
   }
 
   .profile-frame {
     position: relative;
     display: inline-block;
+    margin-bottom: 10px;
   }
 
   .profile-frame img {
     display: block;
-    width: 148px;
-    height: 148px;
+    width: 170px;
+    height: auto;
     background-color: transparent; 
     // filter: grayscale(1);
     padding: 0px;
-    margin-bottom: 10px;
   }
 
   .profile-frame::before,
@@ -85,6 +82,7 @@
 
   .typing-carousel {
     font-size: 14pt;
+    height: 42pt;
     color: get-light-color('transparent-navbar-text-color');
   }
 
@@ -92,11 +90,19 @@
     display: none;
   }
 
-  .arrow {
+  .arrow-center {
     position: absolute;
+    bottom: 12.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow {
     color: get-light-color('accent-color');
     font-size: 1.5rem;
-    bottom: 0;
   }
 
   .bounce {
@@ -130,23 +136,23 @@
     50%,100% { opacity: 0; }
   }
 
-  @include media('<=small') {
-    .content {
-      position: relative;
-      top: -75%;
-      height: 65%;
-    }
+  // @include media('<=small') {
+  //   .content {
+  //     position: relative;
+  //     top: -75%;
+  //     height: 65%;
+  //   }
 
-    .profile-frame img {
-      width: 140px;
-      // max-width: 50%;
-      height: auto;
-    }
+  //   .profile-frame img {
+  //     width: 140px;
+  //     // max-width: 50%;
+  //     height: auto;
+  //   }
 
-    .greeting {
-      font-size: 24pt;
-    }
-  }
+  //   .greeting {
+  //     font-size: 24pt;
+  //   }
+  // }
 }
 
 html[data-theme='dark'] {
