@@ -54,16 +54,14 @@
 <nav class="navbar navbar-expand-xl top-navbar shadow {{ if .IsHome}}transparent-navbar homepage{{end}}" id="top-navbar">
   <div class="container">
     <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
-      <span id="logo-slot">
         {{ if $logo }}
           {{ if eq $logo.MediaType.SubType "svg" }}
             {{ $logo.Content | safeHTML }}
           {{ else }}
-            {{ $logo = $logo.Resize "42x" }}
+            {{ $logo = $logo.Resize "x50" }}
             <img src="{{ $logo.RelPermalink }}" alt="Logo">
           {{ end }}
         {{ end }}
-      </span>
       {{- $navBarTitle -}}
     </a>
     <div class="d-flex">

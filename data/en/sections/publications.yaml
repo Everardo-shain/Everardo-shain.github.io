@@ -13,8 +13,8 @@ buttons:
 - name: All
   filter: "all"
   icon: "fas fa-border-all"
-- name: "Article"
-  filter: "article"
+- name: "Journal"
+  filter: "journal"
 - name: "Thesis"
   filter: "thesis"
 
@@ -31,11 +31,11 @@ publications:
   - name: Efraín López-Damian
     url: https://orcid.org/0000-0002-1113-929X
   paper:
-    summary: This paper presents the tuning and comparison of various optimization algorithms on the Next Best View (NBV) problem. A simulated 5 Degree-of-Freedom (DOF) mobile robot with a mounted simulated range sensor was used on a Virtual Reality Modeling Language (VRML) environment, and the space discretization was made using a voxel map. The optimization methods tested were Nelder-Mead, an Evolution Strategy, and Simulated Annealing. Their repeatability was tested on a laboratory model, a room with a cube and a pyramid inside it, and a study room with multiple furniture and windows.
+    summary: This Q1 journal article presents the tuning and comparison of various optimization algorithms on the Next Best View (NBV) problem. A simulated 5 Degree-of-Freedom (DOF) mobile robot with a mounted simulated range sensor was used on a Virtual Reality Modeling Language (VRML) environment, and the space discretization was made using a voxel map. The optimization methods tested were Nelder-Mead, an Evolution Strategy, and Simulated Annealing. Their repeatability was tested on a laboratory model, a room with a cube and a pyramid inside it, and a study room with multiple furniture and windows.
     url: https://ieeexplore.ieee.org/document/10781375
     file: "files/Tuning_and_Comparison_of_Optimization_Algorithms_for_the_Next_Best_View_Problematic.pdf"
-  categories: ["article"]
-  tags: ["article","next best view", "objective function","optimization algorithms"]
+  categories: ["journal"]
+  tags: ["journal", "article", "next best view", "objective function","optimization algorithms"]
 - title: View planning for three-dimensional environment reconstruction using the Next Best View method
   publishedIn:
     name: Instituto Tecnológico y de Estudios Superiores de Monterrey
