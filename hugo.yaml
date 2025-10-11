@@ -67,7 +67,7 @@ params:
   logo:
     main: /images/site/logo-outline.svg
     inverted: /images/site/logo-outline.svg
-    favicon: /images/site/favicon.png
+    favicon: /images/site/logo-deco-dark.png
 
   # GitHub repo of your site
   gitRepo: https://github.com/Everardo-shain/Everardo-shain.github.io
