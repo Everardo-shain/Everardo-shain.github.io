@@ -124,6 +124,16 @@ The following steps are repeated until a stopping condition is met.
 
 ---
 
+## Publications
+- **Thesis**: E. Shain Ruvalcaba, *"View planning for three-dimensional environment reconstruction using the Next Best View method"*, 2024.  
+  DOI: [10.60473/ritec.31](https://doi.org/10.60473/ritec.31).  
+  Defense unanimously approved by a three-person committee.
+
+- **Journal article**: E. Shain-Ruvalcaba, E. López-Damian, *"Tuning and Comparison of Optimization Algorithms for the Next Best View Problematic,"* in *IEEE Access*, vol. 12, pp. 185567–185585, 2024.  
+  DOI: [10.1109/ACCESS.2024.3513154](https://doi.org/10.1109/ACCESS.2024.3513154).
+
+---
+
 ## Gallery
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; place-items: center;">
     {{< lightbox-img src="gallery/robot.png">}}
