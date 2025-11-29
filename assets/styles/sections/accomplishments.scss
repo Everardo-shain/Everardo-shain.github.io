@@ -29,7 +29,11 @@
       padding-left: 1rem;
       padding-right: 1rem;
     }
-
+    .card-body p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    
     .card-footer {
       background: get-light-color('bg-card') !important;
       border: none;
