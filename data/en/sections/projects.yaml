@@ -53,8 +53,7 @@ projects:
 - name: Next Best View | Master's Thesis
   image: /images/sections/projects/NBV/multimedia/imagenes.png
   role: Researcher and Developer
-  summary: Implemented 3 optimization algorithms with C to predict sensor positions for environment scanning, where the 3 tested environments were retrieved by at least 83% in less than 200 seconds.
-  tags: ["optimization", "c"]
+  summary: Implemented three optimization algorithms in C for sensor position prediction in 3D environment reconstruction, retrieving at least 83% of three tested environments in under 200 seconds.
   categories: ["data and optimization", "featured"]
   post: "posts/projects/NBV/index.md"
   logo: "fas fa-eye"
@@ -96,7 +95,7 @@ projects:
 - name: Industrial AGV
   image: /images/sections/projects/Industrial AGV/multimedia/imagenes.png
   role: Developer
-  summary: Contributed to the navigation programming of an industrial Ackermann AGV using Arduino, ROS on a NVIDIA Jetson Xavier device and a RPLIDAR sensor, successfully avoiding collisions inside a laboratory.
+  summary: Contributed to the navigation programming of an industrial AGV and SLAM-based laboratory mapping using a RPLIDAR sensor, Arduino, and ROS on an NVIDIA Jetson Xavier, successfully avoiding collisions.
   tags: ["navigation", "arduino", "ros"]
   categories: ["featured", "control and navigation"]
   video: https://youtu.be/e6znDIl7ap0
