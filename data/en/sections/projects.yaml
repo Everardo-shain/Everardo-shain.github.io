@@ -95,7 +95,7 @@ projects:
 - name: Industrial AGV
   image: /images/sections/projects/Industrial AGV/multimedia/imagenes.png
   role: Developer
-  summary: Contributed to the navigation programming of an industrial AGV and SLAM-based laboratory mapping using a RPLIDAR sensor, Arduino, and ROS on an NVIDIA Jetson Xavier, successfully avoiding collisions.
+  summary: Contributed to AGV navigation programming with SLAM-based laboratory mapping using a RPLIDAR sensor, Arduino, and ROS on an NVIDIA Jetson Xavier, successfully avoiding collisions.
   tags: ["navigation", "arduino", "ros"]
   categories: ["featured", "control and navigation"]
   video: https://youtu.be/e6znDIl7ap0
