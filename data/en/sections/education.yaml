@@ -72,7 +72,7 @@ degrees:
     url: "https://ieeexplore.ieee.org/document/10781375"
   customSections:
   - name: Thesis
-    content: "[View planning for three-dimensional environment reconstruction using the Next Best View method.](https://repositorio.tec.mx/items/e2855326-09cd-47a7-8094-6b66793b2796) <br /> Defense unanimously approved by a three-person committee."
+    content: "[View planning for three-dimensional environment reconstruction using the Next Best View method.](https://repositorio.tec.mx/items/e2855326-09cd-47a7-8094-6b66793b2796)"
   
 - name: B.S. in Mechatronics Engineering
   icon: fa-graduation-cap
