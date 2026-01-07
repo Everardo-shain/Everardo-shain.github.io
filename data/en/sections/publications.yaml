@@ -33,7 +33,7 @@ publications:
   paper:
     summary: This Q1 journal article presents the tuning and comparison of various optimization algorithms on the Next Best View (NBV) problem. A simulated 5 Degree-of-Freedom (DOF) mobile robot with a mounted simulated range sensor was used on a Virtual Reality Modeling Language (VRML) environment, and the space discretization was made using a voxel map. The optimization methods tested were Nelder-Mead, an Evolution Strategy, and Simulated Annealing. Their repeatability was tested on a laboratory model, a room with a cube and a pyramid inside it, and a study room with multiple furniture and windows.
     url: https://ieeexplore.ieee.org/document/10781375
-    file: "files/Tuning_and_Comparison_of_Optimization_Algorithms_for_the_Next_Best_View_Problematic.pdf"
+    file: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10781375
   categories: ["journal"]
   tags: ["journal", "article", "next best view", "objective function","optimization algorithms"]
 - title: View planning for three-dimensional environment reconstruction using the Next Best View method
@@ -49,6 +49,6 @@ publications:
   paper:
     summary: This master's thesis describes the impact of the objective function and optimization methods on the Next Best View problem, which consists in finding the next position that the sensor or camera needs to take to scan an object or scenery in its totality. A multi-factor objective function was designed including area and motion factors. Global optimization tasks such as a backstepping technique to escape local minima and a dynamic change in the objective function were implemented. Optimization methods such as Nelder-Mead, an Evolution Strategy, and Simulated Annealing were tuned and compared on three different scenarios.
     url: https://repositorio.tec.mx/items/e2855326-09cd-47a7-8094-6b66793b2796
-    file: "files/EverardoShain_Thesis.pdf"
+    file: https://docs.google.com/viewerng/viewer?url=https://repositorio.tec.mx/server/api/core/bitstreams/1dd975ac-aa7d-41c1-b89c-c7cbdca06675/content
   categories: ["thesis"]
   tags: ["thesis","next best view", "objective function","optimization algorithms"]
