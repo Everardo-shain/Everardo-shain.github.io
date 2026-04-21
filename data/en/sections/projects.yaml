@@ -273,7 +273,7 @@ projects:
 - name: IoT Sensor Data Classification
   image: /images/sections/projects/IoT Sensor Data Classification/multimedia/imagenes.png
   role: Developer
-  summary: Implemented 2 Machine Learning algorithms (KNN and Decision tree) on Python with data from accelerometer and temperature sensors, with both accuracies higher than 97%.
+  summary: Implemented 2 machine learning algorithms (KNN and Decision tree) on Python with data from accelerometer and temperature sensors, with both accuracies higher than 97%.
   tags: ["data science", "machine learning", "IoT", "python", "arduino"]
   categories: ["featured", "data and optimization"]
   post: "posts/projects/IoT Sensor Data Classification/index.md"

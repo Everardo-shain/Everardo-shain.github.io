@@ -20,7 +20,7 @@ categories:
 ---
 
 ## Overview
-This was an IoT project in which I implemented two Machine Learning algorithms, K-Nearest Neighbors (KNN) and Decision Tree, in Python to classify data collected from an MMA7361 accelerometer and a DHT11 temperature/humidity sensor connected to a NodeMCU ESP32 microcontroller. The sensors were programmed and tested using Arduino IDE, with data transmitted both through wired serial communication and wirelessly via MQTT using Mosquitto and OpenSSL for secure transfer. I organized the workflow on Jupyter Notebook, where I processed the collected data, labeled different scenarios (dark room, sunny room, bathroom, sensor movement types), and split it into training and testing sets. Both algorithms achieved good results, with accuracies above 97%, including perfect classification with the Decision Tree on the accelerometer dataset.
+This was an IoT project in which I implemented two machine learning algorithms, K-Nearest Neighbors (KNN) and Decision Tree, in Python to classify data collected from an MMA7361 accelerometer and a DHT11 temperature/humidity sensor connected to a NodeMCU ESP32 microcontroller. The sensors were programmed and tested using Arduino IDE, with data transmitted both through wired serial communication and wirelessly via MQTT using Mosquitto and OpenSSL for secure transfer. I organized the workflow on Jupyter Notebook, where I processed the collected data, labeled different scenarios (dark room, sunny room, bathroom, sensor movement types), and split it into training and testing sets. Both algorithms achieved good results, with accuracies above 97%, including perfect classification with the Decision Tree on the accelerometer dataset.
 
 ---
 

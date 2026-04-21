@@ -20,9 +20,8 @@ degrees:
     # Can optionally show a different logo for dark theme
     darkLogo: /images/sections/education/tec_dark.png
   grade: #(optional)
-    scale: Mexican GPA
-    achieved: 99.2 out of 100 (approx. 3.97
-    outOf: "4.0)"
+    scale: GPA
+    achieved: 99.2/100 (Mexican system, equivalent to approx. 3.97/4.0)
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
     showGrades: true
@@ -84,9 +83,8 @@ degrees:
     # Can optionally show a different logo for dark theme
     darkLogo: /images/sections/education/tec_dark.png
   grade: #(optional)
-    scale: Mexican GPA
-    achieved: 98.7 out of 100 (approx. 3.95
-    outOf: "4.0)"
+    scale: GPA
+    achieved: 98.7/100 (Mexican system, equivalent to approx. 3.95/4.0)
   takenCourses:
     showGrades: true
     collapseAfter: 5
