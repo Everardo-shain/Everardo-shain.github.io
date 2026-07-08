@@ -9,8 +9,15 @@
 >
   <div class="card">
     <div class="card-header">
-      <h5 class="card-title mb-0">{{ .title }}</h5>
-      <div class="sub-title">
+      
+      <div class="d-flex justify-content-between align-items-start">
+        <h5 class="card-title mb-0">{{ .title }}</h5>
+        {{ if .publishedIn.status }}
+          <span class="badge btn-tag ms-3 text-nowrap">{{ .publishedIn.status }}</span>
+        {{ end }}
+      </div>
+      
+      <div class="sub-title mt-1">
         <span>
           {{ if .publishedIn.url }}
           <a class="" href="{{.publishedIn.url}}">{{ .publishedIn.name }}</a>
