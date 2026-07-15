@@ -20,7 +20,7 @@ buttons:
 
 # your publications
 publications:
-- title: Objective Function Refinement and Odometric Robustness Analysis in Next-Best-View 3D Reconstruction
+- title: Multi-Factor Objective Function and Odometric Robustness Optimization for Next-Best-View 3D Reconstruction
   publishedIn:
     name: "IEEE Access"
     status: In Preparation
@@ -32,7 +32,7 @@ publications:
     url: https://orcid.org/0000-0002-1113-929X
   paper:
     summary: This journal article, currently in preparation for submission to IEEE Access,  extends prior work on the Next Best View (NBV) problem. It has two main contributions, a retuned multi-factor objective function (combining area, motion, and quality factors) and a robust optimization approach that explicitly accounts for odometric error. Robustness is achieved via a weighted combination of the nominal and expected objective function values, allowing the optimizer to counteract the effects of possible odometer errors. The approach is validated across two optimization methods (Simulated Annealing and an Evolution Strategy) and multiple simulated environments of varying complexity, showing that the benefit of robust optimization depends on scene complexity.
-  tags: ["journal article", "next best view", "objective function","optimization algorithms","robust optimization"]
+  tags: ["journal article", "next best view", "objective function","3D reconstruction","robust optimization"]
 
 - title: Real-Time Detection of Cloned Spanish Audio in Telephone Calls Using Microcontrollers and Cloud Services
   publishedIn:
@@ -74,7 +74,7 @@ publications:
     url: https://ieeexplore.ieee.org/document/10781375
     file: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10781375
   categories: ["journal"]
-  tags: ["journal article", "next best view", "objective function","optimization algorithms"]
+  tags: ["journal article", "next best view", "objective function","optimization algorithms", "3D reconstruction"]
 
 - title: View planning for three-dimensional environment reconstruction using the Next Best View method
   publishedIn:
@@ -92,4 +92,4 @@ publications:
     url: https://repositorio.tec.mx/items/e2855326-09cd-47a7-8094-6b66793b2796
     file: https://docs.google.com/viewerng/viewer?url=https://repositorio.tec.mx/server/api/core/bitstreams/1dd975ac-aa7d-41c1-b89c-c7cbdca06675/content
   categories: ["thesis"]
-  tags: ["thesis","next best view", "objective function","optimization algorithms"]
+  tags: ["thesis","next best view", "objective function","optimization algorithms", "3D reconstruction"]
