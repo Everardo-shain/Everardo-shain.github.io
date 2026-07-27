@@ -1,0 +1,29 @@
+<div class="col-md-12 col-lg-6 p-2">
+  <div class="card">
+    <div class="card-header">
+      {{ if .icon }}
+        {{ $iconName := .icon }}
+        <h5 class="card-title">
+          <i class="{{ $iconName }}"></i> {{ .name }}
+        </h5>
+      {{ else }}
+        <h5 class="card-title">{{ .name }}</h5>
+      {{ end }}
+      <div class="sub-title">
+        <span><a href="{{ .organization.url }}" title="{{ .organization.name }}" target="_blank" rel="noopener">{{ .organization.name }}</a></span>
+        <span class="ms-2">{{ .timeline }}</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p>{{ .overview | markdownify }}</p>
+    </div>
+    <div class="card-footer">
+      {{ if .certificateURL }}
+        <a 
+          class="btn btn-outline-info ms-1 ps-2 mb-2" href="{{ .certificateURL }}" target="_blank" rel="noopener" role="button"
+          ><i class="fas fa-certificate me-1"></i>{{ i18n "view_certificate" }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</div>

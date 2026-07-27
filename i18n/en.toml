@@ -65,6 +65,9 @@ other = "out of"
 [publications]
 other = "Publications"
 
+[awards]
+other = "Awards"
+
 [taken_courses]
 other = "Taken Courses"
 

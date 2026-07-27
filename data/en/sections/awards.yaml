@@ -1,0 +1,65 @@
+# section information
+section:
+  name: Awards and Scholarships
+  id: awards
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your awards and scholarships
+awards:
+- name: "Highest Honorable Mention (Master's)"
+  icon: "fas fa-award"
+  timeline: "December 2024"
+  organization:
+    name: Tecnológico de Monterrey
+    url: https://tec.mx/
+  overview: |
+    Recognized as the best graduate of the Master of Science in Engineering program in a group of 15 students, with a final grade average of 99.2/100.
+
+- name: "CONACYT National Graduate Scholarship (Master's)"
+  icon: "fas fa-graduation-cap"
+  timeline: "February 2023 - December 2024"
+  organization:
+    name: Federal Government of Mexico
+    url: https://conahcyt.mx/
+  overview: |
+    Awarded a total of MXN $340,000 (approximately CAD $26,424) by the Mexican National Council of Science and Technology (CONACYT) to support living expenses during MSc studies.
+
+- name: "Scholarship for Academic Talent (Master's)"
+  icon: "fas fa-medal"
+  timeline: "February 2023 - December 2024"
+  organization:
+    name: Tecnológico de Monterrey
+    url: https://tec.mx/
+  overview: |
+    Awarded a 100% scholarship for MSc tuition after an interview and achieving a qualifying score on the Graduate Admission Test (628 on a scale of 200-800).
+
+- name: "Best Graduate Award (Bachelor's)"
+  icon: "fas fa-trophy"
+  timeline: "December 2022"
+  organization:
+    name: Tecnológico de Monterrey
+    url: https://tec.mx/
+  overview: |
+    Recognized as the best graduate in the entire university, selected from more than 200 graduates across 12 degree programs.
+
+- name: "Highest Honorable Mention (Bachelor's)"
+  icon: "fas fa-award"
+  timeline: "December 2022"
+  organization:
+    name: Tecnológico de Monterrey
+    url: https://tec.mx/
+  overview: |
+    Recognized as the best graduate of the B.S. in Mechatronics Engineering program in a group of 20 students, with a final grade average of 98.7/100.
+
+- name: "Scholarship for Academic Talent (Bachelor's)"
+  icon: "fas fa-medal"
+  timeline: "April 2018 - December 2022"
+  organization:
+    name: Tecnológico de Monterrey
+    url: https://tec.mx/
+  overview: |
+    Awarded a 50% scholarship for BSc tuition after an interview and achieving a qualifying score on the Academic Aptitude Test (1495/1600).
