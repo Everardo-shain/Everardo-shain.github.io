@@ -16,7 +16,7 @@ buttons:
   icon: "fas fa-border-all"
 - name: Mechatronics
   filter: "mechatronics"
-- name: Data Analysis & Programming
+- name: AI & Computational Methods
   filter: "computational"
 - name: Communication & Management
   filter: "communication and management"
@@ -46,21 +46,30 @@ skills:
     - <strong>Programming languages:</strong> C/C++, Python, MATLAB.
   categories: ["computational"]
 
-- name: Data Science
-  icon: "fas fa-chart-line"
+- name: AI & Machine Learning
+  icon: "fas fa-brain"
   summary: |
-    Data cleaning and analysis using statistical inference, plus predictive modeling through machine learning techniques. 
-    - <strong>Platforms:</strong> Google Cloud, Google Colab, RStudio.
-    - <strong>Programming languages:</strong> Python, R, SQL. 
+    Statistical inference and predictive modeling, with deep learning for classification tasks, including CNNs for audio analysis.
+    - <strong>Platforms:</strong> TensorFlow/Keras, scikit-learn, Google Cloud, RStudio.
+    - <strong>Programming languages:</strong> Python, R, SQL.
   categories: ["computational"]
 
-- name: Automation and Robotics
+- name: Industrial Automation
+  icon: "fas fa-industry"
+  summary: |
+    Automation of industrial processes using PLCs, including ladder logic and structured control programming.
+    - <strong>Platforms:</strong> Siemens PLCs, TIA Portal.
+    - <strong>Programming languages:</strong> Ladder, SCL.
+  categories: ["mechatronics"]
+
+- name: Robotics & Autonomous Systems
   icon: "fas fa-robot"
   summary: |
-    Automation of industrial processes using PLCs. Programming of robotic arms including direct and inverse kinematics.
-    - <strong>Platforms:</strong> Siemens PLCs, TIA Portal, UR10e Collaborative Robot, RoboDK.
-    - <strong>Programming languages:</strong> Ladder, SCL, Python.
+    Robotic arm kinematics and simulation, AGV navigation, and view-planning optimization for 3D reconstruction.
+    - <strong>Platforms:</strong> UR10e Collaborative Robot, RoboDK, ROS, MATLAB/Simulink.
+    - <strong>Programming languages:</strong> Python, MATLAB, C, Arduino (C/C++).
   categories: ["mechatronics"]
+
 
 - name: Optimization
   icon: "fas fa-project-diagram"

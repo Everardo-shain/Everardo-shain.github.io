@@ -76,11 +76,11 @@ badges:
   name: Scientific Research
   icon: fa-microscope
 - type: hard-skill-indicator
-  name: Embedded Software & Automation
+  name: Robotics & Embedded Software
   icon: fa-microchip
 - type: hard-skill-indicator
-  name: Data Science
-  icon: fa-chart-line
+  name: Data Science & Embodied AI
+  icon: fa-brain
 
 #Soft skills
 - type: soft-skill-indicator
