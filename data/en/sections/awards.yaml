@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Awards and Scholarships
+  name: Awards
   id: awards
   enable: true
   weight: 6
@@ -26,7 +26,7 @@ awards:
     name: Federal Government of Mexico
     url: https://conahcyt.mx/
   overview: |
-    Awarded a total of MXN $340,000 (approximately CAD $26,424) by the Mexican National Council of Science and Technology (CONACYT) to support living expenses during MSc studies.
+    Awarded a total of MXN $340,000 by the Mexican National Council of Science and Technology (CONACYT) to support living expenses during MSc studies.
 
 - name: "Scholarship for Academic Talent (Master's)"
   icon: "fas fa-medal"
