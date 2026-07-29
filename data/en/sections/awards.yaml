@@ -29,7 +29,7 @@ awards:
     Awarded a total of MXN $340,000 by the Mexican National Council of Science and Technology (CONACYT) to support living expenses during MSc studies.
 
 - name: "Scholarship for Academic Talent (Master's)"
-  icon: "fas fa-medal"
+  icon: "fas fa-graduation-cap"
   timeline: "February 2023 - December 2024"
   organization:
     name: Tecnológico de Monterrey
@@ -56,7 +56,7 @@ awards:
     Recognized as the best graduate of the B.S. in Mechatronics Engineering program in a group of 20 students, with a final grade average of 98.7/100.
 
 - name: "Scholarship for Academic Talent (Bachelor's)"
-  icon: "fas fa-medal"
+  icon: "fas fa-graduation-cap"
   timeline: "April 2018 - December 2022"
   organization:
     name: Tecnológico de Monterrey
