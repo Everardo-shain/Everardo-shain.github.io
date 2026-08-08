@@ -20,10 +20,11 @@ buttons:
 
 # your publications
 publications:
-- title: Multi-Factor Objective Function and Odometric Robustness Optimization for Next-Best-View 3D Reconstruction
+- title: Multi-Factor and Odometric Aware Optimization for Next-Best-View 3D Reconstruction
   publishedIn:
     name: "IEEE Access"
-    status: In Preparation
+    status: Under Review
+    date: Submitted 5 August 2026
     url: https://ieeeaccess.ieee.org/
   authors:
   - name: Everardo Shain-Ruvalcaba
@@ -31,7 +32,7 @@ publications:
   - name: Efraín López-Damian
     url: https://orcid.org/0000-0002-1113-929X
   paper:
-    summary: This journal article, currently in preparation for submission to IEEE Access,  extends prior work on the Next Best View (NBV) problem. It has two main contributions, a retuned multi-factor objective function (combining area, motion, and quality factors) and a robust optimization approach that explicitly accounts for odometric error. Robustness is achieved via a weighted combination of the nominal and expected objective function values, allowing the optimizer to counteract the effects of possible odometer errors. The approach is validated across two optimization methods (Simulated Annealing and an Evolution Strategy) and multiple simulated environments of varying complexity, showing that the benefit of robust optimization depends on scene complexity.
+    summary: This journal article (Q1 at the time of submission)  extends prior work on the Next Best View (NBV) problem. It has two main contributions, a retuned multi-factor objective function (combining area, motion, and quality factors) and a robust optimization approach that explicitly accounts for odometric error. Robustness is achieved via a weighted combination of the nominal and expected objective function values, allowing the optimizer to counteract the effects of possible odometer errors. The approach is validated across two optimization methods (Simulated Annealing and an Evolution Strategy) and multiple simulated environments of varying complexity, showing that the benefit of robust optimization depends on scene complexity.
   tags: ["journal article", "next best view", "objective function","3D reconstruction","robust optimization"]
 
 - title: Real-Time Detection of Cloned Spanish Audio in Telephone Calls Using Microcontrollers and Cloud Services

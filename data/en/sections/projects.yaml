@@ -53,11 +53,21 @@ projects:
 - name: Next Best View | Master's Thesis
   image: /images/sections/projects/NBV/multimedia/imagenes.png
   role: Researcher and Developer
-  summary: Implemented three optimization algorithms in C for sensor position prediction in 3D environment reconstruction, retrieving at least 83% of three tested environments in under 200 seconds.
+  summary: Implemented 3 optimization algorithms in C on Linux for view planning in 3D reconstruction, retrieving 83\%+ of tested scenes in under 200s (1st journal article, IEEE Access, published). Extended with a new objective function and odometric aware optimization (2nd journal article, IEEE Access, submitted in 2026).
   tags: ["optimization", "3D sensing", "c"]
   categories: ["data and optimization", "featured"]
   post: "posts/projects/NBV/index.md"
   logo: "fas fa-eye"
+  timeline: "2023 - 2026"
+
+- name: Wound Filling Robotics
+  image: /images/sections/projects/NBV/multimedia/imagenes.png
+  role: Contributor
+  summary: Supported the virtual prototyping phase of a wound-filling robotic device, performing the kinematic analysis and trajectory control engineering for an 8-DOF robot using MATLAB, and designing the system's integration and assembly within Simulink.
+  tags: ["control systems", "matlab"]
+  categories: ["control and navigation"]
+  logo: "fas fa-hospital"
+  timeline: "2026"
 
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/multimedia/imagenes.png
@@ -67,7 +77,8 @@ projects:
   categories: ["featured", "software"]
   post: "posts/projects/Poker Simulation/index.md"
   logo: "fas fa-heart"
-  
+  timeline: "2024"
+
 - name: Northeastern Home Goods Vehicle Routing
   image: /images/sections/projects/Northeastern Home Goods Vehicle Routing/multimedia/imagenes.png
   role: Analyst and Developer
@@ -75,6 +86,7 @@ projects:
   tags: ["optimization","gams", "r"]
   categories: ["data and optimization"]
   logo: "fas fa-route"
+  timeline: "2024"
 
 - name: US Children Adoption Statistical Inference
   image: /images/sections/projects/US Children Adoption Statistical Inference/multimedia/imagenes.png
@@ -84,6 +96,7 @@ projects:
   categories: ["featured", "data and optimization"]
   post: "posts/projects/US Children Adoption Statistical Inference/index.md"
   logo: "fas fa-chart-simple"
+  timeline: "2023"
 
 - name: IC Genetic Algorithm
   image: /images/sections/projects/IC Genetic Algorithm/multimedia/imagenes.png
@@ -92,6 +105,7 @@ projects:
   tags: ["optimization", "python"]
   categories: ["data and optimization"]
   logo: "fas fa-dna"
+  timeline: "2023"
 
 - name: Industrial AGV
   image: /images/sections/projects/Industrial AGV/multimedia/imagenes.png
@@ -102,6 +116,7 @@ projects:
   video: https://youtu.be/e6znDIl7ap0
   post: "posts/projects/Industrial AGV/index.md"
   logo: "fas fa-compass"
+  timeline: "2022"
 
 - name: Industrial Robotics Tower of Hanoi
   image: /images/sections/projects/Industrial Robotics Tower of Hanoi/multimedia/imagenes.png
@@ -111,6 +126,7 @@ projects:
   categories: ["automation"]
   video: https://youtu.be/PPkQLMn-2hs
   logo: "fas fa-robot"
+  timeline: "2022"
 
 - name: Car Design
   image: /images/sections/projects/Car Design/multimedia/imagenes.png
@@ -119,6 +135,7 @@ projects:
   tags: ["cad", "siemens nx"]
   categories: ["design"]
   logo: "fas fa-car"
+  timeline: "2022"
 
 - name: Battery Bank Cooling System
   image: /images/sections/projects/Battery Bank Cooling System/multimedia/imagenes.png
@@ -127,6 +144,7 @@ projects:
   tags: ["embedded","arduino", "labview"]
   categories: ["embedded"]
   logo: "fas fa-car-battery"
+  timeline: "2022"
 
 - name: Laser Harp
   image: /images/sections/projects/Laser Harp/multimedia/imagenes.png
@@ -136,7 +154,8 @@ projects:
   categories: ["embedded"]
   video: https://youtu.be/3o-LQzRDszI
   logo: "fas fa-music"
-
+  timeline: "2022"
+  
 - name: Step Ladder Assembly
   image: /images/sections/projects/Step Ladder Assembly/multimedia/imagenes.png
   role: CAD Designer
@@ -144,6 +163,7 @@ projects:
   tags: ["cad", "siemens nx"]
   categories: ["design"]
   logo: "fas fa-stairs"
+  timeline: "2022"
 
 - name: Robomatrix 2022 | Robociety
   image: /images/sections/projects/Robomatrix 2022/multimedia/imagenes.png
@@ -153,6 +173,7 @@ projects:
   categories: ["embedded"]
   video: https://youtu.be/fhyYnLaLY4I
   logo: "fas fa-shield"
+  timeline: "2022"
 
 - name: Bicycle Assembly
   image: /images/sections/projects/Bicycle Assembly/multimedia/imagenes.png
@@ -161,6 +182,7 @@ projects:
   tags: ["cad", "siemens nx"]
   categories: ["design"]
   logo: "fas fa-bicycle"
+  timeline: "2022"
 
 - name: Turret Tracking
   image: /images/sections/projects/Turret Tracking/multimedia/imagenes.png
@@ -170,6 +192,7 @@ projects:
   categories: ["control and navigation"]
   video: https://youtu.be/KQ9zRreEm9I
   logo: "fas fa-crosshairs"
+  timeline: "2022"
 
 - name: Conveyor Belt
   image: /images/sections/projects/Conveyor Belt/multimedia/imagenes.png
@@ -179,6 +202,7 @@ projects:
   categories: ["automation"]
   video: https://youtu.be/xhTHO3_LCNc
   logo: "fas fa-industry"
+  timeline: "2022"
 
 - name: Scooter Design
   image: /images/sections/projects/Scooter Design/multimedia/imagenes.png
@@ -187,6 +211,7 @@ projects:
   tags: ["project design"]
   categories: ["design"]
   logo: "fas fa-diagram-project"
+  timeline: "2022"
 
 - name: IMDB Sentiment Analysis
   image: /images/sections/projects/IMDB Sentiment Analysis/multimedia/imagenes.png
@@ -196,6 +221,7 @@ projects:
   categories: ["featured", "data and optimization"]
   post: "posts/projects/IMDB Sentiment Analysis/index.md"
   logo: "fas fa-brain"
+  timeline: "2022"
 
 - name: Upright CNC Router
   image: /images/sections/projects/Upright CNC Router/multimedia/imagenes.png
@@ -206,6 +232,7 @@ projects:
   video: https://youtu.be/5scmf3VBpIU
   post: "posts/projects/Upright CNC Router/index.md"
   logo: "fas fa-shapes"
+  timeline: "2022"
 
 - name: Smart Bulb
   image: /images/sections/projects/Smart Bulb/multimedia/imagenes.png
@@ -215,6 +242,7 @@ projects:
   categories: ["embedded"]
   video: https://youtu.be/FWT_69kZMYQ
   logo: "fas fa-lightbulb"
+  timeline: "2022"
 
 - name: Robofest 2022 | Robociety
   image: /images/sections/projects/Robofest 2022/multimedia/imagenes.png
@@ -225,6 +253,7 @@ projects:
   video: https://youtu.be/e-Wuxif8ChU
   post: "posts/projects/Robofest 2022/index.md"
   logo: "fas fa-bottle-water"
+  timeline: "2022"
 
 - name: Airline Passengers Prediction
   image: /images/sections/projects/Airline Passengers Prediction/multimedia/imagenes.png
@@ -233,6 +262,7 @@ projects:
   tags: ["data science", "machine learning", "python"]
   categories: ["data and optimization"]
   logo: "fas fa-plane"
+  timeline: "2022"
 
 - name: Tomato Harvesting Robot
   image: /images/sections/projects/Tomato Harvesting Robot/multimedia/imagenes.png
@@ -243,6 +273,7 @@ projects:
   video: https://youtu.be/NaoElE4skmY
   post: "posts/projects/Tomato Harvesting Robot/index.md"
   logo: "fas fa-gear"
+  timeline: "2022"
 
 - name: Car Motor System
   image: /images/sections/projects/Car Motor System/multimedia/imagenes.png
@@ -251,6 +282,7 @@ projects:
   tags: ["embedded", "proteus", "c","microcontroller"]
   categories: ["embedded"]
   logo: "fas fa-microchip"
+  timeline: "2021"
 
 - name: Elevator
   image: /images/sections/projects/Elevator/multimedia/imagenes.png
@@ -261,6 +293,7 @@ projects:
   video: https://youtu.be/OM1dn-VYwz8
   post: "posts/projects/Elevator/index.md"
   logo: "fas fa-elevator"
+  timeline: "2021"
 
 - name: Power Source
   image: /images/sections/projects/Power Source/multimedia/imagenes.png
@@ -269,6 +302,7 @@ projects:
   tags: ["electronic design", "proteus"]
   categories: ["design"]
   logo: "fas fa-plug"
+  timeline: "2021"
 
 - name: IoT Sensor Data Classification
   image: /images/sections/projects/IoT Sensor Data Classification/multimedia/imagenes.png
@@ -278,6 +312,7 @@ projects:
   categories: ["featured", "data and optimization"]
   post: "posts/projects/IoT Sensor Data Classification/index.md"
   logo: "fas fa-temperature-half"
+  timeline: "2021"
 
 - name: Car Alarm System
   image: /images/sections/projects/Car Alarm System/multimedia/imagenes.png
@@ -286,6 +321,7 @@ projects:
   tags: ["embedded", "proteus","assembly","microcontroller"]
   categories: ["embedded"]
   logo: "fas fa-car-on"
+  timeline: "2021"
 
 - name: Sorting Line
   image: /images/sections/projects/Sorting Line/multimedia/imagenes.png
@@ -294,6 +330,7 @@ projects:
   tags: ["automation", "plc"]
   categories: ["automation"]
   logo: "fas fa-box-open"
+  timeline: "2021"
 
 - name: Traffic Light Simulation
   image: /images/sections/projects/Traffic Light Simulation/multimedia/imagenes.png
@@ -303,6 +340,7 @@ projects:
   categories: ["automation"]
   video: https://youtu.be/Rve9ntNXj7c
   logo: "fas fa-traffic-light"
+  timeline: "2021"
 
 - name: Audio Filtering
   image: /images/sections/projects/Audio Filtering/multimedia/imagenes.png
@@ -311,6 +349,7 @@ projects:
   tags: ["software", "signal processing", "matlab"]
   categories: ["software"]
   logo: "fas fa-wave-square"
+  timeline: "2020"
 
 - name: Cleaner Robot
   image: /images/sections/projects/Cleaner Robot/multimedia/imagenes.png
@@ -320,6 +359,7 @@ projects:
   categories: ["control and navigation"]
   video: https://youtu.be/SyzPRuBWdbQ
   logo: "fas fa-broom"
+  timeline: "2020"
 
 - name: Millipede Video Game
   image: /images/sections/projects/Millipede Video Game/multimedia/imagenes.png
@@ -329,6 +369,7 @@ projects:
   categories: ["software"]
   video: https://youtu.be/ofYekjYC_y0
   logo: "fas fa-gamepad"
+  timeline: "2020"
 
 - name: Vending Machine
   image: /images/sections/projects/Vending Machine/multimedia/imagenes.png
@@ -338,6 +379,7 @@ projects:
   categories: ["software"]
   video: https://youtu.be/WnUSUwC09L8
   logo: "fas fa-coins"
+  timeline: "2020"
 
 - name: Basketball Game
   image: /images/sections/projects/Basketball Game/multimedia/imagenes.png
@@ -346,6 +388,7 @@ projects:
   tags: ["electronic design"]
   categories: ["design"]
   logo: "fas fa-basketball"
+  timeline: "2020"
 
 - name: Router Access
   image: /images/sections/projects/Router Access/multimedia/imagenes.png
@@ -354,6 +397,7 @@ projects:
   tags: ["software", "c++"]
   categories: ["software"]
   logo: "fas fa-lock"
+  timeline: "2018"
 
 - name: Payroll Software
   image: /images/sections/projects/Payroll Software/multimedia/imagenes.png
@@ -362,6 +406,7 @@ projects:
   tags: ["software", "c++"]
   categories: ["software"]
   logo: "fas fa-file-lines"
+  timeline: "2018"
 
 - name: Battleship
   image: /images/sections/projects/Battleship/multimedia/imagenes.png
@@ -370,3 +415,4 @@ projects:
   tags: ["software", "c++"]
   categories: ["software"]
   logo: "fas fa-ship"
+  timeline: "2018"
