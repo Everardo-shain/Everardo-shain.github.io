@@ -60,24 +60,6 @@ projects:
   logo: "fas fa-eye"
   timeline: "2023 - 2026"
 
-- name: Wound Filling Robotics
-  image: /images/sections/projects/Wound Filling Robotics/picture.jpg
-  role: Contributor
-  summary: Supported the virtual prototyping phase of a wound-filling robotic device, performing the kinematic analysis and trajectory control engineering for an 8-DOF robot using MATLAB, and designing the system's integration and assembly within Simulink.
-  tags: ["control systems", "matlab"]
-  categories: ["control and navigation"]
-  logo: "fas fa-hospital"
-  timeline: "2026"
-
-- name: Deepfake Audio Detection
-  image: /images/sections/projects/Deepfake Audio Detection/picture.png
-  role: Researcher and Developer
-  summary: Co-engineered a real-time cloned-audio detection system for Spanish telephone calls. Engineered dataset segmentation and benchmarked a custom CNN against MobileNetV2 in Python across telephonic codecs and noise levels, reaching 99.97% validation accuracy. Co-authored a journal article for peer review (ACM TOPS, submitted in 2026).
-  tags: ["data science", "machine learning", "python"]
-  categories: ["featured", "data and optimization"]
-  post: "posts/projects/Deepfake/index.md"
-  logo: "fas fa-file-audio"
-  timeline: "2026"
 
 - name: Poker Simulation
   image: /images/sections/projects/Poker Simulation/picture.png
