@@ -34,33 +34,33 @@ publications:
   - name: Efraín López-Damian
     url: https://orcid.org/0000-0002-1113-929X
   paper:
-    summary: This journal article (Q1 at the time of submission)  extends prior work on the Next Best View (NBV) problem. It has two main contributions, a retuned multi-factor objective function (combining area, motion, and quality factors) and a robust optimization approach that explicitly accounts for odometric error. Robustness is achieved via a weighted combination of the nominal and expected objective function values, allowing the optimizer to counteract the effects of possible odometer errors. The approach is validated across two optimization methods (Simulated Annealing and an Evolution Strategy) and multiple simulated environments of varying complexity, showing that the benefit of robust optimization depends on scene complexity.
+    summary: This journal article extends prior work on the Next Best View (NBV) problem. It has two main contributions, a retuned multi-factor objective function (combining area, motion, and quality factors) and a robust optimization approach that explicitly accounts for odometric error. Robustness is achieved via a weighted combination of the nominal and expected objective function values, allowing the optimizer to counteract the effects of possible odometer errors. The approach is validated across two optimization methods (Simulated Annealing and an Evolution Strategy) and multiple simulated environments of varying complexity, showing that the benefit of robust optimization depends on scene complexity.
   categories: ["journal", "under-review"]
   tags: ["journal article", "next best view", "objective function","3D reconstruction","robust optimization"]
 
-# - title: Real-Time Detection of Cloned Spanish Audio in Telephone Calls Using Microcontrollers and Cloud Services
-#   publishedIn:
-#     name: "ACM Transactions on Privacy and Security"
-#     status: Under Review
-#     date: Submitted 30 April 2026
-#     url: https://dl.acm.org/journal/tops
-#   authors:
-#   - name: Ruben Villicaña
-#     url: https://orcid.org/0009-0007-1061-075X
-#   - name: Diana Paola Ayala-Roldan
-#     url: https://orcid.org/0009-0009-6079-8708
-#   - name: Everardo Shain-Ruvalcaba
-#     url: https://orcid.org/0009-0001-5123-0557
-#   - name: Alfredo Mantilla-Caeiros
-#     url: https://orcid.org/0009-0003-0043-5450
-#   - name: Alejandro Santos-Diaz
-#     url: https://orcid.org/0000-0001-5235-7325
-#   - name: Luis Montesinos
-#     url: https://orcid.org/0000-0003-3976-4190
-#   paper:
-#     summary: This journal article (Q1 at the time of submission) presents the development and evaluation of a real-time system for detecting cloned Spanish audio during telephone calls. A comprehensive dataset of real and cloned recordings was created, encoded in four standard telephone formats (GSM, $\mu$-law, a-law, and G.723.1) and enhanced with varying noise levels. The proposed architecture leverages microcontrollers and Amazon Web Services (AWS) cloud services for real-time analysis using deep learning models. The system's performance was validated against human capability, demonstrating high accuracy in real-world scenarios and outperforming participants' ability to distinguish between real and cloned audio samples.
-#   categories: ["journal", "under-review"]
-#   tags: ["journal article", "deep learning", "audio deepfakes","embedded systems", "cloud computing (AWS)", "signal processing", "cybersecurity"]
+- title: Real-Time Detection of Cloned Spanish Audio in Telephone Calls Using Microcontrollers and Cloud Services
+  publishedIn:
+    name: "ACM Transactions on Privacy and Security"
+    status: Under Review
+    date: Submitted 30 April 2026
+    url: https://dl.acm.org/journal/tops
+  authors:
+  - name: Ruben Villicaña
+    url: https://orcid.org/0009-0007-1061-075X
+  - name: Diana Paola Ayala-Roldan
+    url: https://orcid.org/0009-0009-6079-8708
+  - name: Everardo Shain-Ruvalcaba
+    url: https://orcid.org/0009-0001-5123-0557
+  - name: Alfredo Mantilla-Caeiros
+    url: https://orcid.org/0009-0003-0043-5450
+  - name: Alejandro Santos-Diaz
+    url: https://orcid.org/0000-0001-5235-7325
+  - name: Luis Montesinos
+    url: https://orcid.org/0000-0003-3976-4190
+  paper:
+    summary: This journal article presents a collaborative project focused on developing a real-time system for detecting cloned Spanish audio during telephone calls, combining deep learning classification with a hardware-to-cloud prototype. Contributed with the design and implementation of the evaluation pipeline used to benchmark the deep learning models against a human perception survey. Isolated the specific survey audio pairs from the main dataset before retraining the models, preventing the training process from being influenced by these targeted inputs while preserving the general training and evaluation flow. Built a target-audio inference pipeline to extract the model predictions for those isolated pairs and developed a mapping logic to translate the individual real/fake probabilities into pair-level outcomes, enabling a direct human-vs-model comparison.
+  categories: ["journal", "under-review"]
+  tags: ["journal article", "deep learning", "audio deepfakes","embedded systems", "cloud computing (AWS)", "signal processing", "cybersecurity"]
 
 - title: Tuning and Comparison of Optimization Algorithms for the Next Best View Problematic
   publishedIn:
@@ -74,7 +74,7 @@ publications:
   - name: Efraín López-Damian
     url: https://orcid.org/0000-0002-1113-929X
   paper:
-    summary: This journal article (Q1 at the time of publication) presents the tuning and comparison of various optimization algorithms on the Next Best View (NBV) problem. A simulated 5 Degree-of-Freedom (DOF) mobile robot with a mounted simulated range sensor was used on a Virtual Reality Modeling Language (VRML) environment, and the space discretization was made using a voxel map. The optimization methods tested were Nelder-Mead, an Evolution Strategy, and Simulated Annealing. Their repeatability was tested on a laboratory model, a room with a cube and a pyramid inside it, and a study room with multiple furniture and windows.
+    summary: This journal article presents the tuning and comparison of various optimization algorithms on the Next Best View (NBV) problem. A simulated 5 Degree-of-Freedom (DOF) mobile robot with a mounted simulated range sensor was used on a Virtual Reality Modeling Language (VRML) environment, and the space discretization was made using a voxel map. The optimization methods tested were Nelder-Mead, an Evolution Strategy, and Simulated Annealing. Their repeatability was tested on a laboratory model, a room with a cube and a pyramid inside it, and a study room with multiple furniture and windows.
     url: https://ieeexplore.ieee.org/document/10781375
     file: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10781375
   categories: ["journal"]
