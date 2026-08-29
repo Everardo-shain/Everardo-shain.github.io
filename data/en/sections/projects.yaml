@@ -50,7 +50,7 @@ projects:
 #   summary:
 #   tags: ["", "", ""]
 
-- name: Next Best View | Master's Thesis
+- name: Next Best View | Master's Thesis & Extended Work
   image: /images/sections/projects/NBV/picture.png
   role: Researcher and Developer
   summary: Implemented 3 optimization algorithms in C on Linux for view planning in 3D reconstruction, retrieving 83\%+ of tested scenes in under 200s (1st journal article, IEEE Access, published). Extended with a new objective function and odometric aware optimization (2nd journal article, IEEE Access, submitted in 2026).

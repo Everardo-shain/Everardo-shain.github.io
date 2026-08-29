@@ -1,5 +1,5 @@
 ---
-title: "Next Best View | Master's Thesis"
+title: "Next Best View | Master's Thesis & Extended Work"
 date: 2026-07-31T08:06:25+06:00
 description: Next Best View project
 menu:
