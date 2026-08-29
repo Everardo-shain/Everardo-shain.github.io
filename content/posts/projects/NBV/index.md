@@ -162,7 +162,7 @@ Validation with simulated odometric perturbations confirmed the benefit: the rob
 - **First journal article**: E. Shain-Ruvalcaba, E. López-Damian, *"Tuning and Comparison of Optimization Algorithms for the Next Best View Problematic,"* in *IEEE Access*, vol. 12, pp. 185567–185585, 2024.  
   DOI: [10.1109/ACCESS.2024.3513154](https://doi.org/10.1109/ACCESS.2024.3513154).
 
-- **Second journal article**: E. Shain-Ruvalcaba, E. López-Damian, *"Multi-Factor and Odometric Aware Optimization for Next-Best-View 3D Reconstruction,"*  in *IEEE Access*. (Submitted, 2026).
+- **Second journal article**: E. Shain-Ruvalcaba, E. López-Damian, *"Multi-Factor and Odometric Aware Optimization for Next-Best-View 3D Reconstruction,"* submitted to *IEEE Access*, Aug. 2026 (under review).
 
 ---
 
